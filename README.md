@@ -37,21 +37,33 @@ MH3 is the NPTH 3.2 mm hole at **(155.000, 130.000)**. The ground pour is held
 back 1.40 mm from the hole edge by a dedicated keepout. **Fit a nylon or other
 insulating washer / standoff at MH3** - do not use a bare metal washer.
 
-### Known issue - zone fill must be refilled before fabrication
+### Fabrication status: READY
 
-> The committed `hakai_mouse_v6.kicad_pcb` has a **stale saved zone fill**. It
-> predates the SWDIO / VBAT_SENSE reroutes, so the stored GND pour overlaps
-> those traces and intrudes into the MH3 keepout.
->
-> - DRC **with** zone refill: 0 violations, 0 unconnected
-> - DRC **without** refill (i.e. what gets plotted): **33 errors**, including
->   `0.0000 mm` clearance between the GND pour and SWDIO / VBAT_SENSE
->
-> Gerber export plots the *saved* fill, so exporting without refilling first
-> produces boards with SWDIO and VBAT_SENSE shorted to ground.
->
-> **Before any fabrication export:** open the board, `Edit > Fill All Zones` (B),
-> re-run DRC with "Refill all zones" *unchecked* and confirm 0/0, then save.
+The saved zone fill is current. Verified with KiCad 10.0.5:
+
+- DRC **without** `--refill-zones` (i.e. against the *stored* fill that gerber
+  export actually plots): **0 violations, 0 unconnected**
+- Ground pour clearance to the MH3 hole edge: **1.3964 mm (F.Cu) / 1.3974 mm
+  (B.Cu)**, measured in the exported gerber
+- Mounting-hole drill: 3x NPTH 3.2 mm, MH3 at `X155.0 Y-130.0`
+
+Ready-to-send package: **`gerbers/fab_ready/`** - 9 gerbers, merged Excellon
+drill (PTH + NPTH, MixedPlating), `.gbrjob`, and `FAB_NOTES.txt`.
+
+> **Always re-fill zones before exporting gerbers.** Gerber export plots the
+> *saved* fill, not a live one. If you edit routing, run `Edit > Fill All Zones`
+> (B), confirm DRC is 0/0 with "Refill all zones" *unchecked*, then save and
+> re-export. An earlier revision of this board shipped a stale fill in which the
+> GND pour overlapped SWDIO and VBAT_SENSE at 0.0000 mm clearance.
+
+### Known deviation - VBAT_SENSE under the RF feed
+
+`VBAT_SENSE` on B.Cu crosses beneath `RF_FEED` on F.Cu, with the nearest plane
+cut **~1.79 mm from the antenna feed pad ANT1.1** at (138.000, 140.000).
+Crossing counts are unchanged from the pre-reroute baseline (2x RF_FEED, 2x ANT,
+1x RF1, all broadside through the 0.8 mm dielectric), but the baseline's closest
+cut was 8.83 mm out. Accepted for prototype. If return loss disappoints, look
+here before touching the match component values.
 
 ## Excluded from version control
 
