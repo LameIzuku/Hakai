@@ -1,0 +1,3232 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-08-11T16:42:05",
+    "ignored_checks": [
+        {
+            "description": "Global label only appears once in the schematic",
+            "key": "single_global_label"
+        },
+        {
+            "description": "Four connection points are joined together",
+            "key": "four_way_junction"
+        },
+        {
+            "description": "SPICE model issue",
+            "key": "simulation_model_issue"
+        },
+        {
+            "description": "Assigned footprint doesn't match footprint filters",
+            "key": "footprint_filter"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.5",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/df71f9f2-97ab-4d7b-a476-8fc54408afff",
+            "violations": [
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0046 [GND]",
+                            "pos": {
+                                "x": 0.254,
+                                "y": 2.794
+                            },
+                            "uuid": "80dc8e5b-5f80-4acb-8e4d-9a3aba76c12e"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol #FLG0047 [PWR_FLAG]",
+                            "pos": {
+                                "x": 0.254,
+                                "y": 2.794
+                            },
+                            "uuid": "d1c4a095-665f-444e-925b-e188dbd3bdf2"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol R3 [R]",
+                            "pos": {
+                                "x": 0.2794,
+                                "y": 1.651
+                            },
+                            "uuid": "17953bad-da62-423e-8e65-521dd94b2b42"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0015 [GND]",
+                            "pos": {
+                                "x": 0.2794,
+                                "y": 1.7018
+                            },
+                            "uuid": "bd069d45-53d8-48dc-ac62-a34546eebc6f"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0008 [VBUS]",
+                            "pos": {
+                                "x": 0.3556,
+                                "y": 1.27
+                            },
+                            "uuid": "47c5cebc-e937-4ba5-81c9-4e6164236221"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0009 [VSYS]",
+                            "pos": {
+                                "x": 0.3556,
+                                "y": 1.2954
+                            },
+                            "uuid": "2f0d7181-611d-4320-a2c9-ac3c096c6814"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0010 [GND]",
+                            "pos": {
+                                "x": 0.3556,
+                                "y": 1.3208
+                            },
+                            "uuid": "13f911bd-950b-468a-9e05-3335c1e22800"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0011 [GND]",
+                            "pos": {
+                                "x": 0.3556,
+                                "y": 1.3462
+                            },
+                            "uuid": "5d014dc2-188a-40b0-a2e7-e6381a48f30f"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol J1 [USB4105-GF-A]",
+                            "pos": {
+                                "x": 0.381,
+                                "y": 0.635
+                            },
+                            "uuid": "e859299d-3a7e-442d-afc2-80d298c79490"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol J2 [CONN_BATT_PH2]",
+                            "pos": {
+                                "x": 0.381,
+                                "y": 2.0574
+                            },
+                            "uuid": "92ed7f62-1edc-4a5a-a2fa-b1e28e1e0a9b"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol #FLG0049 [PWR_FLAG]",
+                            "pos": {
+                                "x": 0.381,
+                                "y": 2.794
+                            },
+                            "uuid": "76254ee6-4080-4ad7-af62-b02845f15c03"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0048 [VBUS]",
+                            "pos": {
+                                "x": 0.381,
+                                "y": 2.794
+                            },
+                            "uuid": "97f54ef0-c7a1-4597-8d4a-e7db4e9b9ec9"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol R4 [R]",
+                            "pos": {
+                                "x": 0.4064,
+                                "y": 1.651
+                            },
+                            "uuid": "7a11148d-5c77-4fc4-8914-4f1ed9dfd34f"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0016 [GND]",
+                            "pos": {
+                                "x": 0.4064,
+                                "y": 1.7018
+                            },
+                            "uuid": "177cdadd-832d-4e18-a3a6-995579eaa375"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol U2 [BQ24074]",
+                            "pos": {
+                                "x": 0.508,
+                                "y": 1.3716
+                            },
+                            "uuid": "92b9f73c-9001-4fbc-82e6-aa51431fb2fb"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0027 [VBAT]",
+                            "pos": {
+                                "x": 0.508,
+                                "y": 2.0447
+                            },
+                            "uuid": "c562d17a-513f-4cae-9f5c-d8c5b7eeb18d"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0028 [GND]",
+                            "pos": {
+                                "x": 0.508,
+                                "y": 2.0701
+                            },
+                            "uuid": "33dca497-efaf-42f2-a9a7-b2f6dfadf07b"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol #FLG0051 [PWR_FLAG]",
+                            "pos": {
+                                "x": 0.508,
+                                "y": 2.794
+                            },
+                            "uuid": "1daddccd-511d-452b-a3db-4e34932a1c1a"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0050 [VBAT]",
+                            "pos": {
+                                "x": 0.508,
+                                "y": 2.794
+                            },
+                            "uuid": "e5a38bee-714c-4074-8ca1-898e5a9a4675"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0001 [GND]",
+                            "pos": {
+                                "x": 0.5207,
+                                "y": 0.4318
+                            },
+                            "uuid": "b741ec31-de24-4e25-949c-1300ae4476a0"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0003 [VBUS]",
+                            "pos": {
+                                "x": 0.5207,
+                                "y": 0.4572
+                            },
+                            "uuid": "c11e5586-868b-4d35-9802-8e706003f662"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0002 [GND]",
+                            "pos": {
+                                "x": 0.5207,
+                                "y": 0.8382
+                            },
+                            "uuid": "b795cbfd-99fe-4fe2-91ae-498a09db7a19"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol R5 [R]",
+                            "pos": {
+                                "x": 0.5334,
+                                "y": 1.651
+                            },
+                            "uuid": "5e899ed7-a88c-4e14-89e5-b9bbe51a4dcb"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0017 [GND]",
+                            "pos": {
+                                "x": 0.5334,
+                                "y": 1.7018
+                            },
+                            "uuid": "abd690ee-31de-4891-a70d-b3362dbf50c2"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0004 [VBUS]",
+                            "pos": {
+                                "x": 0.635,
+                                "y": 0.3302
+                            },
+                            "uuid": "17392854-31ab-4382-9c8b-f893df363df9"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol D1 [D_TVS]",
+                            "pos": {
+                                "x": 0.635,
+                                "y": 0.381
+                            },
+                            "uuid": "5f9fc8fc-b58a-4844-97d1-04ec4c1f56d1"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0005 [GND]",
+                            "pos": {
+                                "x": 0.635,
+                                "y": 0.4318
+                            },
+                            "uuid": "da9215c3-40c8-4966-9df0-4d51d6f8660f"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol R8 [R]",
+                            "pos": {
+                                "x": 0.635,
+                                "y": 2.0574
+                            },
+                            "uuid": "ed8d5693-8eda-4ca1-9f32-8681e20d08c7"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol R9 [R]",
+                            "pos": {
+                                "x": 0.635,
+                                "y": 2.2606
+                            },
+                            "uuid": "489993aa-4148-418b-9245-766c8dcaf392"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0031 [GND]",
+                            "pos": {
+                                "x": 0.635,
+                                "y": 2.3114
+                            },
+                            "uuid": "f2e03f3e-2d31-4cb3-994a-2daad71f9305"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol #FLG0053 [PWR_FLAG]",
+                            "pos": {
+                                "x": 0.635,
+                                "y": 2.794
+                            },
+                            "uuid": "1e76aef1-8ec6-4f83-854a-b78850fad6b5"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0052 [VSYS]",
+                            "pos": {
+                                "x": 0.635,
+                                "y": 2.794
+                            },
+                            "uuid": "af8b9a80-3aba-4137-a261-9c1491ddf363"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0109 [GND]",
+                            "pos": {
+                                "x": 0.6477,
+                                "y": 2.6543
+                            },
+                            "uuid": "ea414cb6-7717-4461-af7c-f235f2e2d543"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0012 [VSYS]",
+                            "pos": {
+                                "x": 0.6604,
+                                "y": 1.27
+                            },
+                            "uuid": "e6c38fcc-68b3-472c-9ef8-dcd0c82c3344"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0013 [VBAT]",
+                            "pos": {
+                                "x": 0.6604,
+                                "y": 1.3208
+                            },
+                            "uuid": "8b5d0e2e-f7bc-488e-8ff8-697a9f2e680f"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0014 [GND]",
+                            "pos": {
+                                "x": 0.6604,
+                                "y": 1.4224
+                            },
+                            "uuid": "976668d4-1c34-4d1c-800a-71f515cedc60"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol SW5 [SW_Kailh_GM8]",
+                            "pos": {
+                                "x": 0.762,
+                                "y": 2.667
+                            },
+                            "uuid": "da737f90-3ea2-4fd3-8c92-7631f9c19fdb"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0054 [1V9]",
+                            "pos": {
+                                "x": 0.762,
+                                "y": 2.794
+                            },
+                            "uuid": "787f278d-5820-404f-b349-3849c032a394"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol #FLG0055 [PWR_FLAG]",
+                            "pos": {
+                                "x": 0.762,
+                                "y": 2.794
+                            },
+                            "uuid": "e827817e-e288-4eba-b358-806192d27a73"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol R1 [R]",
+                            "pos": {
+                                "x": 0.7874,
+                                "y": 0.635
+                            },
+                            "uuid": "b93720ad-a302-4b5e-946a-7c8a7aaa95bd"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0006 [GND]",
+                            "pos": {
+                                "x": 0.7874,
+                                "y": 0.6858
+                            },
+                            "uuid": "ec6fd93c-71d4-4051-b9d4-bbd211e7f581"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0020 [VBUS]",
+                            "pos": {
+                                "x": 0.7874,
+                                "y": 1.0668
+                            },
+                            "uuid": "cc3d4a4a-1828-4998-90fd-70294655689f"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol C1 [C]",
+                            "pos": {
+                                "x": 0.7874,
+                                "y": 1.1176
+                            },
+                            "uuid": "115810b7-3c1c-45e8-a864-1c6d2b8f25fb"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0021 [GND]",
+                            "pos": {
+                                "x": 0.7874,
+                                "y": 1.1684
+                            },
+                            "uuid": "0b89bdcf-3990-4b10-87a3-d35537669fe4"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol Q3 [AO3401A]",
+                            "pos": {
+                                "x": 0.889,
+                                "y": 2.0574
+                            },
+                            "uuid": "aface1c3-2f85-4e05-8217-9be0b4a6f107"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol Q1 [AO3400A]",
+                            "pos": {
+                                "x": 0.889,
+                                "y": 2.3114
+                            },
+                            "uuid": "ae639c4a-5f31-4019-b707-eeace4ced95c"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0056 [1V9_A]",
+                            "pos": {
+                                "x": 0.889,
+                                "y": 2.794
+                            },
+                            "uuid": "27663f7f-6d3f-4a8f-b254-c77d6819ffca"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol #FLG0057 [PWR_FLAG]",
+                            "pos": {
+                                "x": 0.889,
+                                "y": 2.794
+                            },
+                            "uuid": "94b758c7-c3d9-406f-ab1c-5aca00851b53"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol R2 [R]",
+                            "pos": {
+                                "x": 0.9144,
+                                "y": 0.635
+                            },
+                            "uuid": "2fe83074-1828-45ad-958e-57638054f688"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0007 [GND]",
+                            "pos": {
+                                "x": 0.9144,
+                                "y": 0.6858
+                            },
+                            "uuid": "6c7f0bc8-ce47-45fc-b8d6-dbf14cadce37"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol C2 [C]",
+                            "pos": {
+                                "x": 0.9144,
+                                "y": 1.1176
+                            },
+                            "uuid": "cf86024a-84b3-4a53-83d1-7c514e9cc763"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0022 [GND]",
+                            "pos": {
+                                "x": 0.9144,
+                                "y": 1.1684
+                            },
+                            "uuid": "63ac31bb-45ec-4085-98c1-d2228e2f73ed"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0029 [VBAT]",
+                            "pos": {
+                                "x": 0.9906,
+                                "y": 2.0701
+                            },
+                            "uuid": "462aeca2-e6e1-403f-8384-0c1e51e91cef"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0032 [GND]",
+                            "pos": {
+                                "x": 0.9906,
+                                "y": 2.3241
+                            },
+                            "uuid": "e836cb76-d18f-4252-a2a6-0c96a1c2bf49"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0023 [VSYS]",
+                            "pos": {
+                                "x": 1.0414,
+                                "y": 1.0668
+                            },
+                            "uuid": "f22ba413-454e-40ab-9f37-f3a79454f183"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol C3 [C]",
+                            "pos": {
+                                "x": 1.0414,
+                                "y": 1.1176
+                            },
+                            "uuid": "dad40f15-413c-4b9d-8105-3fc9606a098d"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0024 [GND]",
+                            "pos": {
+                                "x": 1.0414,
+                                "y": 1.1684
+                            },
+                            "uuid": "85a43be3-1431-4629-b5e7-df4da65fba45"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0018 [1V9_A]",
+                            "pos": {
+                                "x": 1.0922,
+                                "y": 1.6002
+                            },
+                            "uuid": "2c1405e6-5b45-4a89-b693-9d651e34ee09"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol R6 [R]",
+                            "pos": {
+                                "x": 1.0922,
+                                "y": 1.651
+                            },
+                            "uuid": "d998d227-d71b-40f0-a83e-5ce97cd138d2"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0030 [VBAT]",
+                            "pos": {
+                                "x": 1.0922,
+                                "y": 2.0066
+                            },
+                            "uuid": "967256a0-4cb7-4ecb-9be5-4b6132b8e99f"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol R25 [R]",
+                            "pos": {
+                                "x": 1.0922,
+                                "y": 2.0574
+                            },
+                            "uuid": "e4a91998-7591-42f6-a861-3e0b33365cb5"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol R10 [R]",
+                            "pos": {
+                                "x": 1.0922,
+                                "y": 2.3114
+                            },
+                            "uuid": "4dcd4513-59af-476b-8858-ce85e47ca822"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0033 [GND]",
+                            "pos": {
+                                "x": 1.0922,
+                                "y": 2.3622
+                            },
+                            "uuid": "ce85a6d3-9197-4e69-878b-3ddf61451043"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0096 [GND]",
+                            "pos": {
+                                "x": 1.1049,
+                                "y": 2.6543
+                            },
+                            "uuid": "bad155ee-36f7-4a1f-badb-58c9db8e7da6"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0025 [VBAT]",
+                            "pos": {
+                                "x": 1.1684,
+                                "y": 1.0668
+                            },
+                            "uuid": "d0458c36-3982-4a06-a9f6-6e4a628f663a"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol C36 [C]",
+                            "pos": {
+                                "x": 1.1684,
+                                "y": 1.1176
+                            },
+                            "uuid": "76ff0ae6-a802-487f-aa0f-2f6b60be1bb2"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0026 [GND]",
+                            "pos": {
+                                "x": 1.1684,
+                                "y": 1.1684
+                            },
+                            "uuid": "60d91080-6069-4b0b-90de-42d1ee67c942"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0019 [1V9_A]",
+                            "pos": {
+                                "x": 1.2192,
+                                "y": 1.6002
+                            },
+                            "uuid": "3d62ce02-9cd4-4e35-a1a0-0a241ffdced4"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol R7 [R]",
+                            "pos": {
+                                "x": 1.2192,
+                                "y": 1.651
+                            },
+                            "uuid": "e45e0b8d-b6c2-490a-9692-9331cf19658a"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0097 [1V9_A]",
+                            "pos": {
+                                "x": 1.2192,
+                                "y": 2.3622
+                            },
+                            "uuid": "e9d3c551-088a-4207-aaee-96577619ae05"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol R15 [R]",
+                            "pos": {
+                                "x": 1.2192,
+                                "y": 2.413
+                            },
+                            "uuid": "13d87cf5-e100-427a-8351-b8b1c3b53c26"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol SW1 [SW_Kailh_GM8]",
+                            "pos": {
+                                "x": 1.2192,
+                                "y": 2.667
+                            },
+                            "uuid": "47684d6e-31d5-40fe-bb53-3c7460babe34"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol C28 [C]",
+                            "pos": {
+                                "x": 1.2192,
+                                "y": 2.8575
+                            },
+                            "uuid": "0e76351d-e2b6-4924-8318-5a4c08448642"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0098 [GND]",
+                            "pos": {
+                                "x": 1.2192,
+                                "y": 2.9083
+                            },
+                            "uuid": "758fd4b3-3a58-4c01-8a5b-ed2d734a6cb2"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0034 [VSYS]",
+                            "pos": {
+                                "x": 1.3462,
+                                "y": 0.3302
+                            },
+                            "uuid": "7f21ff24-f671-4b93-ab14-2c9957f1f13b"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol F1 [FUSE_PTC]",
+                            "pos": {
+                                "x": 1.3462,
+                                "y": 0.381
+                            },
+                            "uuid": "f69b0079-2551-4374-90aa-e0bb78d0421d"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol C4 [C]",
+                            "pos": {
+                                "x": 1.3462,
+                                "y": 0.8382
+                            },
+                            "uuid": "31dd998e-2e78-4c5d-84bf-782924df0f29"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0037 [GND]",
+                            "pos": {
+                                "x": 1.3462,
+                                "y": 0.889
+                            },
+                            "uuid": "75d46bd5-201f-4bf5-98cf-b4ca0c8f8e1f"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol Y1 [XTAL]",
+                            "pos": {
+                                "x": 1.3462,
+                                "y": 1.9812
+                            },
+                            "uuid": "1186a1d7-abc4-4afd-92e0-ddee4090117c"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol Y2 [XTAL]",
+                            "pos": {
+                                "x": 1.3462,
+                                "y": 2.2098
+                            },
+                            "uuid": "35c07946-2163-4ecd-a153-af9e1a9263b3"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0035 [GND]",
+                            "pos": {
+                                "x": 1.4605,
+                                "y": 0.5588
+                            },
+                            "uuid": "7f1019b1-5cb6-4ea4-b756-f111f92debc9"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0038 [1V9]",
+                            "pos": {
+                                "x": 1.4732,
+                                "y": 0.7874
+                            },
+                            "uuid": "34466f57-5504-4ea1-859e-9cd9cd41b5c4"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol C5 [C]",
+                            "pos": {
+                                "x": 1.4732,
+                                "y": 0.8382
+                            },
+                            "uuid": "2777ce7a-a6b6-4999-9f76-3c127db0d0ac"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0039 [GND]",
+                            "pos": {
+                                "x": 1.4732,
+                                "y": 0.889
+                            },
+                            "uuid": "617c88ee-bea0-4088-81d3-bf1b5b605d4e"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol C18 [C]",
+                            "pos": {
+                                "x": 1.5621,
+                                "y": 1.9812
+                            },
+                            "uuid": "4a05083e-d8f2-4c64-946d-29c648e791c1"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0074 [GND]",
+                            "pos": {
+                                "x": 1.5621,
+                                "y": 2.032
+                            },
+                            "uuid": "0988bffb-d747-46a7-a4a7-6de47cc045bb"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol C20 [C]",
+                            "pos": {
+                                "x": 1.5621,
+                                "y": 2.2098
+                            },
+                            "uuid": "3125f998-976e-4e2c-8698-4ca562fc41f1"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0076 [GND]",
+                            "pos": {
+                                "x": 1.5621,
+                                "y": 2.2606
+                            },
+                            "uuid": "8e85049f-ec26-4cfd-9d2f-58ebd45f39eb"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0099 [GND]",
+                            "pos": {
+                                "x": 1.5621,
+                                "y": 2.6543
+                            },
+                            "uuid": "b4a1516c-0881-48d9-9673-0e40a8f3e278"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol U3 [XC6219B192MR]",
+                            "pos": {
+                                "x": 1.6002,
+                                "y": 0.5334
+                            },
+                            "uuid": "a76adcdc-376e-4a06-901f-53b0e74e3b94"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol C6 [C]",
+                            "pos": {
+                                "x": 1.6002,
+                                "y": 0.8382
+                            },
+                            "uuid": "e1f2bcca-2a2a-4d9e-b0be-d93bd54e04b6"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0040 [GND]",
+                            "pos": {
+                                "x": 1.6002,
+                                "y": 0.889
+                            },
+                            "uuid": "2a5e5638-3313-4e08-b787-fc1e7a2d30f9"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0100 [1V9_A]",
+                            "pos": {
+                                "x": 1.6764,
+                                "y": 2.3622
+                            },
+                            "uuid": "7f58be35-654f-4369-8ba4-1c002718bdc2"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol R16 [R]",
+                            "pos": {
+                                "x": 1.6764,
+                                "y": 2.413
+                            },
+                            "uuid": "e8c23e4c-1231-4dcf-a55d-5bd5bde4f36c"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol SW2 [SW_Kailh_GM8]",
+                            "pos": {
+                                "x": 1.6764,
+                                "y": 2.667
+                            },
+                            "uuid": "11554ca3-ac57-4905-8204-da6513e545d8"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol C29 [C]",
+                            "pos": {
+                                "x": 1.6764,
+                                "y": 2.8575
+                            },
+                            "uuid": "c76015bb-68ef-4405-af71-68f0839884bf"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0101 [GND]",
+                            "pos": {
+                                "x": 1.6764,
+                                "y": 2.9083
+                            },
+                            "uuid": "df8f04d8-39e5-4366-b1c0-53b0302043bb"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol C19 [C]",
+                            "pos": {
+                                "x": 1.6891,
+                                "y": 1.9812
+                            },
+                            "uuid": "1271e7dd-93dc-4479-aa65-4ae5778002fb"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0075 [GND]",
+                            "pos": {
+                                "x": 1.6891,
+                                "y": 2.032
+                            },
+                            "uuid": "dd97cce2-6f81-4804-85ee-3fba37a40128"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol C21 [C]",
+                            "pos": {
+                                "x": 1.6891,
+                                "y": 2.2098
+                            },
+                            "uuid": "4336dfe6-7962-4882-a9bf-9c0c21c9efc0"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0077 [GND]",
+                            "pos": {
+                                "x": 1.6891,
+                                "y": 2.2606
+                            },
+                            "uuid": "dd223a82-8b1e-4460-a74e-1a4490c338ea"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0036 [1V9]",
+                            "pos": {
+                                "x": 1.7399,
+                                "y": 0.508
+                            },
+                            "uuid": "cdebfa41-5384-4592-90d4-e49fafb143f9"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0078 [1V9_A]",
+                            "pos": {
+                                "x": 1.778,
+                                "y": 2.413
+                            },
+                            "uuid": "9e801bfe-f587-4aa3-b37c-4e57f0f4d989"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol R11 [R]",
+                            "pos": {
+                                "x": 1.778,
+                                "y": 2.4638
+                            },
+                            "uuid": "cab8d7b3-1e9a-483a-ba5e-8084d4bc30e3"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0041 [1V9]",
+                            "pos": {
+                                "x": 1.8542,
+                                "y": 0.3302
+                            },
+                            "uuid": "6d157243-d399-4f46-acaa-b1d4e2cbda9a"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol FB1 [FERRITE]",
+                            "pos": {
+                                "x": 1.8542,
+                                "y": 0.381
+                            },
+                            "uuid": "bd7e4731-6456-4040-96ea-4f9f7c908ee8"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0042 [1V9_A]",
+                            "pos": {
+                                "x": 1.8542,
+                                "y": 0.4318
+                            },
+                            "uuid": "0a5ec1e1-0db0-43af-b892-afddc2027b80"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0043 [1V9_A]",
+                            "pos": {
+                                "x": 1.8542,
+                                "y": 0.7874
+                            },
+                            "uuid": "d49ed6d4-cf83-4188-98dd-40d566ab0c48"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol C7 [C]",
+                            "pos": {
+                                "x": 1.8542,
+                                "y": 0.8382
+                            },
+                            "uuid": "cba703d3-2cd7-4282-b33e-79682515ddda"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0044 [GND]",
+                            "pos": {
+                                "x": 1.8542,
+                                "y": 0.889
+                            },
+                            "uuid": "86542577-f923-4a87-bea4-53b38f4e0759"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol C11 [C]",
+                            "pos": {
+                                "x": 1.905,
+                                "y": 1.7272
+                            },
+                            "uuid": "0383a43b-557a-4bb8-b6d6-40b583987ba3"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0072 [GND]",
+                            "pos": {
+                                "x": 1.905,
+                                "y": 1.778
+                            },
+                            "uuid": "6fc80b3c-c0fb-4807-a1cc-50264d85e6a0"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol L1 [L]",
+                            "pos": {
+                                "x": 1.905,
+                                "y": 1.9812
+                            },
+                            "uuid": "9152fc9d-9d85-4ba4-b464-3cc79cc2492a"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol C8 [C]",
+                            "pos": {
+                                "x": 1.9812,
+                                "y": 0.8382
+                            },
+                            "uuid": "19c5fefd-3fc3-4f74-8dbf-6c089462d123"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0045 [GND]",
+                            "pos": {
+                                "x": 1.9812,
+                                "y": 0.889
+                            },
+                            "uuid": "ac9604b7-6b35-4e56-8496-d0b12c6f0f46"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0102 [GND]",
+                            "pos": {
+                                "x": 2.0193,
+                                "y": 2.6543
+                            },
+                            "uuid": "a0369be2-4ee5-4bc0-83d1-d404abe1a4dd"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol C9 [C]",
+                            "pos": {
+                                "x": 2.032,
+                                "y": 1.27
+                            },
+                            "uuid": "7f51fd0c-83aa-4497-8ec9-be12eb419323"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0070 [GND]",
+                            "pos": {
+                                "x": 2.032,
+                                "y": 1.3208
+                            },
+                            "uuid": "2ebc1f45-048f-4f45-9872-8ac106ee0d75"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol C10 [C]",
+                            "pos": {
+                                "x": 2.032,
+                                "y": 1.4986
+                            },
+                            "uuid": "fe2afcb2-791f-4d84-a79d-5685c29bf374"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0071 [GND]",
+                            "pos": {
+                                "x": 2.032,
+                                "y": 1.5494
+                            },
+                            "uuid": "1b311e90-4e79-4600-9de1-343bef358436"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol C12 [C]",
+                            "pos": {
+                                "x": 2.032,
+                                "y": 1.7272
+                            },
+                            "uuid": "d0519330-58d2-4af4-b234-6b9dae320887"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0073 [GND]",
+                            "pos": {
+                                "x": 2.032,
+                                "y": 1.778
+                            },
+                            "uuid": "810a48ae-05c6-45dd-916d-25381afd01fa"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol L2 [L]",
+                            "pos": {
+                                "x": 2.032,
+                                "y": 1.9812
+                            },
+                            "uuid": "78b65caf-306b-4b77-8089-8fcce126ea9b"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0103 [1V9_A]",
+                            "pos": {
+                                "x": 2.1336,
+                                "y": 2.3622
+                            },
+                            "uuid": "c0364bcc-f0dd-4ca9-b57f-884ac7a77fb8"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol R17 [R]",
+                            "pos": {
+                                "x": 2.1336,
+                                "y": 2.413
+                            },
+                            "uuid": "2701704a-f3de-4315-84d1-c0364dfce02d"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol SW3 [SW_Kailh_GM8]",
+                            "pos": {
+                                "x": 2.1336,
+                                "y": 2.667
+                            },
+                            "uuid": "85d9cb9b-bc47-4324-81e9-18c61c81dc22"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol C30 [C]",
+                            "pos": {
+                                "x": 2.1336,
+                                "y": 2.8575
+                            },
+                            "uuid": "f1ed7426-9771-47d8-95e4-e30116e57c9e"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0104 [GND]",
+                            "pos": {
+                                "x": 2.1336,
+                                "y": 2.9083
+                            },
+                            "uuid": "1225a025-475c-4828-8cbd-1004dab7611e"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0060 [1V9_A]",
+                            "pos": {
+                                "x": 2.1844,
+                                "y": 0.9398
+                            },
+                            "uuid": "0bf4604b-dbbd-40f6-9bab-857c8f154073"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol C13 [C]",
+                            "pos": {
+                                "x": 2.1844,
+                                "y": 0.9906
+                            },
+                            "uuid": "074a930f-e78b-4a46-b9a1-072b79636b48"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0061 [GND]",
+                            "pos": {
+                                "x": 2.1844,
+                                "y": 1.0414
+                            },
+                            "uuid": "44ba865b-35dc-416f-a946-8a63d7697a91"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0062 [1V9_A]",
+                            "pos": {
+                                "x": 2.3114,
+                                "y": 0.9398
+                            },
+                            "uuid": "59a97bcc-97af-4593-9c72-21a5691b93d2"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol C14 [C]",
+                            "pos": {
+                                "x": 2.3114,
+                                "y": 0.9906
+                            },
+                            "uuid": "ca8dfbb2-8702-441f-bf48-a0090b9da063"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0063 [GND]",
+                            "pos": {
+                                "x": 2.3114,
+                                "y": 1.0414
+                            },
+                            "uuid": "427059d4-b669-40d7-b73f-edd4d5b93ba6"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0058 [1V9_A]",
+                            "pos": {
+                                "x": 2.3368,
+                                "y": 1.2446
+                            },
+                            "uuid": "3c38d81c-a9a9-4441-ad6e-43bea1ef3d54"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0059 [GND]",
+                            "pos": {
+                                "x": 2.3368,
+                                "y": 1.8542
+                            },
+                            "uuid": "8ff4ec91-627b-4483-9efd-573fda34716b"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0093 [VSYS]",
+                            "pos": {
+                                "x": 2.3622,
+                                "y": 0.381
+                            },
+                            "uuid": "7071e64d-932a-4d35-b845-90a37536d91e"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol R12 [R]",
+                            "pos": {
+                                "x": 2.3622,
+                                "y": 0.4318
+                            },
+                            "uuid": "7c0864cb-b9f2-4723-a9e3-3faea3f4fa45"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol D3 [LED]",
+                            "pos": {
+                                "x": 2.3622,
+                                "y": 0.635
+                            },
+                            "uuid": "aaab6c8f-2505-43e7-81a8-22d260304fdd"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0064 [1V9_A]",
+                            "pos": {
+                                "x": 2.4384,
+                                "y": 0.9398
+                            },
+                            "uuid": "bece627f-0993-4b0b-b126-71dbc2e41207"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol C15 [C]",
+                            "pos": {
+                                "x": 2.4384,
+                                "y": 0.9906
+                            },
+                            "uuid": "7083a735-64be-458a-b0d7-3e94cb0d2093"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0065 [GND]",
+                            "pos": {
+                                "x": 2.4384,
+                                "y": 1.0414
+                            },
+                            "uuid": "5b6d470a-9c93-4d12-a69a-4d73708212d1"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0105 [GND]",
+                            "pos": {
+                                "x": 2.4765,
+                                "y": 2.6543
+                            },
+                            "uuid": "c6f5f52b-19e9-489a-88e9-2a8b5333761b"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol Q2 [AO3400A]",
+                            "pos": {
+                                "x": 2.54,
+                                "y": 0.7112
+                            },
+                            "uuid": "e5b0d304-ba8f-4590-95d9-0e4842be5bd9"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0066 [1V9_A]",
+                            "pos": {
+                                "x": 2.5654,
+                                "y": 0.9398
+                            },
+                            "uuid": "71a3291b-c250-4271-99b1-533d21cf8a2d"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol C16 [C]",
+                            "pos": {
+                                "x": 2.5654,
+                                "y": 0.9906
+                            },
+                            "uuid": "256104e1-6c9b-48e0-959b-64b49ab9735f"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0067 [GND]",
+                            "pos": {
+                                "x": 2.5654,
+                                "y": 1.0414
+                            },
+                            "uuid": "58a2cb40-fb76-447d-beba-8e569ff3df63"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol U4 [nRF52833-QIAA]",
+                            "pos": {
+                                "x": 2.5654,
+                                "y": 1.7272
+                            },
+                            "uuid": "ae49a727-aeca-480c-88c4-bf2180e23cdf"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0106 [1V9_A]",
+                            "pos": {
+                                "x": 2.5908,
+                                "y": 2.3622
+                            },
+                            "uuid": "27f084ed-3775-425a-9490-6f5acb66e0a8"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol R18 [R]",
+                            "pos": {
+                                "x": 2.5908,
+                                "y": 2.413
+                            },
+                            "uuid": "0ec788be-9cdc-4c0a-a6e8-24b1cd3d105a"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol SW4 [SW_Kailh_GM8]",
+                            "pos": {
+                                "x": 2.5908,
+                                "y": 2.667
+                            },
+                            "uuid": "4dfdee1d-92bf-4396-974e-91e2717231a1"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol C31 [C]",
+                            "pos": {
+                                "x": 2.5908,
+                                "y": 2.8575
+                            },
+                            "uuid": "81cfdc64-085b-4857-85c8-39209ee941e2"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0107 [GND]",
+                            "pos": {
+                                "x": 2.5908,
+                                "y": 2.9083
+                            },
+                            "uuid": "061be3d9-b6d2-40e2-a740-ae80af403762"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0094 [GND]",
+                            "pos": {
+                                "x": 2.6416,
+                                "y": 0.7239
+                            },
+                            "uuid": "3f0b8ed7-f073-4cad-b0da-de14a795f55a"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0068 [1V9_A]",
+                            "pos": {
+                                "x": 2.6924,
+                                "y": 0.9398
+                            },
+                            "uuid": "017d51d9-416d-4e17-9b55-4f74d140b3fb"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol C17 [C]",
+                            "pos": {
+                                "x": 2.6924,
+                                "y": 0.9906
+                            },
+                            "uuid": "0f51cb6c-b2c9-4dca-8129-c3113012a90f"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0069 [GND]",
+                            "pos": {
+                                "x": 2.6924,
+                                "y": 1.0414
+                            },
+                            "uuid": "65ea984d-5250-4365-8103-f41dd75a3e9b"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol C32 [C]",
+                            "pos": {
+                                "x": 2.7432,
+                                "y": 2.8575
+                            },
+                            "uuid": "31cc58a2-d9a8-4ee6-8923-82b0ccb0ceaa"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0113 [GND]",
+                            "pos": {
+                                "x": 2.7432,
+                                "y": 2.9083
+                            },
+                            "uuid": "d8adbd51-9467-4172-80c1-f975c56cd0ae"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol R24 [R]",
+                            "pos": {
+                                "x": 2.794,
+                                "y": 0.7112
+                            },
+                            "uuid": "5035641e-5981-4579-bba9-d8f83167ce32"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0095 [GND]",
+                            "pos": {
+                                "x": 2.794,
+                                "y": 0.762
+                            },
+                            "uuid": "582cd3c2-8aaf-4e84-80b8-ec56df72a849"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0108 [GND]",
+                            "pos": {
+                                "x": 2.8194,
+                                "y": 2.4384
+                            },
+                            "uuid": "9e8b777c-cbe4-405b-9658-1099947e6f92"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol C33 [C]",
+                            "pos": {
+                                "x": 2.8702,
+                                "y": 2.8575
+                            },
+                            "uuid": "24d530e6-f955-4a43-a977-6de3c9ea8ca3"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0114 [GND]",
+                            "pos": {
+                                "x": 2.8702,
+                                "y": 2.9083
+                            },
+                            "uuid": "0283be51-05eb-43f8-b70d-ad845efe3bc8"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol EC1 [ENC_MOUSE_11MM]",
+                            "pos": {
+                                "x": 2.9464,
+                                "y": 2.4384
+                            },
+                            "uuid": "cc74fda4-bee1-4e69-a9b4-2ed38a69e05d"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0084 [1V9_A]",
+                            "pos": {
+                                "x": 3.0226,
+                                "y": 1.4478
+                            },
+                            "uuid": "cc3a3aa8-0589-46fa-b478-3e515440f539"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol C35 [C]",
+                            "pos": {
+                                "x": 3.0226,
+                                "y": 1.4986
+                            },
+                            "uuid": "667dcef6-f625-4976-8c43-947a1f8bfaee"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0085 [GND]",
+                            "pos": {
+                                "x": 3.0226,
+                                "y": 1.5494
+                            },
+                            "uuid": "9c4a060e-de83-4dcb-9dbf-052a44234cf3"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0110 [1V9_A]",
+                            "pos": {
+                                "x": 3.0226,
+                                "y": 2.2987
+                            },
+                            "uuid": "910e694a-630a-4d14-bd43-996b45006e88"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol R19 [R]",
+                            "pos": {
+                                "x": 3.0226,
+                                "y": 2.3495
+                            },
+                            "uuid": "7660becb-1095-4a86-a630-3c57c3953541"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol C22 [C]",
+                            "pos": {
+                                "x": 3.0734,
+                                "y": 1.27
+                            },
+                            "uuid": "d0455a55-bd9f-47b7-a50a-40ab21fe82e5"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0079 [GND]",
+                            "pos": {
+                                "x": 3.0734,
+                                "y": 1.3208
+                            },
+                            "uuid": "93cc7fdb-fe19-4773-8333-fff6ee0d293f"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0086 [1V9_A]",
+                            "pos": {
+                                "x": 3.1496,
+                                "y": 1.4478
+                            },
+                            "uuid": "6e9b731c-71c9-4cf9-81dc-f2da795016ff"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol R22 [R]",
+                            "pos": {
+                                "x": 3.1496,
+                                "y": 1.4986
+                            },
+                            "uuid": "1012fd5e-6467-42df-98d6-7907b6b440a6"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0111 [1V9_A]",
+                            "pos": {
+                                "x": 3.1496,
+                                "y": 2.2987
+                            },
+                            "uuid": "8fe775d1-d743-4dbc-a4d4-73f794b1ab09"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol R20 [R]",
+                            "pos": {
+                                "x": 3.1496,
+                                "y": 2.3495
+                            },
+                            "uuid": "e987cbe8-3399-4f15-814f-174ff9ff86c7"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol L3 [L]",
+                            "pos": {
+                                "x": 3.2004,
+                                "y": 1.27
+                            },
+                            "uuid": "714675be-4fe5-4b29-b335-4098d8f06aae"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0112 [1V9_A]",
+                            "pos": {
+                                "x": 3.2766,
+                                "y": 2.2987
+                            },
+                            "uuid": "67390220-2845-46ca-937b-d20a290632cf"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol R21 [R]",
+                            "pos": {
+                                "x": 3.2766,
+                                "y": 2.3495
+                            },
+                            "uuid": "4901b93f-57e8-4b05-9971-3bd1b59e7047"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol D2 [LED]",
+                            "pos": {
+                                "x": 3.302,
+                                "y": 1.4986
+                            },
+                            "uuid": "8a7f4111-f781-49c2-af9b-bd224cbea917"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0087 [1V9_A]",
+                            "pos": {
+                                "x": 3.302,
+                                "y": 2.0828
+                            },
+                            "uuid": "e22ba555-bece-4521-b30a-153cde4e975c"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol C25 [C]",
+                            "pos": {
+                                "x": 3.302,
+                                "y": 2.1336
+                            },
+                            "uuid": "66998cbb-ea25-4d66-95f3-9bad4c856264"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0088 [GND]",
+                            "pos": {
+                                "x": 3.302,
+                                "y": 2.1844
+                            },
+                            "uuid": "c51929e2-f4c5-410d-943f-7cee9e0ce59d"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol C23 [C]",
+                            "pos": {
+                                "x": 3.3274,
+                                "y": 1.27
+                            },
+                            "uuid": "82f07b37-a9a2-4ff2-b4cf-f5ad601bfeb4"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0080 [GND]",
+                            "pos": {
+                                "x": 3.3274,
+                                "y": 1.3208
+                            },
+                            "uuid": "e4933311-729c-4a7c-b876-f177b30028f0"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0082 [1V9_A]",
+                            "pos": {
+                                "x": 3.3909,
+                                "y": 1.8415
+                            },
+                            "uuid": "32fededc-1e7b-4c69-845f-35ca375d698d"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0083 [GND]",
+                            "pos": {
+                                "x": 3.3909,
+                                "y": 1.9177
+                            },
+                            "uuid": "30bb249b-3e66-426d-87ed-3882a345ab0b"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0117 [VBAT]",
+                            "pos": {
+                                "x": 3.4036,
+                                "y": 0.635
+                            },
+                            "uuid": "bd606786-69cc-4f52-b104-894f51a42597"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0118 [VSYS]",
+                            "pos": {
+                                "x": 3.4036,
+                                "y": 0.762
+                            },
+                            "uuid": "50d1f12e-1bea-46ff-9c13-28b97e0a9282"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol J3 [CONN_SWD_05]",
+                            "pos": {
+                                "x": 3.4036,
+                                "y": 2.4384
+                            },
+                            "uuid": "7ee6b275-eeed-4d0d-bead-fcf3de5cf211"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol C26 [C]",
+                            "pos": {
+                                "x": 3.429,
+                                "y": 2.1336
+                            },
+                            "uuid": "46d05a0e-65ee-4b33-98f2-2845c105707f"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0089 [GND]",
+                            "pos": {
+                                "x": 3.429,
+                                "y": 2.1844
+                            },
+                            "uuid": "f0b947ba-7811-4bf8-9156-68d199dbf5c6"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol TP5 [TP]",
+                            "pos": {
+                                "x": 3.4544,
+                                "y": 0.635
+                            },
+                            "uuid": "10586ace-9f82-43a3-ae64-45e9e0fb763b"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol TP6 [TP]",
+                            "pos": {
+                                "x": 3.4544,
+                                "y": 0.762
+                            },
+                            "uuid": "b7e7ec00-7e9e-4fe5-96e1-51465b786bd7"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol L4 [L]",
+                            "pos": {
+                                "x": 3.4544,
+                                "y": 1.27
+                            },
+                            "uuid": "ecc18fad-a273-4a1e-beda-214c1484b69c"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0115 [1V9_A]",
+                            "pos": {
+                                "x": 3.5306,
+                                "y": 2.3876
+                            },
+                            "uuid": "658a0b0a-717c-4d3a-9da9-f63162b61fbc"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0116 [GND]",
+                            "pos": {
+                                "x": 3.5306,
+                                "y": 2.4892
+                            },
+                            "uuid": "86c23510-9081-4132-9214-3b52cef94005"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol U5 [PAW3311DB-T2MU]",
+                            "pos": {
+                                "x": 3.556,
+                                "y": 1.8796
+                            },
+                            "uuid": "fe6b36c5-052a-4f8f-8ca6-d1db2e094ed6"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol C27 [C]",
+                            "pos": {
+                                "x": 3.556,
+                                "y": 2.1336
+                            },
+                            "uuid": "af57d717-dc7a-4ee6-b55e-f93357f2856b"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0090 [GND]",
+                            "pos": {
+                                "x": 3.556,
+                                "y": 2.1844
+                            },
+                            "uuid": "21ad1746-821c-4bed-8dc1-cb4f300de799"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol C24 [C]",
+                            "pos": {
+                                "x": 3.5814,
+                                "y": 1.27
+                            },
+                            "uuid": "be4ecf1c-9a8a-4df9-ae3c-229b7110c9d3"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0081 [GND]",
+                            "pos": {
+                                "x": 3.5814,
+                                "y": 1.3208
+                            },
+                            "uuid": "b1bb899e-5722-45c2-8e61-ded0814babc3"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol C34 [C]",
+                            "pos": {
+                                "x": 3.683,
+                                "y": 2.1336
+                            },
+                            "uuid": "aafa463e-bac0-47cf-b1cf-95f6ee7c2e32"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0091 [GND]",
+                            "pos": {
+                                "x": 3.683,
+                                "y": 2.1844
+                            },
+                            "uuid": "e95cc92e-9146-42fd-b30a-9a991df3e401"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0092 [1V9_A]",
+                            "pos": {
+                                "x": 3.81,
+                                "y": 2.0828
+                            },
+                            "uuid": "8cb1c4cb-6198-4e6e-ad0e-f40f6183bf65"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol R13 [R]",
+                            "pos": {
+                                "x": 3.81,
+                                "y": 2.1336
+                            },
+                            "uuid": "401032b4-a3b6-4053-99e0-e24c223143dc"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol ANT1 [ANT_PCB_2G4]",
+                            "pos": {
+                                "x": 3.8354,
+                                "y": 1.2192
+                            },
+                            "uuid": "74a744bc-f387-4562-883c-998724f7e567"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol R14 [R]",
+                            "pos": {
+                                "x": 3.937,
+                                "y": 2.1336
+                            },
+                            "uuid": "1c2976d1-79cc-44b8-b031-b4cb5a7df2a2"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol TP1 [TP]",
+                            "pos": {
+                                "x": 3.9624,
+                                "y": 0.635
+                            },
+                            "uuid": "100e6a53-f556-4a69-bac8-a4c234ca9fe2"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol TP2 [TP]",
+                            "pos": {
+                                "x": 3.9624,
+                                "y": 0.762
+                            },
+                            "uuid": "c1ee1657-fab9-47b6-8505-5855ee2f673e"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol TP3 [TP]",
+                            "pos": {
+                                "x": 3.9624,
+                                "y": 0.889
+                            },
+                            "uuid": "b5c94913-1657-4e49-ae11-b6884c9a68f7"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol TP4 [TP]",
+                            "pos": {
+                                "x": 3.9624,
+                                "y": 1.016
+                            },
+                            "uuid": "e78543e2-fb1b-4605-9d57-47f3c7efb090"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'hakai'",
+                    "items": [
+                        {
+                            "description": "Symbol R23 [R]",
+                            "pos": {
+                                "x": 3.9624,
+                                "y": 1.8796
+                            },
+                            "uuid": "ec628e86-94d4-4cd5-b714-61c8f2f39952"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                }
+            ]
+        }
+    ],
+    "source": "hakai_mouse_v6.kicad_sch"
+}

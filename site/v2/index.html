@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HAKAI WRATH — Break everything between you and the shot</title>
+<script>document.documentElement.dataset.theme = localStorage.getItem('hakai-theme') || 'dark';</script>
+<style>
+  :root {
+    --bg: #250202;
+    --bg-raise: #3b0d0d;
+    --line: #571c1c;
+    --text: #fff9f2;
+    --muted: #b9968f;
+    --accent: #f10222;
+    --accent-dark: #fff9f2;
+    --ember: #ffcad0;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    background:
+      radial-gradient(1200px 900px at 70% 300px, rgba(241, 2, 34, 0.20), rgba(137, 35, 37, 0.10) 50%, transparent 72%),
+      radial-gradient(900px 700px at 8% 120px, rgba(137, 35, 37, 0.32), transparent 60%),
+      radial-gradient(800px 600px at 92% 90%, rgba(255, 202, 208, 0.08), transparent 60%),
+      linear-gradient(172deg, #4a0d0d 0%, #2b0404 45%, #120000 100%);
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 50;
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 18px 48px;
+    background: rgba(37, 2, 2, 0.78);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--line);
+  }
+  .logo { font-size: 15px; font-weight: 600; letter-spacing: 6px; }
+  .logo span { color: var(--ember); }
+  nav .links { display: flex; gap: 32px; align-items: center; }
+  nav a { color: var(--muted); text-decoration: none; font-size: 13px; letter-spacing: 1px; transition: color .2s; }
+  nav a:hover { color: var(--text); }
+  .btn {
+    display: inline-block; background: #fff9f2; color: #250202;
+    font-size: 13px; font-weight: 600; letter-spacing: 1px;
+    padding: 11px 28px; border-radius: 999px; text-decoration: none;
+    transition: transform .15s, background .2s, border-color .2s;
+  }
+  .btn:hover { background: #ffffff; transform: translateY(1px); }
+  .btn.ghost { background: transparent; color: var(--text); border: 1px solid var(--line); }
+  .btn.ghost:hover { border-color: var(--muted); background: transparent; }
+  .btn.glass {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(115deg, rgba(255,255,255,0.16) 0%, rgba(255,255,255,0.04) 45%, rgba(255,255,255,0.10) 100%);
+    color: #f2f6fa;
+    border: 1px solid rgba(255, 255, 255, 0.28);
+    backdrop-filter: blur(18px) saturate(1.6);
+    -webkit-backdrop-filter: blur(18px) saturate(1.6);
+    box-shadow:
+      inset 0 1.5px 1px rgba(255, 255, 255, 0.38),
+      inset 0 -1px 1px rgba(255, 255, 255, 0.12),
+      inset 2px 0 6px rgba(255, 255, 255, 0.06),
+      0 12px 32px rgba(0, 0, 0, 0.5),
+      0 1px 3px rgba(0, 0, 0, 0.35);
+  }
+  .btn.glass::after {
+    content: "";
+    position: absolute; top: -60%; left: 8%; width: 34%; height: 220%;
+    background: linear-gradient(105deg, transparent 0%, rgba(255,255,255,0.16) 50%, transparent 100%);
+    transform: rotate(18deg);
+    pointer-events: none;
+    transition: left .4s;
+  }
+  .btn.glass:hover {
+    background: linear-gradient(115deg, rgba(255,255,255,0.22) 0%, rgba(255,255,255,0.08) 45%, rgba(255,255,255,0.15) 100%);
+    border-color: rgba(255, 255, 255, 0.42);
+    transform: translateY(1px);
+  }
+  .btn.glass:hover::after { left: 55%; }
+
+  .hero { position: relative; min-height: 100vh; display: flex; align-items: center; padding: 120px 48px 60px; }
+  #stage { position: absolute; inset: 0; z-index: 1; }
+  #stage canvas { display: block; }
+  .hero-copy { position: relative; z-index: 2; max-width: 620px; pointer-events: none; }
+  .hero-copy > * { pointer-events: auto; }
+  .kicker { font-size: 12px; letter-spacing: 4px; color: var(--accent); margin-bottom: 20px; text-transform: uppercase; }
+  h1 { font-size: clamp(44px, 6.5vw, 84px); line-height: 0.98; letter-spacing: -1px; font-weight: 650; }
+  h1 em { font-style: normal; color: var(--accent); }
+  .sub { margin-top: 24px; font-size: 16px; line-height: 1.7; color: var(--muted); max-width: 440px; }
+  .cta-row { margin-top: 36px; display: flex; gap: 14px; }
+  .scroll-hint {
+    position: absolute; bottom: 28px; left: 50%; transform: translateX(-50%);
+    z-index: 2; font-size: 11px; letter-spacing: 3px; color: var(--muted); text-transform: uppercase;
+    display: flex; align-items: center; gap: 10px;
+  }
+  .scroll-hint::before, .scroll-hint::after { content: ""; width: 40px; height: 1px; background: var(--line); }
+
+  .specs { display: grid; grid-template-columns: repeat(4, 1fr); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); position: relative; z-index: 2; background: rgba(37, 2, 2, 0.55); backdrop-filter: blur(6px); }
+  .spec { padding: 40px 24px; text-align: center; border-right: 1px solid var(--line); }
+  .spec:last-child { border-right: none; }
+  .spec .n { font-size: 40px; font-weight: 650; letter-spacing: -1px; }
+  .spec .n small { font-size: 20px; color: var(--accent); }
+  .spec .l { margin-top: 6px; font-size: 12px; letter-spacing: 2px; color: var(--muted); text-transform: uppercase; }
+
+  section { padding: 110px 48px; max-width: 1200px; margin: 0 auto; }
+  .sec-title { font-size: 12px; letter-spacing: 4px; color: var(--accent); text-transform: uppercase; margin-bottom: 16px; }
+  h2 { font-size: clamp(30px, 4vw, 48px); letter-spacing: -1px; font-weight: 650; line-height: 1.05; max-width: 640px; }
+
+  .angles { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-top: 48px; }
+  .angle { background: var(--bg-raise); border: 1px solid var(--line); overflow: hidden; position: relative; }
+  .angle img { width: 100%; display: block; aspect-ratio: 1; object-fit: cover; transition: transform .4s; }
+  .angle:hover img { transform: scale(1.06); }
+  .angle span {
+    position: absolute; bottom: 10px; left: 12px;
+    font-size: 11px; letter-spacing: 3px; color: var(--muted); text-transform: uppercase;
+  }
+
+  .feat-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 48px; }
+  .feat { background: rgba(59, 13, 13, 0.7); border: 1px solid var(--line); padding: 32px 28px; }
+  .feat h3 { font-size: 17px; font-weight: 600; margin-bottom: 12px; }
+  .feat h3::before { content: "— "; color: var(--accent); }
+  .feat p { font-size: 14px; line-height: 1.7; color: var(--muted); }
+
+  .final { text-align: center; padding: 140px 48px; border-top: 1px solid var(--line); }
+  .final h2 { margin: 0 auto 18px; }
+  .final p { color: var(--muted); font-size: 15px; margin-bottom: 36px; }
+
+  footer {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 26px 48px; border-top: 1px solid var(--line);
+    font-size: 12px; color: var(--muted); letter-spacing: 1px;
+  }
+  footer .logo { font-size: 12px; letter-spacing: 4px; }
+
+  .mode-toggle {
+    position: relative; width: 26px; height: 52px; border-radius: 999px;
+    border: 1px solid var(--line); background: var(--bg-raise); cursor: pointer; padding: 0;
+    transition: background .3s, border-color .3s;
+    flex: none;
+  }
+  .mode-toggle .moon, .mode-toggle .sun {
+    position: absolute; left: 50%; transform: translateX(-50%);
+    font-size: 11px; line-height: 1; color: var(--muted);
+  }
+  .mode-toggle .moon { top: 7px; }
+  .mode-toggle .sun { bottom: 6px; }
+  .mode-toggle .knob {
+    position: absolute; top: 2px; left: 2px; width: 20px; height: 20px; border-radius: 50%;
+    background: var(--accent); transition: transform .3s;
+  }
+  :root[data-theme="light"] .mode-toggle .knob { transform: translateY(26px); }
+
+  :root[data-theme="light"] {
+    --bg: #fff9f2;
+    --bg-raise: #ffffff;
+    --line: #ecd6c9;
+    --text: #250202;
+    --muted: #8a5d55;
+    --accent: #d80723;
+    --accent-dark: #fff9f2;
+  }
+  :root[data-theme="light"] body {
+    background:
+      radial-gradient(1200px 900px at 70% 300px, rgba(255, 202, 208, 0.50), rgba(255, 202, 208, 0.18) 50%, transparent 72%),
+      radial-gradient(900px 700px at 8% 120px, rgba(241, 2, 34, 0.10), transparent 60%),
+      radial-gradient(800px 600px at 92% 90%, rgba(137, 35, 37, 0.08), transparent 60%),
+      linear-gradient(172deg, #ffe3dc 0%, #fff4ec 45%, #ffffff 100%);
+    background-color: var(--bg);
+  }
+  :root[data-theme="light"] nav { background: rgba(255, 249, 242, 0.82); }
+  :root[data-theme="light"] .specs { background: rgba(255, 249, 242, 0.55); }
+  :root[data-theme="light"] .feat { background: rgba(255, 255, 255, 0.8); }
+  :root[data-theme="light"] .btn { background: #250202; color: #fff9f2; }
+  :root[data-theme="light"] .btn:hover { background: #4a0d0d; }
+  :root[data-theme="light"] .btn.ghost { background: transparent; color: var(--text); border-color: var(--line); }
+  :root[data-theme="light"] .btn.glass {
+    color: #250202;
+    border-color: rgba(37, 2, 2, 0.25);
+    background: linear-gradient(115deg, rgba(255,255,255,0.65) 0%, rgba(255,255,255,0.30) 45%, rgba(255,255,255,0.50) 100%);
+    box-shadow:
+      inset 0 1.5px 1px rgba(255, 255, 255, 0.85),
+      inset 0 -1px 1px rgba(37, 2, 2, 0.08),
+      0 10px 26px rgba(137, 35, 37, 0.20),
+      0 1px 3px rgba(137, 35, 37, 0.12);
+  }
+
+  @media (max-width: 860px) {
+    nav { padding: 14px 20px; } nav .links a:not(.btn) { display: none; }
+    .hero, section, .final { padding-left: 20px; padding-right: 20px; }
+    .specs { grid-template-columns: repeat(2, 1fr); }
+    .spec:nth-child(2) { border-right: none; }
+    .spec:nth-child(-n+2) { border-bottom: 1px solid var(--line); }
+    .angles, .feat-grid { grid-template-columns: repeat(2, 1fr); }
+    .cta-row { flex-direction: column; align-items: flex-start; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">HAKAI<span>.</span></div>
+  <div class="links">
+    <a href="#mouse">The mouse</a>
+    <a href="#angles">Every angle</a>
+    <a href="#teardown">Teardown</a>
+    <a class="btn" href="buy.html">Buy — $25</a>
+    <button class="mode-toggle" id="theme-toggle" role="switch" aria-checked="false" aria-label="Switch between dark and light mode">
+      <span class="moon" aria-hidden="true">&#9790;</span>
+      <span class="sun" aria-hidden="true">&#9728;</span>
+      <span class="knob"></span>
+    </button>
+  </div>
+</nav>
+
+<header class="hero">
+  <div id="stage"></div>
+  <div class="hero-copy">
+    <p class="kicker">Hakai Wrath — 破壊</p>
+    <h1>Your aim was never the problem. <em>Your mouse was.</em></h1>
+    <p class="sub">49 grams. Rock-solid 1,000 Hz polling. Optical switches rated for 100 million clicks. Nothing you don't need — nothing left to blame.</p>
+    <div class="cta-row">
+      <a class="btn" href="buy.html">Pre order now</a>
+      <a class="btn glass" href="buy.html">Reserve — $25</a>
+    </div>
+  </div>
+  <p class="scroll-hint">Scroll</p>
+</header>
+
+<div class="specs" id="mouse">
+  <div class="spec"><p class="n">49<small> g</small></p><p class="l">Weight</p></div>
+  <div class="spec"><p class="n">1<small> kHz</small></p><p class="l">Polling</p></div>
+  <div class="spec"><p class="n">0.7<small> ms</small></p><p class="l">Click latency</p></div>
+  <div class="spec"><p class="n">100<small> h</small></p><p class="l">Battery</p></div>
+</div>
+
+<section id="angles">
+  <p class="sec-title">Every angle</p>
+  <h2>Shaped by ten thousand hours of holding it wrong.</h2>
+  <div class="angles">
+    <div class="angle"><img src="../assets/top.png" alt="Top view of the HAKAI Wrath mouse"><span>Top</span></div>
+    <div class="angle"><img src="../assets/left.png" alt="Left side view of the HAKAI Wrath mouse"><span>Left</span></div>
+    <div class="angle"><img src="../assets/front.png" alt="Front view of the HAKAI Wrath mouse"><span>Front</span></div>
+    <div class="angle"><img src="../assets/back.png" alt="Back view of the HAKAI Wrath mouse"><span>Back</span></div>
+  </div>
+</section>
+
+<section id="teardown">
+  <p class="sec-title">Teardown</p>
+  <h2>Designed in the open. Every trace, every gram, documented.</h2>
+  <div class="feat-grid">
+    <div class="feat">
+      <h3>Sensor</h3>
+      <p>Flagship optical sensor on a custom four-layer board, rev 5.3. Datasheet-exact cutouts, custom IR-LED footprint, zero smoothing.</p>
+    </div>
+    <div class="feat">
+      <h3>Power</h3>
+      <p>High-side battery monitoring and aggressive sleep states. A hundred hours at 1 kHz, without a brick of a battery inside.</p>
+    </div>
+    <div class="feat">
+      <h3>Shell</h3>
+      <p>Solid shell, no cheese-grater holes. Flat bottom, dampened switch mounts, and a scroll wheel that will outlive the game you bought it for.</p>
+    </div>
+  </div>
+</section>
+
+<div class="final" id="buy">
+  <h2>Break everything between you and the shot.</h2>
+  <p>First batch of 500. Ships worldwide. Two-year warranty, no questions.</p>
+  <a class="btn glass" href="buy.html">Preorder now — $25</a>
+</div>
+
+<footer>
+  <div class="logo">HAKAI<span>.</span></div>
+  <p>© 2026 HAKAI · warranty · shipping · discord</p>
+</footer>
+
+<script>
+(function () {
+  var btn = document.getElementById('theme-toggle');
+  function setTheme(mode) {
+    document.documentElement.dataset.theme = mode;
+    localStorage.setItem('hakai-theme', mode);
+    btn.setAttribute('aria-checked', String(mode === 'light'));
+    window.dispatchEvent(new CustomEvent('hakaitheme', { detail: mode }));
+  }
+  btn.setAttribute('aria-checked', String(document.documentElement.dataset.theme === 'light'));
+  btn.addEventListener('click', function () {
+    setTheme(document.documentElement.dataset.theme === 'light' ? 'dark' : 'light');
+  });
+})();
+</script>
+<script type="importmap">
+{ "imports": {
+    "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js"
+} }
+</script>
+<script type="module">
+import * as THREE from 'three';
+
+const stage = document.getElementById('stage');
+const scene = new THREE.Scene();
+scene.fog = new THREE.FogExp2(0x250202, 0.055);
+const camera = new THREE.PerspectiveCamera(45, stage.clientWidth / stage.clientHeight, 0.1, 100);
+camera.position.set(0, 0, 7);
+
+const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+renderer.setSize(stage.clientWidth, stage.clientHeight);
+renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+renderer.toneMapping = THREE.ACESFilmicToneMapping;
+renderer.toneMappingExposure = 1.2;
+stage.appendChild(renderer.domElement);
+
+const hemi = new THREE.HemisphereLight(0xffcad0, 0x120000, 0.55);
+scene.add(hemi);
+const rimA = new THREE.DirectionalLight(0xff2440, 3.0);
+rimA.position.set(-3, 4, -5);
+scene.add(rimA);
+const rimB = new THREE.DirectionalLight(0xffcad0, 1.6);
+rimB.position.set(4, -1, -3);
+scene.add(rimB);
+const key = new THREE.DirectionalLight(0xffefe4, 0.35);
+key.position.set(0, 2, 5);
+scene.add(key);
+
+const crystalMat = new THREE.MeshStandardMaterial({
+  color: 0x3a0808, metalness: 0.78, roughness: 0.22,
+  flatShading: true, emissive: 0x6b1418, emissiveIntensity: 0.45,
+});
+
+const world = new THREE.Group();
+scene.add(world);
+const drifters = [];
+
+const SPEC = [
+  [-4.6, -0.6, -1.5, 0.75, 3.4, 0.55, 0.10, 0.35, 0.0],
+  [-3.9, -1.6, -0.5, 0.50, 2.2, 0.85, -0.15, -0.25, 1.3],
+  [-4.2, 1.6, -2.5, 0.42, 2.0, 2.60, 0.20, 0.30, 2.1],
+  [-3.2, 0.6, -3.5, 0.30, 1.4, 1.20, -0.35, -0.40, 3.4],
+  [-2.6, -2.1, -2.0, 0.24, 1.1, 0.35, 0.55, 0.45, 4.2],
+  [4.7, 0.4, -1.2, 0.80, 3.6, -0.60, -0.12, -0.30, 0.7],
+  [3.9, -1.4, -2.2, 0.55, 2.4, -1.00, 0.18, 0.28, 1.9],
+  [4.3, 2.0, -3.0, 0.40, 1.9, -2.40, -0.25, -0.35, 2.8],
+  [3.1, 1.0, -3.8, 0.28, 1.3, -0.90, 0.40, 0.42, 3.9],
+  [2.7, -2.3, -1.4, 0.20, 0.9, -0.30, -0.50, -0.48, 5.0],
+  [0.8, 2.6, -5.5, 0.30, 1.5, 0.40, 0.30, 0.22, 2.5],
+  [-1.2, 2.9, -6.0, 0.24, 1.2, -0.70, -0.20, -0.26, 4.6],
+];
+for (const [x, y, z, r, h, rz, rx, spin, phase] of SPEC) {
+  const m = new THREE.Mesh(new THREE.OctahedronGeometry(r, 0), crystalMat);
+  m.scale.y = h / r;
+  m.position.set(x, y, z);
+  m.rotation.set(rx, 0, rz);
+  world.add(m);
+  drifters.push({ m, baseY: y, spin, phase });
+}
+
+const shardMat = new THREE.MeshBasicMaterial({ color: 0xffcad0, transparent: true, opacity: 0.5 });
+for (let i = 0; i < 10; i++) {
+  const s = new THREE.Mesh(new THREE.TetrahedronGeometry(0.05 + (i % 4) * 0.03, 0), shardMat);
+  const a = (i / 10) * Math.PI * 2;
+  s.position.set(Math.cos(a) * (2.2 + (i % 3)), Math.sin(a * 1.7) * 2.2, -1 - (i % 5));
+  world.add(s);
+  drifters.push({ m: s, baseY: s.position.y, spin: 0.9 + (i % 3) * 0.3, phase: i * 0.9 });
+}
+
+function applySceneTheme(mode) {
+  const light = mode === 'light';
+  scene.fog.color.set(light ? 0xf9e2da : 0x250202);
+  hemi.color.set(light ? 0xfffdf9 : 0xffcad0);
+  hemi.groundColor.set(light ? 0xe0b8ac : 0x120000);
+  hemi.intensity = light ? 0.9 : 0.55;
+  renderer.toneMappingExposure = light ? 1.05 : 1.2;
+}
+window.addEventListener('hakaitheme', (e) => applySceneTheme(e.detail));
+applySceneTheme(document.documentElement.dataset.theme);
+
+let camTarget = { x: 0, y: 0 };
+stage.addEventListener('pointermove', (e) => {
+  const r = stage.getBoundingClientRect();
+  const nx = ((e.clientX - r.left) / r.width) * 2 - 1;
+  const ny = ((e.clientY - r.top) / r.height) * 2 - 1;
+  camTarget = { x: nx * 0.35, y: -ny * 0.22 };
+});
+stage.addEventListener('pointerleave', () => { camTarget = { x: 0, y: 0 }; });
+
+function onResize() {
+  camera.aspect = stage.clientWidth / stage.clientHeight;
+  camera.updateProjectionMatrix();
+  renderer.setSize(stage.clientWidth, stage.clientHeight);
+}
+window.addEventListener('resize', onResize);
+
+renderer.setAnimationLoop((t) => {
+  for (const d of drifters) {
+    d.m.rotation.y += d.spin * 0.003;
+    d.m.position.y = d.baseY + Math.sin(t * 0.00045 + d.phase) * 0.14;
+  }
+  camera.position.x += (camTarget.x - camera.position.x) * 0.04;
+  camera.position.y += (camTarget.y - camera.position.y) * 0.04;
+  camera.lookAt(0, 0, -1);
+  renderer.render(scene, camera);
+});
+</script>
+</body>
+</html>

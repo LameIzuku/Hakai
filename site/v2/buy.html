@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Buy — HAKAI WRATH</title>
+<script>document.documentElement.dataset.theme = localStorage.getItem('hakai-theme') || 'dark';</script>
+<style>
+  :root {
+    --bg: #250202;
+    --bg-raise: #3b0d0d;
+    --line: #571c1c;
+    --text: #fff9f2;
+    --muted: #b9968f;
+    --accent: #f10222;
+    --accent-dark: #fff9f2;
+    --ember: #ffcad0;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background:
+      radial-gradient(1000px 700px at 22% 280px, rgba(241, 2, 34, 0.16), transparent 68%),
+      radial-gradient(1200px 750px at 78% -150px, rgba(137, 35, 37, 0.30), transparent 60%),
+      radial-gradient(1100px 800px at 50% 100%, rgba(255, 202, 208, 0.08), transparent 65%),
+      linear-gradient(172deg, #4a0d0d 0%, #2b0404 45%, #120000 100%);
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+  }
+
+  nav {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 18px 48px;
+    border-bottom: 1px solid var(--line);
+  }
+  .logo { font-size: 15px; font-weight: 600; letter-spacing: 6px; color: var(--text); text-decoration: none; }
+  .logo span { color: var(--ember); }
+  nav a.back { color: var(--muted); text-decoration: none; font-size: 13px; letter-spacing: 1px; }
+  nav a.back:hover { color: var(--text); }
+
+  main { flex: 1; display: grid; grid-template-columns: 1.1fr 1fr; gap: 0; max-width: 1200px; margin: 0 auto; width: 100%; }
+
+  .visual { padding: 48px; display: flex; flex-direction: column; gap: 16px; justify-content: center; }
+  .shot { background: var(--bg-raise); border: 1px solid var(--line); overflow: hidden; }
+  .shot img { width: 100%; display: block; aspect-ratio: 16/10; object-fit: cover; }
+  .thumbs { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+  .thumbs button { background: var(--bg-raise); border: 1px solid var(--line); padding: 0; cursor: pointer; }
+  .thumbs button.active { border-color: var(--accent); }
+  .thumbs img { width: 100%; display: block; aspect-ratio: 1; object-fit: cover; opacity: 0.75; }
+  .thumbs button.active img, .thumbs button:hover img { opacity: 1; }
+
+  .panel { padding: 64px 48px; border-left: 1px solid var(--line); display: flex; flex-direction: column; justify-content: center; }
+  .kicker { font-size: 12px; letter-spacing: 4px; color: var(--accent); text-transform: uppercase; margin-bottom: 14px; }
+  h1 { font-size: 44px; font-weight: 650; letter-spacing: -1px; line-height: 1; }
+  .price-row { display: flex; align-items: baseline; gap: 14px; margin: 18px 0 6px; }
+  .price { font-size: 30px; font-weight: 650; color: var(--accent); }
+  .price-note { font-size: 13px; color: var(--muted); }
+  .desc { font-size: 14px; line-height: 1.7; color: var(--muted); margin: 14px 0 28px; max-width: 380px; }
+
+  .field-label { font-size: 11px; letter-spacing: 3px; color: var(--muted); text-transform: uppercase; margin-bottom: 10px; }
+  .colorway { display: flex; gap: 10px; margin-bottom: 26px; }
+  .colorway .chip {
+    border: 1px solid var(--accent); color: var(--text);
+    font-size: 13px; padding: 8px 18px; background: var(--bg-raise); letter-spacing: 1px;
+  }
+  .colorway .chip small { color: var(--muted); letter-spacing: 0; }
+
+  .qty-row { display: flex; align-items: center; gap: 0; margin-bottom: 30px; }
+  .qty-row button {
+    width: 42px; height: 42px; background: var(--bg-raise); color: var(--text);
+    border: 1px solid var(--line); font-size: 18px; cursor: pointer;
+  }
+  .qty-row button:hover { border-color: var(--muted); }
+  .qty-row .qty { width: 60px; height: 42px; display: flex; align-items: center; justify-content: center; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); font-size: 15px; font-weight: 600; }
+
+  .summary { border: 1px solid var(--line); margin-bottom: 26px; }
+  .summary .row { display: flex; justify-content: space-between; padding: 12px 18px; font-size: 13px; color: var(--muted); border-bottom: 1px solid var(--line); }
+  .summary .row.total { color: var(--text); font-weight: 600; font-size: 15px; border-bottom: none; }
+
+  .buy-btn {
+    display: block; width: 100%; background: var(--accent); color: var(--accent-dark);
+    font-size: 15px; font-weight: 650; letter-spacing: 2px; text-transform: uppercase;
+    padding: 16px; border: none; border-radius: 999px; cursor: pointer; transition: background .2s;
+  }
+  .buy-btn:hover { background: #ff3247; }
+  .fine { margin-top: 16px; font-size: 12px; color: var(--muted); line-height: 1.7; }
+  .fine b { color: var(--text); font-weight: 600; }
+
+  .confirm { text-align: center; padding: 40px 0; display: none; }
+  .confirm .mark { font-size: 40px; color: var(--accent); margin-bottom: 12px; }
+  .confirm h2 { font-size: 26px; font-weight: 650; margin-bottom: 10px; }
+  .confirm p { font-size: 14px; color: var(--muted); line-height: 1.7; }
+  .confirm a { color: var(--accent); }
+
+  .inspect { border-top: 1px solid var(--line); padding: 80px 0 0; }
+  .inspect .head { text-align: center; padding: 0 48px; }
+  .inspect .sec-title { font-size: 12px; letter-spacing: 4px; color: var(--accent); text-transform: uppercase; margin-bottom: 14px; }
+  .inspect h2 { font-size: clamp(28px, 4vw, 44px); letter-spacing: -1px; font-weight: 650; line-height: 1.05; }
+  .inspect .hint { margin-top: 12px; font-size: 12px; letter-spacing: 3px; color: var(--muted); text-transform: uppercase; }
+  #stage { position: relative; height: 68vh; min-height: 420px; }
+  #stage canvas { display: block; }
+  #loader {
+    position: absolute; inset: 0; z-index: 5;
+    display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px;
+    background: transparent; transition: opacity .6s;
+  }
+  #loader.done { opacity: 0; pointer-events: none; }
+  .load-bar { width: 220px; height: 2px; background: var(--line); }
+  .load-bar div { height: 100%; width: 0%; background: var(--accent); transition: width .2s; }
+  #loader p { font-size: 11px; letter-spacing: 4px; color: var(--muted); }
+
+  footer {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 22px 48px; border-top: 1px solid var(--line);
+    font-size: 12px; color: var(--muted); letter-spacing: 1px;
+  }
+
+  .nav-right { display: flex; align-items: center; gap: 18px; }
+  .mode-toggle {
+    position: relative; width: 26px; height: 52px; border-radius: 999px;
+    border: 1px solid var(--line); background: var(--bg-raise); cursor: pointer; padding: 0;
+    transition: background .3s, border-color .3s;
+    flex: none;
+  }
+  .mode-toggle .moon, .mode-toggle .sun {
+    position: absolute; left: 50%; transform: translateX(-50%);
+    font-size: 11px; line-height: 1; color: var(--muted);
+  }
+  .mode-toggle .moon { top: 7px; }
+  .mode-toggle .sun { bottom: 6px; }
+  .mode-toggle .knob {
+    position: absolute; top: 2px; left: 2px; width: 20px; height: 20px; border-radius: 50%;
+    background: var(--accent); transition: transform .3s;
+  }
+  :root[data-theme="light"] .mode-toggle .knob { transform: translateY(26px); }
+
+  :root[data-theme="light"] {
+    --bg: #fff9f2;
+    --bg-raise: #ffffff;
+    --line: #ecd6c9;
+    --text: #250202;
+    --muted: #8a5d55;
+    --accent: #d80723;
+    --accent-dark: #fff9f2;
+  }
+  :root[data-theme="light"] body {
+    background:
+      radial-gradient(1000px 700px at 22% 280px, rgba(255, 202, 208, 0.45), transparent 68%),
+      radial-gradient(1200px 750px at 78% -150px, rgba(241, 2, 34, 0.09), transparent 60%),
+      radial-gradient(1100px 800px at 50% 100%, rgba(137, 35, 37, 0.06), transparent 65%),
+      linear-gradient(172deg, #ffe3dc 0%, #fff4ec 45%, #ffffff 100%);
+    background-color: var(--bg);
+  }
+  :root[data-theme="light"] .buy-btn:hover { background: #f13148; }
+
+  @media (max-width: 900px) {
+    main { grid-template-columns: 1fr; }
+    .panel { border-left: none; border-top: 1px solid var(--line); padding: 40px 24px; }
+    .visual { padding: 24px; }
+    nav, footer { padding-left: 20px; padding-right: 20px; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a class="logo" href="index.html">HAKAI<span>.</span></a>
+  <div class="nav-right">
+    <a class="back" href="index.html">&larr; Back to the mouse</a>
+    <button class="mode-toggle" id="theme-toggle" role="switch" aria-checked="false" aria-label="Switch between dark and light mode">
+      <span class="moon" aria-hidden="true">&#9790;</span>
+      <span class="sun" aria-hidden="true">&#9728;</span>
+      <span class="knob"></span>
+    </button>
+  </div>
+</nav>
+
+<main>
+  <div class="visual">
+    <div class="shot"><img id="main-shot" src="../assets/top.png" alt="HAKAI Wrath mouse, top view"></div>
+    <div class="thumbs">
+      <button class="active" data-src="../assets/top.png" aria-label="Top view"><img src="../assets/top.png" alt=""></button>
+      <button data-src="../assets/left.png" aria-label="Left view"><img src="../assets/left.png" alt=""></button>
+      <button data-src="../assets/front.png" aria-label="Front view"><img src="../assets/front.png" alt=""></button>
+      <button data-src="../assets/back.png" aria-label="Back view"><img src="../assets/back.png" alt=""></button>
+    </div>
+  </div>
+
+  <div class="panel">
+    <div id="order-form">
+      <p class="kicker">Hakai Wrath — 破壊</p>
+      <h1>Hakai Wrath</h1>
+      <div class="price-row">
+        <span class="price">$25</span>
+        <span class="price-note">first batch · 500 units</span>
+      </div>
+      <p class="desc">49 grams. Rock-solid 1,000 Hz polling. Optical switches rated for 100 million clicks. Two-year warranty, no questions asked.</p>
+
+      <p class="field-label">Colorway</p>
+      <div class="colorway">
+        <span class="chip">Black <small>— that's it.</small></span>
+      </div>
+
+      <p class="field-label">Quantity</p>
+      <div class="qty-row">
+        <button id="dec" aria-label="Decrease quantity">&minus;</button>
+        <div class="qty" id="qty">1</div>
+        <button id="inc" aria-label="Increase quantity">+</button>
+      </div>
+
+      <div class="summary">
+        <div class="row"><span id="sub-label">Hakai Wrath &times; 1</span><span id="subtotal">$25</span></div>
+        <div class="row"><span>Shipping — worldwide</span><span>Free</span></div>
+        <div class="row total"><span>Total</span><span id="total">$25</span></div>
+      </div>
+
+      <button class="buy-btn" id="buy">Buy now</button>
+      <p class="fine">Ships in 2&ndash;3 weeks &middot; <b>2-year warranty</b> &middot; 30-day returns, even if you just hold it wrong.</p>
+    </div>
+
+    <div class="confirm" id="confirm">
+      <div class="mark">&#10003;</div>
+      <h2>You're on the list.</h2>
+      <p id="confirm-detail">Order reserved.</p>
+      <p style="margin-top:14px;">This is a demo storefront &mdash; no payment was taken.<br><a href="index.html">&larr; Back to the site</a></p>
+    </div>
+  </div>
+</main>
+
+<div class="inspect">
+  <div class="head">
+    <p class="sec-title">In your hands</p>
+    <h2>Inspect every millimeter.</h2>
+    <p class="hint">Hover to press it around</p>
+  </div>
+  <div id="stage">
+    <div id="loader">
+      <div class="load-bar"><div id="load-fill"></div></div>
+      <p id="load-label">LOADING MODEL</p>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <span>HAKAI&middot; warranty &middot; shipping &middot; discord</span>
+  <span>&copy; 2026 HAKAI</span>
+</footer>
+
+<script>
+(function () {
+  var btn = document.getElementById('theme-toggle');
+  function setTheme(mode) {
+    document.documentElement.dataset.theme = mode;
+    localStorage.setItem('hakai-theme', mode);
+    btn.setAttribute('aria-checked', String(mode === 'light'));
+    window.dispatchEvent(new CustomEvent('hakaitheme', { detail: mode }));
+  }
+  btn.setAttribute('aria-checked', String(document.documentElement.dataset.theme === 'light'));
+  btn.addEventListener('click', function () {
+    setTheme(document.documentElement.dataset.theme === 'light' ? 'dark' : 'light');
+  });
+})();
+</script>
+<script>
+  var qty = 1;
+  var PRICE = 25;
+  function render() {
+    document.getElementById('qty').textContent = qty;
+    document.getElementById('sub-label').innerHTML = 'Hakai Wrath &times; ' + qty;
+    document.getElementById('subtotal').textContent = '$' + (PRICE * qty);
+    document.getElementById('total').textContent = '$' + (PRICE * qty);
+  }
+  document.getElementById('inc').addEventListener('click', function () { if (qty < 5) { qty++; render(); } });
+  document.getElementById('dec').addEventListener('click', function () { if (qty > 1) { qty--; render(); } });
+
+  document.querySelectorAll('.thumbs button').forEach(function (b) {
+    b.addEventListener('click', function () {
+      document.querySelectorAll('.thumbs button').forEach(function (x) { x.classList.remove('active'); });
+      b.classList.add('active');
+      document.getElementById('main-shot').src = b.getAttribute('data-src');
+    });
+  });
+
+  document.getElementById('buy').addEventListener('click', function () {
+    document.getElementById('order-form').style.display = 'none';
+    var c = document.getElementById('confirm');
+    c.style.display = 'block';
+    document.getElementById('confirm-detail').textContent =
+      qty + ' × Hakai Wrath reserved — $' + (PRICE * qty) + ' total, free worldwide shipping.';
+  });
+</script>
+
+<script type="importmap">
+{ "imports": {
+    "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+    "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+} }
+</script>
+<script type="module">
+import * as THREE from 'three';
+import { OBJLoader } from 'three/addons/loaders/OBJLoader.js';
+
+const stage = document.getElementById('stage');
+const scene = new THREE.Scene();
+const camera = new THREE.PerspectiveCamera(38, stage.clientWidth / stage.clientHeight, 0.1, 100);
+camera.position.set(0, 4.1, 1.15);
+
+const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+renderer.setSize(stage.clientWidth, stage.clientHeight);
+renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+renderer.toneMapping = THREE.ACESFilmicToneMapping;
+renderer.toneMappingExposure = 1.25;
+stage.appendChild(renderer.domElement);
+
+const hemi = new THREE.HemisphereLight(0xffffff, 0x808080, 0.85);
+scene.add(hemi);
+const key = new THREE.DirectionalLight(0xffffff, 2.2);
+key.position.set(3, 4, 2);
+scene.add(key);
+const rim = new THREE.DirectionalLight(0xffffff, 0.9);
+rim.position.set(-4, 2, -3);
+scene.add(rim);
+const fill = new THREE.DirectionalLight(0xe8e8e8, 0.6);
+fill.position.set(-2, -1, 3);
+scene.add(fill);
+
+camera.lookAt(0, 0, 0);
+
+const rest = { rz: 0, px: 0, py: 0 };
+let target = { ...rest };
+let hovering = false;
+
+stage.addEventListener('pointermove', (e) => {
+  const r = stage.getBoundingClientRect();
+  const nx = ((e.clientX - r.left) / r.width) * 2 - 1;
+  hovering = true;
+  target = {
+    rz: -nx * 0.65,
+    px: nx * 0.22,
+    py: -0.06,
+  };
+});
+stage.addEventListener('pointerleave', () => {
+  hovering = false;
+  target = { ...rest };
+});
+
+const texLoader = new THREE.TextureLoader();
+const diffuseWhite = texLoader.load('../assets/diffuse-white.png');
+diffuseWhite.colorSpace = THREE.SRGBColorSpace;
+const diffuseBlack = texLoader.load('../assets/diffuse.png');
+diffuseBlack.colorSpace = THREE.SRGBColorSpace;
+const roughness = texLoader.load('../assets/roughness.png');
+const normal = texLoader.load('../assets/normal.png');
+
+const material = new THREE.MeshPhysicalMaterial({
+  map: diffuseWhite,
+  roughnessMap: roughness,
+  roughness: 0.95,
+  metalness: 0.0,
+  normalMap: normal,
+  normalScale: new THREE.Vector2(0.8, 0.8),
+  clearcoat: 0.07,
+  clearcoatRoughness: 0.55,
+});
+
+function applyModelTheme(mode) {
+  material.map = mode === 'light' ? diffuseBlack : diffuseWhite;
+  material.needsUpdate = true;
+}
+window.addEventListener('hakaitheme', (e) => applyModelTheme(e.detail));
+applyModelTheme(document.documentElement.dataset.theme);
+window.__mat = material;
+
+const fillEl = document.getElementById('load-fill');
+const labelEl = document.getElementById('load-label');
+const loaderEl = document.getElementById('loader');
+
+new OBJLoader().load('../assets/hakai.obj',
+  (obj) => {
+    obj.traverse((c) => { if (c.isMesh) c.material = material; });
+
+    const box = new THREE.Box3().setFromObject(obj);
+    const center = box.getCenter(new THREE.Vector3());
+    const size = box.getSize(new THREE.Vector3());
+    const maxDim = Math.max(size.x, size.y, size.z);
+    obj.position.sub(center);
+
+    const orient = new THREE.Group();
+    orient.add(obj);
+    orient.rotation.y = (size.x > size.z ? Math.PI / 2 : 0) + Math.PI;
+
+    const group = new THREE.Group();
+    group.add(orient);
+    group.scale.setScalar(2.2 / maxDim);
+    scene.add(group);
+    model = group;
+
+    loaderEl.classList.add('done');
+  },
+  (xhr) => {
+    if (xhr.total) {
+      const pct = Math.round((xhr.loaded / xhr.total) * 100);
+      fillEl.style.width = pct + '%';
+      labelEl.textContent = 'LOADING MODEL — ' + pct + '%';
+    }
+  },
+  (err) => { labelEl.textContent = 'FAILED TO LOAD MODEL'; console.error(err); }
+);
+
+window.probeUV = (cx, cy) => {
+  const rect = renderer.domElement.getBoundingClientRect();
+  const ndc = new THREE.Vector2(
+    ((cx - rect.left) / rect.width) * 2 - 1,
+    -((cy - rect.top) / rect.height) * 2 + 1
+  );
+  const rc = new THREE.Raycaster();
+  rc.setFromCamera(ndc, camera);
+  const hits = rc.intersectObject(scene, true);
+  return hits.length ? { u: hits[0].uv.x, v: hits[0].uv.y } : null;
+};
+
+function onResize() {
+  camera.aspect = stage.clientWidth / stage.clientHeight;
+  camera.updateProjectionMatrix();
+  renderer.setSize(stage.clientWidth, stage.clientHeight);
+}
+window.addEventListener('resize', onResize);
+
+let model = null;
+renderer.setAnimationLoop((t) => {
+  if (model) {
+    let goal = target;
+    if (!hovering) {
+      goal = {
+        rz: rest.rz + Math.sin(t * 0.0004) * 0.05,
+        px: rest.px,
+        py: rest.py + Math.sin(t * 0.0008) * 0.02,
+      };
+    }
+    model.rotation.z += (goal.rz - model.rotation.z) * 0.06;
+    model.position.x += (goal.px - model.position.x) * 0.06;
+    model.position.y += (goal.py - model.position.y) * 0.06;
+  }
+  renderer.render(scene, camera);
+});
+</script>
+</body>
+</html>

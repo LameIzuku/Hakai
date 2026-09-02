@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Buy — HAKAI WRATH</title>
+<style>
+  :root {
+    --bg: #131311;
+    --bg-raise: #1c1c19;
+    --line: #2e2e2a;
+    --text: #f0f0ec;
+    --muted: #8a8a82;
+    --accent: #F0997B;
+    --accent-dark: #4A1B0C;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background:
+      radial-gradient(1000px 700px at 22% 280px, rgba(240, 153, 123, 0.13), transparent 68%),
+      radial-gradient(1200px 750px at 78% -150px, rgba(96, 92, 128, 0.20), transparent 60%),
+      radial-gradient(700px 500px at 95% 92%, rgba(127, 119, 221, 0.09), transparent 60%),
+      linear-gradient(170deg, #262421 0%, #171614 45%, #0b0b0a 100%);
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 18px 48px;
+    border-bottom: 1px solid var(--line);
+  }
+  .logo { font-size: 15px; font-weight: 600; letter-spacing: 6px; color: var(--text); text-decoration: none; }
+  .logo span { color: var(--accent); }
+  nav a.back { color: var(--muted); text-decoration: none; font-size: 13px; letter-spacing: 1px; }
+  nav a.back:hover { color: var(--text); }
+
+  main { flex: 1; display: grid; grid-template-columns: 1.1fr 1fr; gap: 0; max-width: 1200px; margin: 0 auto; width: 100%; }
+
+  .visual { padding: 48px; display: flex; flex-direction: column; gap: 16px; justify-content: center; }
+  .shot { background: var(--bg-raise); border: 1px solid var(--line); overflow: hidden; }
+  .shot img { width: 100%; display: block; aspect-ratio: 16/10; object-fit: cover; }
+  .thumbs { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+  .thumbs button { background: var(--bg-raise); border: 1px solid var(--line); padding: 0; cursor: pointer; }
+  .thumbs button.active { border-color: var(--accent); }
+  .thumbs img { width: 100%; display: block; aspect-ratio: 1; object-fit: cover; opacity: 0.75; }
+  .thumbs button.active img, .thumbs button:hover img { opacity: 1; }
+
+  .panel { padding: 64px 48px; border-left: 1px solid var(--line); display: flex; flex-direction: column; justify-content: center; }
+  .kicker { font-size: 12px; letter-spacing: 4px; color: var(--accent); text-transform: uppercase; margin-bottom: 14px; }
+  h1 { font-size: 44px; font-weight: 650; letter-spacing: -1px; line-height: 1; }
+  .price-row { display: flex; align-items: baseline; gap: 14px; margin: 18px 0 6px; }
+  .price { font-size: 30px; font-weight: 650; color: var(--accent); }
+  .price-note { font-size: 13px; color: var(--muted); }
+  .desc { font-size: 14px; line-height: 1.7; color: var(--muted); margin: 14px 0 28px; max-width: 380px; }
+
+  .field-label { font-size: 11px; letter-spacing: 3px; color: var(--muted); text-transform: uppercase; margin-bottom: 10px; }
+  .colorway { display: flex; gap: 10px; margin-bottom: 26px; }
+  .colorway .chip {
+    border: 1px solid var(--accent); color: var(--text);
+    font-size: 13px; padding: 8px 18px; background: var(--bg-raise); letter-spacing: 1px;
+  }
+  .colorway .chip small { color: var(--muted); letter-spacing: 0; }
+
+  .qty-row { display: flex; align-items: center; gap: 0; margin-bottom: 30px; }
+  .qty-row button {
+    width: 42px; height: 42px; background: var(--bg-raise); color: var(--text);
+    border: 1px solid var(--line); font-size: 18px; cursor: pointer;
+  }
+  .qty-row button:hover { border-color: var(--muted); }
+  .qty-row .qty { width: 60px; height: 42px; display: flex; align-items: center; justify-content: center; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); font-size: 15px; font-weight: 600; }
+
+  .summary { border: 1px solid var(--line); margin-bottom: 26px; }
+  .summary .row { display: flex; justify-content: space-between; padding: 12px 18px; font-size: 13px; color: var(--muted); border-bottom: 1px solid var(--line); }
+  .summary .row.total { color: var(--text); font-weight: 600; font-size: 15px; border-bottom: none; }
+
+  .buy-btn {
+    display: block; width: 100%; background: var(--accent); color: var(--accent-dark);
+    font-size: 15px; font-weight: 650; letter-spacing: 2px; text-transform: uppercase;
+    padding: 16px; border: none; border-radius: 999px; cursor: pointer; transition: background .2s;
+  }
+  .buy-btn:hover { background: #f5b096; }
+  .fine { margin-top: 16px; font-size: 12px; color: var(--muted); line-height: 1.7; }
+  .fine b { color: var(--text); font-weight: 600; }
+
+  .confirm { text-align: center; padding: 40px 0; display: none; }
+  .confirm .mark { font-size: 40px; color: var(--accent); margin-bottom: 12px; }
+  .confirm h2 { font-size: 26px; font-weight: 650; margin-bottom: 10px; }
+  .confirm p { font-size: 14px; color: var(--muted); line-height: 1.7; }
+  .confirm a { color: var(--accent); }
+
+  footer {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 22px 48px; border-top: 1px solid var(--line);
+    font-size: 12px; color: var(--muted); letter-spacing: 1px;
+  }
+
+  @media (max-width: 900px) {
+    main { grid-template-columns: 1fr; }
+    .panel { border-left: none; border-top: 1px solid var(--line); padding: 40px 24px; }
+    .visual { padding: 24px; }
+    nav, footer { padding-left: 20px; padding-right: 20px; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a class="logo" href="index.html">HAKAI<span>.</span></a>
+  <a class="back" href="index.html">&larr; Back to the mouse</a>
+</nav>
+
+<main>
+  <div class="visual">
+    <div class="shot"><img id="main-shot" src="assets/top.png" alt="HAKAI Wrath mouse, top view"></div>
+    <div class="thumbs">
+      <button class="active" data-src="assets/top.png" aria-label="Top view"><img src="assets/top.png" alt=""></button>
+      <button data-src="assets/left.png" aria-label="Left view"><img src="assets/left.png" alt=""></button>
+      <button data-src="assets/front.png" aria-label="Front view"><img src="assets/front.png" alt=""></button>
+      <button data-src="assets/back.png" aria-label="Back view"><img src="assets/back.png" alt=""></button>
+    </div>
+  </div>
+
+  <div class="panel">
+    <div id="order-form">
+      <p class="kicker">Hakai Wrath — 破壊</p>
+      <h1>Hakai Wrath</h1>
+      <div class="price-row">
+        <span class="price">$25</span>
+        <span class="price-note">first batch · 500 units</span>
+      </div>
+      <p class="desc">49 grams. Rock-solid 1,000 Hz polling. Optical switches rated for 100 million clicks. Two-year warranty, no questions asked.</p>
+
+      <p class="field-label">Colorway</p>
+      <div class="colorway">
+        <span class="chip">Black <small>— that's it.</small></span>
+      </div>
+
+      <p class="field-label">Quantity</p>
+      <div class="qty-row">
+        <button id="dec" aria-label="Decrease quantity">&minus;</button>
+        <div class="qty" id="qty">1</div>
+        <button id="inc" aria-label="Increase quantity">+</button>
+      </div>
+
+      <div class="summary">
+        <div class="row"><span id="sub-label">Hakai Wrath &times; 1</span><span id="subtotal">$25</span></div>
+        <div class="row"><span>Shipping — worldwide</span><span>Free</span></div>
+        <div class="row total"><span>Total</span><span id="total">$25</span></div>
+      </div>
+
+      <button class="buy-btn" id="buy">Buy now</button>
+      <p class="fine">Ships in 2&ndash;3 weeks &middot; <b>2-year warranty</b> &middot; 30-day returns, even if you just hold it wrong.</p>
+    </div>
+
+    <div class="confirm" id="confirm">
+      <div class="mark">&#10003;</div>
+      <h2>You're on the list.</h2>
+      <p id="confirm-detail">Order reserved.</p>
+      <p style="margin-top:14px;">This is a demo storefront &mdash; no payment was taken.<br><a href="index.html">&larr; Back to the site</a></p>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <span>HAKAI&middot; warranty &middot; shipping &middot; discord</span>
+  <span>&copy; 2026 HAKAI</span>
+</footer>
+
+<script>
+  var qty = 1;
+  var PRICE = 25;
+  function render() {
+    document.getElementById('qty').textContent = qty;
+    document.getElementById('sub-label').innerHTML = 'Hakai Wrath &times; ' + qty;
+    document.getElementById('subtotal').textContent = '$' + (PRICE * qty);
+    document.getElementById('total').textContent = '$' + (PRICE * qty);
+  }
+  document.getElementById('inc').addEventListener('click', function () { if (qty < 5) { qty++; render(); } });
+  document.getElementById('dec').addEventListener('click', function () { if (qty > 1) { qty--; render(); } });
+
+  document.querySelectorAll('.thumbs button').forEach(function (b) {
+    b.addEventListener('click', function () {
+      document.querySelectorAll('.thumbs button').forEach(function (x) { x.classList.remove('active'); });
+      b.classList.add('active');
+      document.getElementById('main-shot').src = b.getAttribute('data-src');
+    });
+  });
+
+  document.getElementById('buy').addEventListener('click', function () {
+    document.getElementById('order-form').style.display = 'none';
+    var c = document.getElementById('confirm');
+    c.style.display = 'block';
+    document.getElementById('confirm-detail').textContent =
+      qty + ' × Hakai Wrath reserved — $' + (PRICE * qty) + ' total, free worldwide shipping.';
+  });
+</script>
+</body>
+</html>

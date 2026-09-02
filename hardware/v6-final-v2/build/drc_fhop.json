@@ -1,0 +1,896 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-08-15T17:28:00",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.5",
+    "schematic_parity": [],
+    "source": "hakai_mouse_v6.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 100.0,
+                        "y": 40.0
+                    },
+                    "uuid": "e1535142-4abe-4dfb-bb5c-8f43bd02f927"
+                },
+                {
+                    "description": "Zone [GND] on B.Cu, priority 0",
+                    "pos": {
+                        "x": 100.0,
+                        "y": 40.0
+                    },
+                    "uuid": "bd8b5be7-71b4-438a-88da-ea18a3b65a27"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 100.0,
+                        "y": 40.0
+                    },
+                    "uuid": "e1535142-4abe-4dfb-bb5c-8f43bd02f927"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 100.0,
+                        "y": 40.0
+                    },
+                    "uuid": "e1535142-4abe-4dfb-bb5c-8f43bd02f927"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "Clearance violation (netclass 'Default' clearance 0.1500 mm; actual 0.0442 mm)",
+            "items": [
+                {
+                    "description": "Via [VBAT_SENSE] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 155.92,
+                        "y": 116.962
+                    },
+                    "uuid": "ac99a767-f93e-47b5-8110-45afd1bfae1c"
+                },
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.5697 mm",
+                    "pos": {
+                        "x": 155.6232,
+                        "y": 117.7456
+                    },
+                    "uuid": "cc7aac4b-4cb2-46fb-919b-6a30761f8dea"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Track [VBAT_EN] on F.Cu, length 13.2000 mm",
+                    "pos": {
+                        "x": 145.75,
+                        "y": 132.0
+                    },
+                    "uuid": "91811232-8b24-4b14-8ce0-86bf15f89df5"
+                },
+                {
+                    "description": "Track [VBAT_SENSE] on F.Cu, length 9.9110 mm",
+                    "pos": {
+                        "x": 140.0,
+                        "y": 125.0
+                    },
+                    "uuid": "ebbf4349-4fba-498f-8b94-67d581b1a556"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Track [VBAT_EN] on F.Cu, length 10.2500 mm",
+                    "pos": {
+                        "x": 145.75,
+                        "y": 121.75
+                    },
+                    "uuid": "bf7e7c4b-70ec-4950-a055-953220eaf0e0"
+                },
+                {
+                    "description": "Track [VBAT_SENSE] on F.Cu, length 8.0000 mm",
+                    "pos": {
+                        "x": 148.0,
+                        "y": 125.0
+                    },
+                    "uuid": "cf12ebdc-a4dc-4a69-ab11-156a4c94b01b"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Clearance violation (netclass 'Default' clearance 0.1500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Track [VBAT_SENSE] on F.Cu, length 10.7970 mm",
+                    "pos": {
+                        "x": 140.0,
+                        "y": 134.911
+                    },
+                    "uuid": "93637964-3ddf-4802-95f3-db150d19267e"
+                },
+                {
+                    "description": "Polygon [<no net>] of ANT1 on F.Cu",
+                    "pos": {
+                        "x": 140.45,
+                        "y": 137.49
+                    },
+                    "uuid": "f98e40ef-d62a-47d8-a10e-800f8df4d611"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Track [VBAT_SENSE] on F.Cu, length 10.0000 mm",
+                    "pos": {
+                        "x": 148.0,
+                        "y": 115.0
+                    },
+                    "uuid": "635c4229-5cee-4d4d-959c-c12a3b3777b3"
+                },
+                {
+                    "description": "Track [VBAT_EN] on F.Cu, length 6.2000 mm",
+                    "pos": {
+                        "x": 153.2,
+                        "y": 120.6
+                    },
+                    "uuid": "9f24c08a-6929-40e7-a81d-157d1ca8d513"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Track [VBAT_SENSE] on F.Cu, length 7.9200 mm",
+                    "pos": {
+                        "x": 155.92,
+                        "y": 115.0
+                    },
+                    "uuid": "068952f7-b5a9-488d-a05c-c8e684d824f3"
+                },
+                {
+                    "description": "Track [SWDIO] on F.Cu, length 3.7279 mm",
+                    "pos": {
+                        "x": 153.7778,
+                        "y": 114.7415
+                    },
+                    "uuid": "fdc06cba-448a-4464-a72e-535d8e1561a3"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Track [VBAT_SENSE] on F.Cu, length 10.0000 mm",
+                    "pos": {
+                        "x": 148.0,
+                        "y": 115.0
+                    },
+                    "uuid": "635c4229-5cee-4d4d-959c-c12a3b3777b3"
+                },
+                {
+                    "description": "Track [DEC4_6] on F.Cu, length 0.7818 mm",
+                    "pos": {
+                        "x": 147.4472,
+                        "y": 116.0678
+                    },
+                    "uuid": "dc3d870e-566c-4de8-9e2c-1cb3738cd001"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Track [VBAT_SENSE] on F.Cu, length 10.0000 mm",
+                    "pos": {
+                        "x": 148.0,
+                        "y": 115.0
+                    },
+                    "uuid": "635c4229-5cee-4d4d-959c-c12a3b3777b3"
+                },
+                {
+                    "description": "Track [DEC4_6] on F.Cu, length 0.6734 mm",
+                    "pos": {
+                        "x": 148.3355,
+                        "y": 116.9907
+                    },
+                    "uuid": "c10f76ee-7b75-4b22-9c7a-445e2b8cf094"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Track [VBAT_SENSE] on F.Cu, length 7.9200 mm",
+                    "pos": {
+                        "x": 155.92,
+                        "y": 115.0
+                    },
+                    "uuid": "068952f7-b5a9-488d-a05c-c8e684d824f3"
+                },
+                {
+                    "description": "Track [DEC4_6] on F.Cu, length 4.7270 mm",
+                    "pos": {
+                        "x": 149.0596,
+                        "y": 111.5396
+                    },
+                    "uuid": "1ade46c7-6b38-44e8-8026-7ae1f2b9fadc"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Track [VBAT_SW_G] on F.Cu, length 8.1716 mm",
+                    "pos": {
+                        "x": 135.6593,
+                        "y": 123.8257
+                    },
+                    "uuid": "d438452f-b20d-4c22-b164-9961bb745cb6"
+                },
+                {
+                    "description": "Track [VBAT_SENSE] on F.Cu, length 9.9110 mm",
+                    "pos": {
+                        "x": 140.0,
+                        "y": 125.0
+                    },
+                    "uuid": "ebbf4349-4fba-498f-8b94-67d581b1a556"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Track [VBAT_SW_G] on F.Cu, length 9.6146 mm",
+                    "pos": {
+                        "x": 130.0625,
+                        "y": 135.85
+                    },
+                    "uuid": "564df78e-e48d-4435-a41e-77160580ca8d"
+                },
+                {
+                    "description": "Track [VBAT_SENSE] on F.Cu, length 10.7970 mm",
+                    "pos": {
+                        "x": 140.0,
+                        "y": 134.911
+                    },
+                    "uuid": "93637964-3ddf-4802-95f3-db150d19267e"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Track [SPI_MOSI] on F.Cu, length 6.3606 mm",
+                    "pos": {
+                        "x": 143.99,
+                        "y": 115.5
+                    },
+                    "uuid": "42551c68-3d45-49ee-b8a5-fb546ab4fca3"
+                },
+                {
+                    "description": "Track [VBAT_SENSE] on F.Cu, length 10.0000 mm",
+                    "pos": {
+                        "x": 148.0,
+                        "y": 115.0
+                    },
+                    "uuid": "635c4229-5cee-4d4d-959c-c12a3b3777b3"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Track [SPI_MOSI] on F.Cu, length 4.9211 mm",
+                    "pos": {
+                        "x": 153.3173,
+                        "y": 119.5202
+                    },
+                    "uuid": "05d99897-46b6-4444-8e35-36a76b0fc7e4"
+                },
+                {
+                    "description": "Track [VBAT_SENSE] on F.Cu, length 7.9200 mm",
+                    "pos": {
+                        "x": 155.92,
+                        "y": 115.0
+                    },
+                    "uuid": "068952f7-b5a9-488d-a05c-c8e684d824f3"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Track [VBAT] on F.Cu, length 9.3603 mm",
+                    "pos": {
+                        "x": 131.3778,
+                        "y": 126.6222
+                    },
+                    "uuid": "154ba375-34ca-491a-b5fd-ef84a108d10d"
+                },
+                {
+                    "description": "Track [VBAT_SENSE] on F.Cu, length 10.7970 mm",
+                    "pos": {
+                        "x": 140.0,
+                        "y": 134.911
+                    },
+                    "uuid": "93637964-3ddf-4802-95f3-db150d19267e"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Items shorting two nets (nets VBAT_SENSE and BTN_SIDE_BACK)",
+            "items": [
+                {
+                    "description": "Track [VBAT_SENSE] on F.Cu, length 10.0000 mm",
+                    "pos": {
+                        "x": 148.0,
+                        "y": 115.0
+                    },
+                    "uuid": "635c4229-5cee-4d4d-959c-c12a3b3777b3"
+                },
+                {
+                    "description": "Via [BTN_SIDE_BACK] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 147.8,
+                        "y": 123.2
+                    },
+                    "uuid": "f50d0565-7d5d-4925-89fe-d158b21844aa"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Track [VBAT_SENSE] on F.Cu, length 10.0000 mm",
+                    "pos": {
+                        "x": 148.0,
+                        "y": 115.0
+                    },
+                    "uuid": "635c4229-5cee-4d4d-959c-c12a3b3777b3"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on F.Cu, length 7.0500 mm",
+                    "pos": {
+                        "x": 154.85,
+                        "y": 123.2
+                    },
+                    "uuid": "741167a7-3e8f-4a09-9cb3-022e6393222d"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Track [BTN_SIDE_BACK] on F.Cu, length 3.0000 mm",
+                    "pos": {
+                        "x": 145.25,
+                        "y": 125.75
+                    },
+                    "uuid": "2e00d560-844e-42b0-8f9e-fc81b4b5371f"
+                },
+                {
+                    "description": "Track [VBAT_SENSE] on F.Cu, length 8.0000 mm",
+                    "pos": {
+                        "x": 148.0,
+                        "y": 125.0
+                    },
+                    "uuid": "cf12ebdc-a4dc-4a69-ab11-156a4c94b01b"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Clearance violation (netclass 'Default' clearance 0.1500 mm; actual 0.0270 mm)",
+            "items": [
+                {
+                    "description": "Track [VBAT_SENSE] on F.Cu, length 7.9200 mm",
+                    "pos": {
+                        "x": 155.92,
+                        "y": 115.0
+                    },
+                    "uuid": "068952f7-b5a9-488d-a05c-c8e684d824f3"
+                },
+                {
+                    "description": "Track [1V9_A] on F.Cu, length 6.3517 mm",
+                    "pos": {
+                        "x": 152.5456,
+                        "y": 114.848
+                    },
+                    "uuid": "fdf23e1d-a49e-4402-842c-5855e72ed390"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (netclass 'Default' clearance 0.1500 mm; actual 0.0282 mm)",
+            "items": [
+                {
+                    "description": "Track [VBAT_SENSE] on F.Cu, length 7.9200 mm",
+                    "pos": {
+                        "x": 155.92,
+                        "y": 115.0
+                    },
+                    "uuid": "068952f7-b5a9-488d-a05c-c8e684d824f3"
+                },
+                {
+                    "description": "Track [1V9_A] on F.Cu, length 0.7837 mm",
+                    "pos": {
+                        "x": 151.4462,
+                        "y": 115.9369
+                    },
+                    "uuid": "f568dc78-45cc-4ba3-a99d-e8cd33a17ab7"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Track [VBAT_SENSE] on F.Cu, length 7.9200 mm",
+                    "pos": {
+                        "x": 155.92,
+                        "y": 115.0
+                    },
+                    "uuid": "068952f7-b5a9-488d-a05c-c8e684d824f3"
+                },
+                {
+                    "description": "Track [1V9_A] on F.Cu, length 3.2581 mm",
+                    "pos": {
+                        "x": 151.4462,
+                        "y": 115.1532
+                    },
+                    "uuid": "d8ba54ce-452d-42cb-abb9-94ab1ad75713"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Track [VBAT_SENSE] on F.Cu, length 7.9200 mm",
+                    "pos": {
+                        "x": 155.92,
+                        "y": 115.0
+                    },
+                    "uuid": "068952f7-b5a9-488d-a05c-c8e684d824f3"
+                },
+                {
+                    "description": "Track [1V9_A] on F.Cu, length 1.9532 mm",
+                    "pos": {
+                        "x": 152.5456,
+                        "y": 116.8012
+                    },
+                    "uuid": "386be9de-5555-49e8-ac30-13c4949913b1"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Track [VBAT_SENSE] on F.Cu, length 7.9200 mm",
+                    "pos": {
+                        "x": 155.92,
+                        "y": 115.0
+                    },
+                    "uuid": "068952f7-b5a9-488d-a05c-c8e684d824f3"
+                },
+                {
+                    "description": "Track [DCC_L] on F.Cu, length 2.8053 mm",
+                    "pos": {
+                        "x": 148.7336,
+                        "y": 112.9461
+                    },
+                    "uuid": "b0360c88-7534-4049-8e39-ba8fb2d9615d"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Items shorting two nets (nets VBAT_SENSE and GND)",
+            "items": [
+                {
+                    "description": "Track [VBAT_SENSE] on F.Cu, length 10.0000 mm",
+                    "pos": {
+                        "x": 148.0,
+                        "y": 115.0
+                    },
+                    "uuid": "635c4229-5cee-4d4d-959c-c12a3b3777b3"
+                },
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 147.7,
+                        "y": 118.52
+                    },
+                    "uuid": "ab7865b5-c1d9-4ddb-945d-d06834bac6f1"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Track [VBAT_SENSE] on F.Cu, length 10.0000 mm",
+                    "pos": {
+                        "x": 148.0,
+                        "y": 115.0
+                    },
+                    "uuid": "635c4229-5cee-4d4d-959c-c12a3b3777b3"
+                },
+                {
+                    "description": "Track [GND] on F.Cu, length 1.3000 mm",
+                    "pos": {
+                        "x": 149.0,
+                        "y": 118.52
+                    },
+                    "uuid": "8c09cedf-6b0f-48ab-940a-5c7db6479df2"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Track [VBAT_SENSE] on F.Cu, length 10.0000 mm",
+                    "pos": {
+                        "x": 148.0,
+                        "y": 115.0
+                    },
+                    "uuid": "635c4229-5cee-4d4d-959c-c12a3b3777b3"
+                },
+                {
+                    "description": "Track [DCC_L] on F.Cu, length 1.0375 mm",
+                    "pos": {
+                        "x": 148.7336,
+                        "y": 115.7514
+                    },
+                    "uuid": "c37d98ef-a5db-436a-bea0-26af3653e8d9"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Track [VBAT_SENSE] on F.Cu, length 7.9200 mm",
+                    "pos": {
+                        "x": 155.92,
+                        "y": 115.0
+                    },
+                    "uuid": "068952f7-b5a9-488d-a05c-c8e684d824f3"
+                },
+                {
+                    "description": "Track [XC2] on F.Cu, length 4.8190 mm",
+                    "pos": {
+                        "x": 150.9945,
+                        "y": 113.1555
+                    },
+                    "uuid": "21e8d28d-35db-405e-9196-498c85542ed6"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [VBAT_SENSE] on F.Cu, length 10.0000 mm",
+                    "pos": {
+                        "x": 148.0,
+                        "y": 115.0
+                    },
+                    "uuid": "635c4229-5cee-4d4d-959c-c12a3b3777b3"
+                },
+                {
+                    "description": "Pad 1 [DCC_L] of L2 on F.Cu",
+                    "pos": {
+                        "x": 148.0,
+                        "y": 116.485
+                    },
+                    "uuid": "127ac147-ead4-487e-af68-3ed0990cca4a"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [VBAT_SENSE] on F.Cu, length 10.0000 mm",
+                    "pos": {
+                        "x": 148.0,
+                        "y": 115.0
+                    },
+                    "uuid": "635c4229-5cee-4d4d-959c-c12a3b3777b3"
+                },
+                {
+                    "description": "Pad 2 [DEC4_6] of L2 on F.Cu",
+                    "pos": {
+                        "x": 148.0,
+                        "y": 115.515
+                    },
+                    "uuid": "8a9eca44-c6c5-47c9-a82c-852c68336efd"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [VBAT_SENSE] on F.Cu, length 9.9110 mm",
+                    "pos": {
+                        "x": 140.0,
+                        "y": 125.0
+                    },
+                    "uuid": "ebbf4349-4fba-498f-8b94-67d581b1a556"
+                },
+                {
+                    "description": "Pad 1 [VBAT_EN] of Q1 on F.Cu",
+                    "pos": {
+                        "x": 139.5625,
+                        "y": 129.05
+                    },
+                    "uuid": "3317693d-544c-475a-a356-5333b9681b76"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [VBAT_SENSE] on F.Cu, length 9.9110 mm",
+                    "pos": {
+                        "x": 140.0,
+                        "y": 125.0
+                    },
+                    "uuid": "ebbf4349-4fba-498f-8b94-67d581b1a556"
+                },
+                {
+                    "description": "Pad 2 [GND] of Q1 on F.Cu",
+                    "pos": {
+                        "x": 139.5625,
+                        "y": 130.95
+                    },
+                    "uuid": "3db7bbdb-b89e-49fd-8458-1c629c405990"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [VBAT_SENSE] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 129.2035,
+                        "y": 134.911
+                    },
+                    "uuid": "459c8394-26ce-4579-b9ac-c4c3e85545a3"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [SWDIO] on B.Cu, length 3.0400 mm",
+                    "pos": {
+                        "x": 128.0,
+                        "y": 132.5
+                    },
+                    "uuid": "baf80546-4cc1-4b77-a64c-a14d2cbb1be4"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Reference field of Q3",
+                    "pos": {
+                        "x": 131.0,
+                        "y": 134.4
+                    },
+                    "uuid": "4244efb6-0883-40af-ae06-2d3b36f0e1c9"
+                },
+                {
+                    "description": "Reference field of R10",
+                    "pos": {
+                        "x": 130.83,
+                        "y": 133.0
+                    },
+                    "uuid": "8b83d4f6-7b18-4bdf-b35a-0055aaeb0739"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Segment of J3 on F.Silkscreen",
+                    "pos": {
+                        "x": 105.62,
+                        "y": 134.27
+                    },
+                    "uuid": "576dc916-e2a0-4187-8e64-ee4742a652d1"
+                },
+                {
+                    "description": "Reference field of R11",
+                    "pos": {
+                        "x": 108.63,
+                        "y": 133.0
+                    },
+                    "uuid": "d5af97a1-3626-441a-8077-f3524fe262ec"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Reference field of R11",
+                    "pos": {
+                        "x": 108.63,
+                        "y": 133.0
+                    },
+                    "uuid": "d5af97a1-3626-441a-8077-f3524fe262ec"
+                },
+                {
+                    "description": "Segment of J3 on F.Silkscreen",
+                    "pos": {
+                        "x": 108.38,
+                        "y": 134.27
+                    },
+                    "uuid": "e68e7ace-8d0f-4ce8-b448-42e1be460ae3"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of Q3",
+                    "pos": {
+                        "x": 131.0,
+                        "y": 134.4
+                    },
+                    "uuid": "4244efb6-0883-40af-ae06-2d3b36f0e1c9"
+                },
+                {
+                    "description": "Pad 1 [VBAT_EN] of R10 on F.Cu",
+                    "pos": {
+                        "x": 132.0,
+                        "y": 133.51
+                    },
+                    "uuid": "e2c4ffb5-ba5a-4ba7-a135-e1e90fdfb73f"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        }
+    ]
+}

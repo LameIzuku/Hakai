@@ -1,0 +1,13 @@
+# Hardware repo: never rewrite line endings.
+# Gerber, drill and KiCad files are verified by checksum; EOL conversion
+# would silently corrupt fabrication data.
+* -text
+
+# Explicit binaries
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.pdf  binary
+*.zip  binary
+*.jar  binary
+*.obj  binary

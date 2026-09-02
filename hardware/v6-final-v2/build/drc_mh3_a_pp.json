@@ -1,0 +1,266 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-08-15T22:19:56",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.5",
+    "schematic_parity": [],
+    "source": "hakai_mouse_v6.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "Items not allowed",
+            "items": [
+                {
+                    "description": "Track [VBAT_SENSE] on B.Cu, length 1.3000 mm",
+                    "pos": {
+                        "x": 155.7,
+                        "y": 126.85
+                    },
+                    "uuid": "3aec5ccf-479f-45e4-8053-5b53b70732dc"
+                }
+            ],
+            "severity": "error",
+            "type": "items_not_allowed"
+        },
+        {
+            "description": "Items not allowed",
+            "items": [
+                {
+                    "description": "Track [VBAT_SENSE] on B.Cu, length 0.1000 mm",
+                    "pos": {
+                        "x": 154.4,
+                        "y": 126.85
+                    },
+                    "uuid": "4dac52ff-8fc2-4237-991a-554dd52ad5ed"
+                }
+            ],
+            "severity": "error",
+            "type": "items_not_allowed"
+        },
+        {
+            "description": "Items not allowed",
+            "items": [
+                {
+                    "description": "Track [VBAT_SENSE] on B.Cu, length 2.7000 mm",
+                    "pos": {
+                        "x": 154.4,
+                        "y": 126.95
+                    },
+                    "uuid": "dc5b7a11-dcb3-414a-98e5-23a8dfd36236"
+                }
+            ],
+            "severity": "error",
+            "type": "items_not_allowed"
+        },
+        {
+            "description": "Clearance violation (netclass 'Default' clearance 0.1500 mm; actual 0.0500 mm)",
+            "items": [
+                {
+                    "description": "Track [VBAT_SENSE] on B.Cu, length 0.2200 mm",
+                    "pos": {
+                        "x": 155.92,
+                        "y": 126.7
+                    },
+                    "uuid": "622878f4-28a2-49e4-9c25-56dcd88e769f"
+                },
+                {
+                    "description": "Track [XC1] on B.Cu, length 9.1040 mm",
+                    "pos": {
+                        "x": 155.5,
+                        "y": 117.746
+                    },
+                    "uuid": "f7e882c2-5ff8-45c0-824c-2b6c1cfe372c"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (netclass 'Default' clearance 0.1500 mm; actual 0.0500 mm)",
+            "items": [
+                {
+                    "description": "Track [VBAT_SENSE] on B.Cu, length 0.1500 mm",
+                    "pos": {
+                        "x": 155.7,
+                        "y": 126.7
+                    },
+                    "uuid": "74c3af40-4104-4cc8-bc56-095b6f56446b"
+                },
+                {
+                    "description": "Track [XC1] on B.Cu, length 9.1040 mm",
+                    "pos": {
+                        "x": 155.5,
+                        "y": 117.746
+                    },
+                    "uuid": "f7e882c2-5ff8-45c0-824c-2b6c1cfe372c"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (netclass 'Default' clearance 0.1500 mm; actual 0.1300 mm)",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 9.6811 mm",
+                    "pos": {
+                        "x": 156.25,
+                        "y": 126.85
+                    },
+                    "uuid": "6cf1963b-0092-40a5-b01b-b0fe24db17d1"
+                },
+                {
+                    "description": "Track [VBAT_SENSE] on B.Cu, length 9.7380 mm",
+                    "pos": {
+                        "x": 155.92,
+                        "y": 116.962
+                    },
+                    "uuid": "ef8a8d61-b79e-4086-bbb5-e51205da6253"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Track [VBAT_SENSE] on B.Cu, length 1.3000 mm",
+                    "pos": {
+                        "x": 155.7,
+                        "y": 126.85
+                    },
+                    "uuid": "3aec5ccf-479f-45e4-8053-5b53b70732dc"
+                },
+                {
+                    "description": "Track [XC1] on B.Cu, length 9.1040 mm",
+                    "pos": {
+                        "x": 155.5,
+                        "y": 117.746
+                    },
+                    "uuid": "f7e882c2-5ff8-45c0-824c-2b6c1cfe372c"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Reference field of Q3",
+                    "pos": {
+                        "x": 131.0,
+                        "y": 134.4
+                    },
+                    "uuid": "4244efb6-0883-40af-ae06-2d3b36f0e1c9"
+                },
+                {
+                    "description": "Reference field of R10",
+                    "pos": {
+                        "x": 130.83,
+                        "y": 133.0
+                    },
+                    "uuid": "8b83d4f6-7b18-4bdf-b35a-0055aaeb0739"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Segment of J3 on F.Silkscreen",
+                    "pos": {
+                        "x": 105.62,
+                        "y": 134.27
+                    },
+                    "uuid": "576dc916-e2a0-4187-8e64-ee4742a652d1"
+                },
+                {
+                    "description": "Reference field of R11",
+                    "pos": {
+                        "x": 108.63,
+                        "y": 133.0
+                    },
+                    "uuid": "d5af97a1-3626-441a-8077-f3524fe262ec"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Reference field of R11",
+                    "pos": {
+                        "x": 108.63,
+                        "y": 133.0
+                    },
+                    "uuid": "d5af97a1-3626-441a-8077-f3524fe262ec"
+                },
+                {
+                    "description": "Segment of J3 on F.Silkscreen",
+                    "pos": {
+                        "x": 108.38,
+                        "y": 134.27
+                    },
+                    "uuid": "e68e7ace-8d0f-4ce8-b448-42e1be460ae3"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of Q3",
+                    "pos": {
+                        "x": 131.0,
+                        "y": 134.4
+                    },
+                    "uuid": "4244efb6-0883-40af-ae06-2d3b36f0e1c9"
+                },
+                {
+                    "description": "Pad 1 [VBAT_EN] of R10 on F.Cu",
+                    "pos": {
+                        "x": 132.0,
+                        "y": 133.51
+                    },
+                    "uuid": "e2c4ffb5-ba5a-4ba7-a135-e1e90fdfb73f"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        }
+    ]
+}

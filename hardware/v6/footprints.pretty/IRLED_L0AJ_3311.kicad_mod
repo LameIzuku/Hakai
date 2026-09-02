@@ -1,0 +1,110 @@
+(footprint "IRLED_L0AJ_3311"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "IR emitter for PAW3311 + L0AJ-LSG1 set. Pads per datasheet Table 9 LED Soldering Pad positions (0.12 clear of the stadium cutout). Verify vs final LED P/N reflow pad recommendation.")
+	(property "Reference" "REF**"
+		(at 0 -1.8 0)
+		(layer "F.Fab")
+		(uuid "782e8354-c8fd-4d1f-965d-14dd328162c2")
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+		)
+	)
+	(property "Value" ""
+		(at 0 -3 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d53601aa-a900-436a-b8ed-c016ee9a5126")
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0f4eae99-f51f-4b56-a1ea-9cdd0dd169ec")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "1952e107-c38c-490e-be61-17e05ca78c4c")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start 2.35 -0.8)
+		(end 2.35 0.8)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "53821866-fed5-47fd-ae64-500ce5dc01c5")
+	)
+	(fp_rect
+		(start -2.1 -1)
+		(end 2.1 1)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "8e342b41-3942-4357-b680-6bbc97fab586")
+	)
+	(fp_line
+		(start 2.049999 -0.75)
+		(end 2.049999 0.75)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "e5e70a63-4c72-461f-bfc8-abb12b9300a9")
+	)
+	(fp_rect
+		(start -1.6 -0.8)
+		(end 1.6 0.8)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "7c46b059-e503-40cb-beba-3f105ed4b9a3")
+	)
+	(pad "1" smd roundrect
+		(at -1.42 0)
+		(size 0.8 1.4)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.15)
+		(thermal_bridge_angle 45)
+		(uuid "b1c5ddd9-a75b-4771-a171-c537bcbbb977")
+	)
+	(pad "2" smd roundrect
+		(at 1.42 0)
+		(size 0.8 1.4)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.15)
+		(thermal_bridge_angle 45)
+		(uuid "1e44ddc8-e0fa-410c-a6b8-1422d4e49937")
+	)
+	(embedded_fonts no)
+)

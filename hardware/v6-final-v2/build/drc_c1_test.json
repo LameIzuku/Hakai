@@ -1,0 +1,359 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-08-18T14:04:03",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.5",
+    "schematic_parity": [],
+    "source": "hakai_mouse_v6.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "Items shorting two nets (nets VBAT_SENSE and XC1)",
+            "items": [
+                {
+                    "description": "Via [VBAT_SENSE] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 150.0,
+                        "y": 117.4
+                    },
+                    "uuid": "8db04394-47c5-4e52-853c-5dfc7e90cc57"
+                },
+                {
+                    "description": "Track [XC1] on F.Cu, length 5.0872 mm",
+                    "pos": {
+                        "x": 150.3,
+                        "y": 118.6372
+                    },
+                    "uuid": "dda1652f-8db8-43aa-99d2-01c9195e2971"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Track [SWDIO] on B.Cu, length 23.0000 mm",
+                    "pos": {
+                        "x": 151.0,
+                        "y": 132.5
+                    },
+                    "uuid": "32a77b5c-73b4-439f-9f70-32fef90a60ab"
+                },
+                {
+                    "description": "Track [VBAT_SENSE] on B.Cu, length 5.8000 mm",
+                    "pos": {
+                        "x": 147.0,
+                        "y": 128.199999
+                    },
+                    "uuid": "628e7b27-b920-47be-af86-9ec2ea458dbe"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Track [VBAT_SENSE] on B.Cu, length 5.9200 mm",
+                    "pos": {
+                        "x": 155.92,
+                        "y": 116.4
+                    },
+                    "uuid": "1aa7720b-312f-4837-9a78-d753bf8b265b"
+                },
+                {
+                    "description": "Track [1V9_A] on B.Cu, length 1.4180 mm",
+                    "pos": {
+                        "x": 154.1268,
+                        "y": 115.7732
+                    },
+                    "uuid": "6fd58c8a-132b-4d58-ab7e-bb0295790b38"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Items shorting two nets (nets VBAT_SENSE and GND)",
+            "items": [
+                {
+                    "description": "Track [VBAT_SENSE] on F.Cu, length 10.8000 mm",
+                    "pos": {
+                        "x": 147.0,
+                        "y": 117.4
+                    },
+                    "uuid": "0b1ba24a-29d2-4c3c-b2c6-e849c4fb03ed"
+                },
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 147.1,
+                        "y": 119.32
+                    },
+                    "uuid": "9d48c850-8106-4b08-b350-51afe26ae2a1"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Track [VBAT_SENSE] on B.Cu, length 5.9200 mm",
+                    "pos": {
+                        "x": 155.92,
+                        "y": 116.4
+                    },
+                    "uuid": "1aa7720b-312f-4837-9a78-d753bf8b265b"
+                },
+                {
+                    "description": "Track [1V9_A] on B.Cu, length 1.1865 mm",
+                    "pos": {
+                        "x": 152.5181,
+                        "y": 116.7758
+                    },
+                    "uuid": "e68d0b27-9667-4eb6-b791-242c67f5ff01"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Clearance violation (netclass 'Default' clearance 0.1500 mm; actual 0.0835 mm)",
+            "items": [
+                {
+                    "description": "Track [VBAT_SENSE] on B.Cu, length 5.9200 mm",
+                    "pos": {
+                        "x": 155.92,
+                        "y": 116.4
+                    },
+                    "uuid": "1aa7720b-312f-4837-9a78-d753bf8b265b"
+                },
+                {
+                    "description": "Via [PGOOD] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 151.8924,
+                        "y": 116.7835
+                    },
+                    "uuid": "8d583592-c099-4011-8558-0c37362925d3"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Track [VBAT_SENSE] on F.Cu, length 10.8000 mm",
+                    "pos": {
+                        "x": 147.0,
+                        "y": 117.4
+                    },
+                    "uuid": "0b1ba24a-29d2-4c3c-b2c6-e849c4fb03ed"
+                },
+                {
+                    "description": "Track [SPI_MOSI] on F.Cu, length 6.3606 mm",
+                    "pos": {
+                        "x": 143.99,
+                        "y": 115.5
+                    },
+                    "uuid": "42551c68-3d45-49ee-b8a5-fb546ab4fca3"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Clearance violation (netclass 'Default' clearance 0.1500 mm; actual 0.1250 mm)",
+            "items": [
+                {
+                    "description": "Track [VBAT_SENSE] on F.Cu, length 10.8000 mm",
+                    "pos": {
+                        "x": 147.0,
+                        "y": 117.4
+                    },
+                    "uuid": "0b1ba24a-29d2-4c3c-b2c6-e849c4fb03ed"
+                },
+                {
+                    "description": "Track [VBAT_EN] on F.Cu, length 1.0000 mm",
+                    "pos": {
+                        "x": 146.75,
+                        "y": 121.75
+                    },
+                    "uuid": "0e8ba5be-4395-458c-8e83-9f2af11caa26"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (netclass 'Default' clearance 0.1500 mm; actual 0.1000 mm)",
+            "items": [
+                {
+                    "description": "Track [VBAT_SENSE] on F.Cu, length 10.8000 mm",
+                    "pos": {
+                        "x": 147.0,
+                        "y": 117.4
+                    },
+                    "uuid": "0b1ba24a-29d2-4c3c-b2c6-e849c4fb03ed"
+                },
+                {
+                    "description": "Via [nRESET] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 146.6,
+                        "y": 121.35
+                    },
+                    "uuid": "3078213a-b2ff-4cbb-8afe-fe3951d92f1b"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Track [VBAT_SENSE] on F.Cu, length 10.8000 mm",
+                    "pos": {
+                        "x": 147.0,
+                        "y": 117.4
+                    },
+                    "uuid": "0b1ba24a-29d2-4c3c-b2c6-e849c4fb03ed"
+                },
+                {
+                    "description": "Track [GND] on F.Cu, length 4.0000 mm",
+                    "pos": {
+                        "x": 147.1,
+                        "y": 119.32
+                    },
+                    "uuid": "a0749e7b-afa0-4667-b7c4-8f2ef1f4bf56"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 104.0,
+                        "y": 144.0
+                    },
+                    "uuid": "3044b081-fea8-4e01-bfd5-3f1842c7c05c"
+                },
+                {
+                    "description": "Reference field of J3",
+                    "pos": {
+                        "x": 104.0,
+                        "y": 128.0
+                    },
+                    "uuid": "b6cd007d-597a-491e-8cce-7116660f459b"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Segment of R3 on F.Silkscreen",
+                    "pos": {
+                        "x": 117.38,
+                        "y": 126.653641
+                    },
+                    "uuid": "9b6ab309-e6e0-46a1-b008-cbbb2a5294b6"
+                },
+                {
+                    "description": "Reference field of R11",
+                    "pos": {
+                        "x": 117.5,
+                        "y": 126.0
+                    },
+                    "uuid": "d5af97a1-3626-441a-8077-f3524fe262ec"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of R11",
+                    "pos": {
+                        "x": 117.5,
+                        "y": 126.0
+                    },
+                    "uuid": "d5af97a1-3626-441a-8077-f3524fe262ec"
+                },
+                {
+                    "description": "Pad 1 [TS] of R3 on F.Cu",
+                    "pos": {
+                        "x": 117.0,
+                        "y": 127.01
+                    },
+                    "uuid": "a7ce4bb7-9ac3-4533-8449-5cba69509b89"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of R11",
+                    "pos": {
+                        "x": 117.5,
+                        "y": 126.0
+                    },
+                    "uuid": "d5af97a1-3626-441a-8077-f3524fe262ec"
+                },
+                {
+                    "description": "Pad 2 [GND] of R3 on F.Cu",
+                    "pos": {
+                        "x": 117.0,
+                        "y": 125.99
+                    },
+                    "uuid": "475be26c-45c5-46bd-b04c-b6ba51cb6514"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        }
+    ]
+}

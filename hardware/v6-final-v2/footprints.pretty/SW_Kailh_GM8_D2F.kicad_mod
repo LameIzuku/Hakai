@@ -1,0 +1,109 @@
+(footprint "SW_Kailh_GM8_D2F"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Kailh GM 8.0 mouse microswitch, D2F/D2FC pattern per official Omron drawing: 3x 1.2mm holes, 5.08mm pitch, flat bottom (NO boss holes - side-face holes are chassis features, not PCB features). Body 12.8x5.8 centered on terminals; plunger ~1.95mm left of centre terminal (F.Fab circle).")
+	(property "Reference" "REF**"
+		(at 0 -3.9 0)
+		(layer "F.SilkS")
+		(uuid "abfdc728-815f-4bbd-857d-0b99e0d04b8b")
+		(effects
+			(font
+				(size 1 1)
+			)
+		)
+	)
+	(property "Value" ""
+		(at 0 -5.3 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "db7aa20d-2c18-4066-ab9b-b1b36be7aa45")
+		(effects
+			(font
+				(size 1 1)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "f8900e59-76a9-4a9b-b3a8-165cd5b63159")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "deea7c0f-f7e0-4fc9-be7c-0f3cbd61612c")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_rect
+		(start -6.4 -2.9)
+		(end 6.4 2.9)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "e6376b3a-d4b2-42de-83de-79237cf3b574")
+	)
+	(fp_rect
+		(start -6.9 -3.4)
+		(end 6.9 3.4)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "ef006abd-f302-4e3d-a131-abfab204604a")
+	)
+	(fp_circle
+		(center -1.95 0)
+		(end -0.95 0)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "cccb078a-3459-4763-b468-3c97ab7d1b0e")
+	)
+	(pad "1" thru_hole circle
+		(at -5.08 0)
+		(size 2.1 2.1)
+		(drill 1.2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "6c1f034c-3946-440c-9a66-2d83adf7c4d5")
+	)
+	(pad "2" thru_hole circle
+		(at 0 0)
+		(size 2.1 2.1)
+		(drill 1.2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "0bfd285e-aa2b-4344-b367-c5f6bd8e16d9")
+	)
+	(pad "3" thru_hole circle
+		(at 5.08 0)
+		(size 2.1 2.1)
+		(drill 1.2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "e64897c9-cfca-4560-8a4e-6a21aa4eafec")
+	)
+	(embedded_fonts no)
+)

@@ -1,0 +1,39 @@
+Category,Ref(s),Part / Description,Qty,Unit Cost USD (est),Extended USD,Sourcing note
+IC,U4,Nordic nRF52833-QIAA aQFN73 (MCU + 2.4GHz radio),1,4.50,4.50,LCSC/Mouser ~$3.8-5.5 @ qty1; cheaper in reels
+IC,U5,PixArt PAW3311DB-T2MU optical sensor,1,4.00,4.00,LCSC C9900151010 / AliExpress (Duoyi) ~$3-6; via PixArt distributor (EPSGlobal) for volume
+Optics,-,L0AJ-LSG1 SMT lens (pairs with U5),1,1.20,1.20,From PixArt distributor with sensor; 5mm lens sets (LM31-LNG) similar
+IC,U2,TI BQ24074RGT Li-ion charger + power path,1,1.80,1.80,TI.com/Mouser ~$1.5-2.5 @ qty1
+IC,U3,Torex XC6219B192MR 1.9V 240mA LDO,1,0.35,0.35,LCSC/Digi-Key ~$0.25-0.50
+Connector,J1,GCT USB4105-GF-A USB-C 16-pin receptacle,1,0.60,0.60,LCSC (HRO TYPE-C-31-M-12 equivalent ~$0.15-0.30)
+Switch,SW1-SW5,Kailh GM 8.0 mouse microswitch (80M) - L/R/side x2/middle click,5,0.65,3.25,One part number for every click; GM 4.0 (~$0.30) is a lighter/cheaper SW5 option
+Encoder,EC1,11mm mouse scroll encoder - rotation only (TTC/F-switch),1,0.25,0.25,AliExpress/LCSC ~$0.10-0.30; verify pin/bracket spacing vs vendor drawing
+LED,D2,SMT IR emitter for L0AJ-LSG1 set (1206),1,0.30,0.30,Per PixArt recommendation (contact PixArt for exact P/N)
+Crystal,Y1,32MHz 2016 CL=8pF (Nordic-approved list),1,0.35,0.35,e.g. NDK NX2016SA / Epson FA-238 class
+Crystal,Y2,32.768kHz 3215 CL=9pF,1,0.25,0.25,e.g. Epson FC-135 class
+FET,Q1-Q2,AO3400A N-MOSFET SOT-23 (low Vth),2,0.04,0.08,LCSC ~$0.02-0.05
+FET,Q3,AO3401A P-MOSFET SOT-23 (v5.2 high-side battery-divider switch),1,0.05,0.05,LCSC ~$0.02-0.06
+TVS,D1,PESD5V0S1BA SOD-323 (VBUS ESD),1,0.06,0.06,Nexperia; any 5V bidirectional TVS works
+LED,D3,Status LED blue 0603,1,0.04,0.04,Any 0603 LED (driven from VSYS via Q2)
+Protection,F1,PTC resettable fuse 1A hold 1206,1,0.10,0.10,Bourns MF-MSMF/Techfuse
+Filter,FB1,Murata BLM31PG601SN1L ferrite 600R@100MHz 1206,1,0.08,0.08,Or any 1206 600R bead rated >=0.5A
+Inductor,L1,10uH 0603 chip inductor (DC/DC; IDC>=50mA),1,0.06,0.06,Per Nordic reference BOM
+Inductor,L2,15nH 0402 high-freq chip inductor (DC/DC),1,0.03,0.03,Per Nordic reference BOM
+Inductor,L3,4.7nH 0402 Murata LQG15HS4N7 (RF match),1,0.04,0.04,Copy Nordic reference exactly - do not substitute casually
+Inductor,L4,2.2nH 0402 Murata LQG15HS2N2 (RF match),1,0.04,0.04,Copy Nordic reference exactly
+Connector,J2,JST S2B-PH-K-S 2-pin battery header,1,0.12,0.12,Verify pack pigtail polarity before connecting!
+Connector,J3,Pin header 1x05 2.54mm (SWD debug),1,0.05,0.05,Can be left unpopulated in production
+Resistor,R1-R25 (24 fitted + 1 DNP),0402 1% assorted (5.1k/10k/47k/100k/200k/3.24k/2.0k/1k/18R/3.3k),25,0.01,0.25,LCSC reels; 18R and 3.24k must be 1%; R25 = 47k (v5.3)
+Capacitor,C1-C36 (31 fitted + 5 DNP),0402/0603/0805 assorted (see BOM; NP0 for RF/12pF/100pF),36,0.015,0.54,NP0/C0G mandatory for C10 C18-C24; X7R elsewhere
+Test point,TP1-TP6,Copper pad test points,6,0.00,0.00,Bare copper - no part cost
+,,,,,,
+PCB,-,"PCB fabrication 70x110mm, 2-layer, 0.8mm (sensor requires 0.8mm), qty 5",1,7.00,7.00,JLCPCB/PCBWay ~$4-10 for 5 pcs incl. shipping share; 4-layer (better RF) ~$25/5
+PCB,-,Solder stencil (optional but recommended for aQFN73),1,8.00,8.00,Frameless stencil
+,,,,,,
+Off-board,-,"Li-ion cell 503035/603040 ~500-800mAh, protected, JST-PH pigtail",1,3.50,3.50,NOT on PCB BOM; verify polarity vs J2 pin 1 = BAT+
+,,,,,,
+TOTAL,,PCB components only (one board),,,18.39,Sum of all part rows above - R/C quantities include DNP reel stock (fitted-only ~$18.31). v5.2: +C36 +Q3/R25 = +$0.07
+TOTAL,,One assembled prototype (components + PCB share + stencil share),,,21.39,Assumes 5-board run; stencil+fab amortized over 5
+TOTAL,,Complete unit incl. battery,,,24.89,Shell/feet/cable not included
+,,,,,,
+NOTE,,"All prices are qty-1..10 prototype ESTIMATES (2026 USD, LCSC/Mouser/AliExpress mix). Volume pricing (1k+) typically drops total component cost below $9.",,,,
+NOTE,,"Verify current prices before ordering: nRF52833 and PAW3311 dominate cost and fluctuate.",,,,

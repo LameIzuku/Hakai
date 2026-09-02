@@ -1,0 +1,1 @@
+ALL CHECKS PASS: 45 signal nets exact-match, 6 rails verified, 100 total nets in netlist

@@ -1,0 +1,97 @@
+(footprint "SW_Kailh_GM8_D2F"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Kailh GM 8.0 mouse microswitch, D2F/D2FC footprint. 3x 1.2mm holes 5.08mm pitch. Add locating bosses per Omron D2F drawing before fab.")
+	(property "Reference" "REF**"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(uuid "3c0b9435-970f-4ac7-b557-a3b0c06c61e9")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Value" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "d50105a1-5604-4bbe-ad76-907f8f424e28")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d49604e7-5607-4a71-94c9-e59bcf1385cc")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b08449cd-06f7-457a-b662-22120d05dd67")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_rect
+		(start -6.4 -2)
+		(end 6.4 4.5)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "49cae65d-1b3a-49c6-8619-ba3774e019a6")
+	)
+	(fp_rect
+		(start -6.9 -2.5)
+		(end 6.9 5)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "7cb4f350-aeb3-438e-8d98-ddf3d40d005e")
+	)
+	(pad "1" thru_hole circle
+		(at -5.08 0)
+		(size 2.1 2.1)
+		(drill 1.3)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "f89aa3b8-0e33-4b24-8e82-eaa368223739")
+	)
+	(pad "2" thru_hole circle
+		(at 0 0)
+		(size 2.1 2.1)
+		(drill 1.3)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "7a5ccad1-473d-40ad-9dcb-b4d661c53f64")
+	)
+	(pad "3" thru_hole circle
+		(at 5.08 0)
+		(size 2.1 2.1)
+		(drill 1.3)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "3a034326-127d-4205-97ac-1d0583a38662")
+	)
+	(embedded_fonts no)
+)

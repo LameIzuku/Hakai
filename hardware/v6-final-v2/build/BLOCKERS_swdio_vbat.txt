@@ -1,0 +1,12 @@
+﻿RESULT=SUCCESS config=east_dual_Fhop score=0
+unc=0 err=0 warn=0 min_edge=1.529
+XC1 before L=22.359 A=43.217 vias=2 after L=22.359 A=43.217 vias=2 UNCHANGED
+SWDIO 95.507->95.507 vias 1->1 (west dogleg length-preserving)
+VBAT 82.690->102.952 vias 2->8
+VBAT NEW-path dRF_match(C24)=3.441 dDCDC(L2)=7.936 dL1=8.659
+1V9 (0.10,0.10)->(0.10,0.10) untouched
+RF_FEED 39.4325 unchanged
+GND via (150.0,129.5)->(149.50,127.50)
+keepout tracks r=3.00
+best file: hakai_mouse_v6.kicad_pcb.best_swdio_vbat
+gerbers: gerbers/swdio_vbat_clean/

@@ -1,0 +1,26 @@
+# ---------------------------------------------------------------
+# Oversized artifacts
+# GitHub hard-rejects files >100 MB and warns above 50 MB.
+# Everything here is either a redundant snapshot of content that IS
+# tracked in this repo, or a third-party tool to download separately.
+# ---------------------------------------------------------------
+
+# Self-archives of this tree (163 MB + 64 MB) - kept locally in archive/
+/archive/
+
+# Freerouting, 58 MB per copy.
+# Download: https://github.com/freerouting/freerouting/releases
+**/tools/fr/*.jar
+
+# ---------------------------------------------------------------
+# Local / transient
+# ---------------------------------------------------------------
+.claude/settings.local.json
+*.kicad_prl
+~*.lck
+fp-info-cache
+*-backups/
+
+# VS Code Local History extension (contains its own nested .git repos,
+# which would otherwise be committed as broken submodules)
+.history/

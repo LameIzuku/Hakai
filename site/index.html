@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HAKAI WRATH — Break everything between you and the shot</title>
+<style>
+  :root {
+    --bg: #131311;
+    --bg-raise: #1c1c19;
+    --line: #2e2e2a;
+    --text: #f0f0ec;
+    --muted: #8a8a82;
+    --accent: #F0997B;
+    --accent-dark: #4A1B0C;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    background:
+      radial-gradient(1100px 850px at 72% 400px, rgba(240, 153, 123, 0.20), rgba(240, 153, 123, 0.06) 45%, transparent 70%),
+      radial-gradient(1300px 800px at 30% -150px, rgba(96, 92, 128, 0.22), transparent 60%),
+      radial-gradient(800px 600px at 6% 95%, rgba(127, 119, 221, 0.10), transparent 60%),
+      linear-gradient(170deg, #262421 0%, #171614 45%, #0b0b0a 100%);
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 50;
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 18px 48px;
+    background: rgba(19, 19, 17, 0.82);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--line);
+  }
+  .logo { font-size: 15px; font-weight: 600; letter-spacing: 6px; }
+  .logo span { color: var(--accent); }
+  nav .links { display: flex; gap: 32px; align-items: center; }
+  nav a { color: var(--muted); text-decoration: none; font-size: 13px; letter-spacing: 1px; transition: color .2s; }
+  nav a:hover { color: var(--text); }
+  .btn {
+    display: inline-block; background: var(--accent); color: var(--accent-dark);
+    font-size: 13px; font-weight: 600; letter-spacing: 1px;
+    padding: 10px 26px; border-radius: 999px; text-decoration: none;
+    transition: transform .15s, background .2s, border-color .2s;
+  }
+  .btn:hover { background: #f5b096; transform: translateY(-1px); }
+  .btn.ghost { background: transparent; color: var(--text); border: 1px solid var(--line); }
+  .btn.ghost:hover { border-color: var(--muted); background: transparent; }
+  .btn.glass {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(115deg, rgba(255,255,255,0.16) 0%, rgba(255,255,255,0.04) 45%, rgba(255,255,255,0.10) 100%);
+    color: #f5f5f1;
+    border: 1px solid rgba(255, 255, 255, 0.28);
+    backdrop-filter: blur(18px) saturate(1.6);
+    -webkit-backdrop-filter: blur(18px) saturate(1.6);
+    box-shadow:
+      inset 0 1.5px 1px rgba(255, 255, 255, 0.38),
+      inset 0 -1px 1px rgba(255, 255, 255, 0.12),
+      inset 2px 0 6px rgba(255, 255, 255, 0.06),
+      0 12px 32px rgba(0, 0, 0, 0.45),
+      0 1px 3px rgba(0, 0, 0, 0.35);
+  }
+  .btn.glass::after {
+    content: "";
+    position: absolute; top: -60%; left: 8%; width: 34%; height: 220%;
+    background: linear-gradient(105deg, transparent 0%, rgba(255,255,255,0.16) 50%, transparent 100%);
+    transform: rotate(18deg);
+    pointer-events: none;
+    transition: left .4s;
+  }
+  .btn.glass:hover {
+    background: linear-gradient(115deg, rgba(255,255,255,0.22) 0%, rgba(255,255,255,0.08) 45%, rgba(255,255,255,0.15) 100%);
+    border-color: rgba(255, 255, 255, 0.42);
+    transform: translateY(1px);
+  }
+  .btn.glass:hover::after { left: 55%; }
+
+  .hero { position: relative; min-height: 100vh; display: flex; align-items: center; padding: 120px 48px 60px; }
+  #stage { position: absolute; inset: 0; z-index: 1; }
+  #stage canvas { display: block; }
+  .hero-copy { position: relative; z-index: 2; max-width: 560px; pointer-events: none; }
+  .hero-copy > * { pointer-events: auto; }
+  .kicker { font-size: 12px; letter-spacing: 4px; color: var(--accent); margin-bottom: 20px; text-transform: uppercase; }
+  h1 { font-size: clamp(44px, 6.5vw, 84px); line-height: 0.95; letter-spacing: -2px; font-weight: 650; }
+  h1 em { font-style: normal; color: var(--accent); }
+  .sub { margin-top: 24px; font-size: 16px; line-height: 1.7; color: var(--muted); max-width: 420px; }
+  .cta-row { margin-top: 36px; display: flex; gap: 14px; }
+  .drag-hint {
+    position: absolute; bottom: 28px; left: 50%; transform: translateX(-50%);
+    z-index: 2; font-size: 11px; letter-spacing: 3px; color: var(--muted); text-transform: uppercase;
+    display: flex; align-items: center; gap: 10px;
+  }
+  .drag-hint::before, .drag-hint::after { content: ""; width: 40px; height: 1px; background: var(--line); }
+
+  .specs { display: grid; grid-template-columns: repeat(4, 1fr); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+  .spec { padding: 40px 24px; text-align: center; border-right: 1px solid var(--line); }
+  .spec:last-child { border-right: none; }
+  .spec .n { font-size: 40px; font-weight: 650; letter-spacing: -1px; }
+  .spec .n small { font-size: 20px; color: var(--accent); }
+  .spec .l { margin-top: 6px; font-size: 12px; letter-spacing: 2px; color: var(--muted); text-transform: uppercase; }
+
+  section { padding: 110px 48px; max-width: 1200px; margin: 0 auto; }
+  .sec-title { font-size: 12px; letter-spacing: 4px; color: var(--accent); text-transform: uppercase; margin-bottom: 16px; }
+  h2 { font-size: clamp(30px, 4vw, 48px); letter-spacing: -1px; font-weight: 650; line-height: 1.05; max-width: 640px; }
+
+  .angles { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-top: 48px; }
+  .angle { background: var(--bg-raise); border: 1px solid var(--line); overflow: hidden; position: relative; }
+  .angle img { width: 100%; display: block; aspect-ratio: 1; object-fit: cover; transition: transform .4s; }
+  .angle:hover img { transform: scale(1.06); }
+  .angle span {
+    position: absolute; bottom: 10px; left: 12px;
+    font-size: 11px; letter-spacing: 3px; color: var(--muted); text-transform: uppercase;
+  }
+
+  .feat-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 48px; }
+  .feat { background: var(--bg-raise); border: 1px solid var(--line); padding: 32px 28px; }
+  .feat h3 { font-size: 17px; font-weight: 600; margin-bottom: 12px; }
+  .feat h3::before { content: "— "; color: var(--accent); }
+  .feat p { font-size: 14px; line-height: 1.7; color: var(--muted); }
+
+  .final { text-align: center; padding: 140px 48px; border-top: 1px solid var(--line); }
+  .final h2 { margin: 0 auto 18px; }
+  .final p { color: var(--muted); font-size: 15px; margin-bottom: 36px; }
+
+  footer {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 26px 48px; border-top: 1px solid var(--line);
+    font-size: 12px; color: var(--muted); letter-spacing: 1px;
+  }
+  footer .logo { font-size: 12px; letter-spacing: 4px; }
+
+  @media (max-width: 860px) {
+    nav { padding: 14px 20px; } nav .links a:not(.btn) { display: none; }
+    .hero, section, .final { padding-left: 20px; padding-right: 20px; }
+    .specs { grid-template-columns: repeat(2, 1fr); }
+    .spec:nth-child(2) { border-right: none; }
+    .spec:nth-child(-n+2) { border-bottom: 1px solid var(--line); }
+    .angles, .feat-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">HAKAI<span>.</span></div>
+  <div class="links">
+    <a href="#mouse">The mouse</a>
+    <a href="#angles">Every angle</a>
+    <a href="#teardown">Teardown</a>
+    <a class="btn" href="buy.html">Buy — $25</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div id="stage"></div>
+  <div class="hero-copy">
+    <p class="kicker">Hakai Wrath — 破壊</p>
+    <h1>Your aim was never the problem. <em>Your mouse was.</em></h1>
+    <p class="sub">49 grams. Rock-solid 1,000 Hz polling. Optical switches rated for 100 million clicks. Nothing you don't need — nothing left to blame.</p>
+    <div class="cta-row">
+      <a class="btn glass" href="buy.html">Preorder — $25</a>
+      <a class="btn ghost" href="#teardown">See the teardown</a>
+    </div>
+  </div>
+  <p class="drag-hint">Hakai Wrath — see it in 3D on the product page</p>
+</header>
+
+<div class="specs" id="mouse">
+  <div class="spec"><p class="n">49<small> g</small></p><p class="l">Weight</p></div>
+  <div class="spec"><p class="n">1<small> kHz</small></p><p class="l">Polling</p></div>
+  <div class="spec"><p class="n">0.7<small> ms</small></p><p class="l">Click latency</p></div>
+  <div class="spec"><p class="n">100<small> h</small></p><p class="l">Battery</p></div>
+</div>
+
+<section id="angles">
+  <p class="sec-title">Every angle</p>
+  <h2>Shaped by ten thousand hours of holding it wrong.</h2>
+  <div class="angles">
+    <div class="angle"><img src="assets/top.png" alt="Top view of the HAKAI mouse"><span>Top</span></div>
+    <div class="angle"><img src="assets/left.png" alt="Left side view of the HAKAI mouse"><span>Left</span></div>
+    <div class="angle"><img src="assets/front.png" alt="Front view of the HAKAI mouse"><span>Front</span></div>
+    <div class="angle"><img src="assets/back.png" alt="Back view of the HAKAI mouse"><span>Back</span></div>
+  </div>
+</section>
+
+<section id="teardown">
+  <p class="sec-title">Teardown</p>
+  <h2>Designed in the open. Every trace, every gram, documented.</h2>
+  <div class="feat-grid">
+    <div class="feat">
+      <h3>Sensor</h3>
+      <p>Flagship optical sensor on a custom four-layer board, rev 5.3. Datasheet-exact cutouts, custom IR-LED footprint, zero smoothing.</p>
+    </div>
+    <div class="feat">
+      <h3>Power</h3>
+      <p>High-side battery monitoring and aggressive sleep states. A hundred hours at 1 kHz, without a brick of a battery inside.</p>
+    </div>
+    <div class="feat">
+      <h3>Shell</h3>
+      <p>Solid shell, no cheese-grater holes. Flat bottom, dampened switch mounts, and a scroll wheel that will outlive the game you bought it for.</p>
+    </div>
+  </div>
+</section>
+
+<div class="final" id="buy">
+  <h2>Break everything between you and the shot.</h2>
+  <p>First batch of 500. Ships worldwide. Two-year warranty, no questions.</p>
+  <a class="btn glass" href="buy.html">Preorder now — $25</a>
+</div>
+
+<footer>
+  <div class="logo">HAKAI<span>.</span></div>
+  <p>© 2026 HAKAI · warranty · shipping · discord</p>
+</footer>
+
+<script type="importmap">
+{ "imports": {
+    "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+    "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+} }
+</script>
+<script type="module">
+import * as THREE from 'three';
+import { OBJLoader } from 'three/addons/loaders/OBJLoader.js';
+
+const stage = document.getElementById('stage');
+const scene = new THREE.Scene();
+const camera = new THREE.PerspectiveCamera(38, stage.clientWidth / stage.clientHeight, 0.1, 100);
+camera.position.set(0, 4.1, 1.15);
+
+const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+renderer.setSize(stage.clientWidth, stage.clientHeight);
+renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+renderer.toneMapping = THREE.ACESFilmicToneMapping;
+renderer.toneMappingExposure = 1.35;
+stage.appendChild(renderer.domElement);
+
+scene.add(new THREE.HemisphereLight(0xf0f0ec, 0x131311, 0.9));
+const key = new THREE.DirectionalLight(0xffffff, 2.4);
+key.position.set(3, 4, 2);
+scene.add(key);
+const rim = new THREE.DirectionalLight(0xF0997B, 1.6);
+rim.position.set(-4, 2, -3);
+scene.add(rim);
+const fill = new THREE.DirectionalLight(0x8899bb, 0.8);
+fill.position.set(-2, -1, 3);
+scene.add(fill);
+
+camera.lookAt(0, 0, 0);
+
+const rest = { rz: 0, px: 0, py: 0 };
+let target = { ...rest };
+let hovering = false;
+
+stage.addEventListener('pointermove', (e) => {
+  const r = stage.getBoundingClientRect();
+  const nx = ((e.clientX - r.left) / r.width) * 2 - 1;
+  hovering = true;
+  target = {
+    rz: -nx * 0.65,
+    px: nx * 0.22,
+    py: -0.06,
+  };
+});
+stage.addEventListener('pointerleave', () => {
+  hovering = false;
+  target = { ...rest };
+});
+
+const texLoader = new THREE.TextureLoader();
+const diffuse = texLoader.load('assets/diffuse.png',
+  (t) => console.log('diffuse loaded', t.image.width, t.image.height),
+  undefined,
+  (e) => console.error('diffuse FAILED', e));
+diffuse.colorSpace = THREE.SRGBColorSpace;
+const roughness = texLoader.load('assets/roughness.png');
+const metalness = texLoader.load('assets/metalness.png');
+
+const material = new THREE.MeshStandardMaterial({
+  map: diffuse,
+  roughnessMap: roughness,
+  metalnessMap: metalness,
+  roughness: 1.0,
+  metalness: 1.0,
+});
+
+const fillEl = document.getElementById('load-fill');
+const labelEl = document.getElementById('load-label');
+const loaderEl = document.getElementById('loader');
+
+new OBJLoader().load('assets/hakai.obj',
+  (obj) => {
+    obj.traverse((c) => { if (c.isMesh) c.material = material; });
+
+    const box = new THREE.Box3().setFromObject(obj);
+    const center = box.getCenter(new THREE.Vector3());
+    const size = box.getSize(new THREE.Vector3());
+    const maxDim = Math.max(size.x, size.y, size.z);
+    obj.position.sub(center);
+
+    const orient = new THREE.Group();
+    orient.add(obj);
+    orient.rotation.y = (size.x > size.z ? Math.PI / 2 : 0) + Math.PI;
+
+    const group = new THREE.Group();
+    group.add(orient);
+    group.scale.setScalar(2.2 / maxDim);
+    scene.add(group);
+    model = group;
+    window.__debug = { scene, material, group, orient, obj };
+
+    loaderEl.classList.add('done');
+  },
+  (xhr) => {
+    if (xhr.total) {
+      const pct = Math.round((xhr.loaded / xhr.total) * 100);
+      fillEl.style.width = pct + '%';
+      labelEl.textContent = 'LOADING MODEL — ' + pct + '%';
+    }
+  },
+  (err) => { labelEl.textContent = 'FAILED TO LOAD MODEL'; console.error(err); }
+);
+
+function onResize() {
+  camera.aspect = stage.clientWidth / stage.clientHeight;
+  camera.updateProjectionMatrix();
+  renderer.setSize(stage.clientWidth, stage.clientHeight);
+}
+window.addEventListener('resize', onResize);
+
+let model = null;
+renderer.setAnimationLoop((t) => {
+  if (model) {
+    let goal = target;
+    if (!hovering) {
+      goal = {
+        rz: rest.rz + Math.sin(t * 0.0004) * 0.05,
+        px: rest.px,
+        py: rest.py + Math.sin(t * 0.0008) * 0.02,
+      };
+    }
+    model.rotation.z += (goal.rz - model.rotation.z) * 0.06;
+    model.position.x += (goal.px - model.position.x) * 0.06;
+    model.position.y += (goal.py - model.position.y) * 0.06;
+  }
+  renderer.render(scene, camera);
+});
+</script>
+</body>
+</html>

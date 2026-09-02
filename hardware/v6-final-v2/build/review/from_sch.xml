@@ -1,0 +1,3161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>C:\Users\kavya\Documents\hakai\claud\final v2 (v6)\hakai_mouse_v6.kicad_sch</source>
+    <date>2026-08-13T14:54:30</date>
+    <tool>Eeschema 10.0.5</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>HAKAI Wireless Gaming Mouse - Rev 6.0</title>
+        <company>HAKAI Engineering</company>
+        <rev>6.0</rev>
+        <date>2026-07-09</date>
+        <source>hakai_mouse_v6.kicad_sch</source>
+        <comment number="1" value="Values verified: Nordic PS v1.7 + PCA10100 DK 2.0.0, TI SLUS810N, Torex, GCT"/>
+        <comment number="2" value="PAW3311 wiring VERIFIED against PixArt datasheet v1.0 1A009EN (15 Nov 2022)"/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="ANT1">
+      <value>PCB IFA 2.4GHz</value>
+      <footprint>RF_Antenna:Texas_SWRA117D_2.4GHz_Right</footprint>
+      <fields>
+        <field name="Footprint">RF_Antenna:Texas_SWRA117D_2.4GHz_Right</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="hakai" part="ANT_PCB_2G4" description="2.4GHz PCB/chip antenna, 50R feed"/>
+      <property name="Sheetname" value="hakai_mouse_v6"/>
+      <property name="Sheetfile" value="hakai_mouse_v6.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>74a744bc-f387-4562-883c-998724f7e567</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C1">
+      <value>1uF</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="hakai" part="C" description="Capacitor"/>
+      <property name="Sheetname" value="hakai_mouse_v6"/>
+      <property name="Sheetfile" value="hakai_mouse_v6.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>115810b7-3c1c-45e8-a864-1c6d2b8f25fb</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C2">
+      <value>10uF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="hakai" part="C" description="Capacitor"/>
+      <property name="Sheetname" value="hakai_mouse_v6"/>
+      <property name="Sheetfile" value="hakai_mouse_v6.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>cf86024a-84b3-4a53-83d1-7c514e9cc763</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C3">
+      <value>10uF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="hakai" part="C" description="Capacitor"/>
+      <property name="Sheetname" value="hakai_mouse_v6"/>
+      <property name="Sheetfile" value="hakai_mouse_v6.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>dad40f15-413c-4b9d-8105-3fc9606a098d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C4">
+      <value>1uF</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="hakai" part="C" description="Capacitor"/>
+      <property name="Sheetname" value="hakai_mouse_v6"/>
+      <property name="Sheetfile" value="hakai_mouse_v6.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>31dd998e-2e78-4c5d-84bf-782924df0f29</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C5">
+      <value>1uF</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="hakai" part="C" description="Capacitor"/>
+      <property name="Sheetname" value="hakai_mouse_v6"/>
+      <property name="Sheetfile" value="hakai_mouse_v6.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2777ce7a-a6b6-4999-9f76-3c127db0d0ac</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C6">
+      <value>10uF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="hakai" part="C" description="Capacitor"/>
+      <property name="Sheetname" value="hakai_mouse_v6"/>
+      <property name="Sheetfile" value="hakai_mouse_v6.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e1f2bcca-2a2a-4d9e-b0be-d93bd54e04b6</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C7">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="hakai" part="C" description="Capacitor"/>
+      <property name="Sheetname" value="hakai_mouse_v6"/>
+      <property name="Sheetfile" value="hakai_mouse_v6.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>cba703d3-2cd7-4282-b33e-79682515ddda</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C8">
+      <value>10uF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="hakai" part="C" description="Capacitor"/>
+      <property name="Sheetname" value="hakai_mouse_v6"/>
+      <property name="Sheetfile" value="hakai_mouse_v6.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>19c5fefd-3fc3-4f74-8dbf-6c089462d123</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C9">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="hakai" part="C" description="Capacitor"/>
+      <property name="Sheetname" value="hakai_mouse_v6"/>
+      <property name="Sheetfile" value="hakai_mouse_v6.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7f51fd0c-83aa-4497-8ec9-be12eb419323</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C10">
+      <value>100pF NP0</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="hakai" part="C" description="Capacitor"/>
+      <property name="Sheetname" value="hakai_mouse_v6"/>
+      <property name="Sheetfile" value="hakai_mouse_v6.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>fe2afcb2-791f-4d84-a79d-5685c29bf374</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C11">
+      <value>1uF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="hakai" part="C" description="Capacitor"/>
+      <property name="Sheetname" value="hakai_mouse_v6"/>
+      <property name="Sheetfile" value="hakai_mouse_v6.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0383a43b-557a-4bb8-b6d6-40b583987ba3</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C12">
+      <value>47nF</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="hakai" part="C" description="Capacitor"/>
+      <property name="Sheetname" value="hakai_mouse_v6"/>
+      <property name="Sheetfile" value="hakai_mouse_v6.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d0519330-58d2-4af4-b234-6b9dae320887</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C13">
+      <value>4.7uF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="hakai" part="C" description="Capacitor"/>
+      <property name="Sheetname" value="hakai_mouse_v6"/>
+      <property name="Sheetfile" value="hakai_mouse_v6.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>074a930f-e78b-4a46-b9a1-072b79636b48</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C14">
+      <value>1uF</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="hakai" part="C" description="Capacitor"/>
+      <property name="Sheetname" value="hakai_mouse_v6"/>
+      <property name="Sheetfile" value="hakai_mouse_v6.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ca8dfbb2-8702-441f-bf48-a0090b9da063</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C15">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="hakai" part="C" description="Capacitor"/>
+      <property name="Sheetname" value="hakai_mouse_v6"/>
+      <property name="Sheetfile" value="hakai_mouse_v6.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7083a735-64be-458a-b0d7-3e94cb0d2093</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C16">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="hakai" part="C" description="Capacitor"/>
+      <property name="Sheetname" value="hakai_mouse_v6"/>
+      <property name="Sheetfile" value="hakai_mouse_v6.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>256104e1-6c9b-48e0-959b-64b49ab9735f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C17">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="hakai" part="C" description="Capacitor"/>
+      <property name="Sheetname" value="hakai_mouse_v6"/>
+      <property name="Sheetfile" value="hakai_mouse_v6.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0f51cb6c-b2c9-4dca-8129-c3113012a90f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C18">
+      <value>12pF NP0</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="hakai" part="C" description="Capacitor"/>
+      <property name="Sheetname" value="hakai_mouse_v6"/>
+      <property name="Sheetfile" value="hakai_mouse_v6.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4a05083e-d8f2-4c64-946d-29c648e791c1</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C19">
+      <value>12pF NP0</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="hakai" part="C" description="Capacitor"/>
+      <property name="Sheetname" value="hakai_mouse_v6"/>
+      <property name="Sheetfile" value="hakai_mouse_v6.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1271e7dd-93dc-4479-aa65-4ae5778002fb</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C20">
+      <value>12pF NP0</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="hakai" part="C" description="Capacitor"/>
+      <property name="Sheetname" value="hakai_mouse_v6"/>
+      <property name="Sheetfile" value="hakai_mouse_v6.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3125f998-976e-4e2c-8698-4ca562fc41f1</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C21">
+      <value>12pF NP0</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="hakai" part="C" description="Capacitor"/>
+      <property name="Sheetname" value="hakai_mouse_v6"/>
+      <property name="Sheetfile" value="hakai_mouse_v6.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4336dfe6-7962-4882-a9bf-9c0c21c9efc0</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C22">
+      <value>1.0pF NP0</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="hakai" part="C" description="Capacitor"/>
+      <property name="Sheetname" value="hakai_mouse_v6"/>
+      <property name="Sheetfile" value="hakai_mouse_v6.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d0455a55-bd9f-47b7-a50a-40ab21fe82e5</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C23">
+      <value>1.2pF NP0</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="hakai" part="C" description="Capacitor"/>
+      <property name="Sheetname" value="hakai_mouse_v6"/>
+      <property name="Sheetfile" value="hakai_mouse_v6.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>82f07b37-a9a2-4ff2-b4cf-f5ad601bfeb4</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C24">
+      <value>1.2pF (DNP)</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="hakai" part="C" description="Capacitor"/>
+      <property name="Sheetname" value="hakai_mouse_v6"/>
+      <property name="Sheetfile" value="hakai_mouse_v6.kicad_sch"/>
+      <property name="dnp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>be4ecf1c-9a8a-4df9-ae3c-229b7110c9d3</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C25">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="hakai" part="C" description="Capacitor"/>
+      <property name="Sheetname" value="hakai_mouse_v6"/>
+      <property name="Sheetfile" value="hakai_mouse_v6.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>66998cbb-ea25-4d66-95f3-9bad4c856264</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C26">
+      <value>10uF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="hakai" part="C" description="Capacitor"/>
+      <property name="Sheetname" value="hakai_mouse_v6"/>
+      <property name="Sheetfile" value="hakai_mouse_v6.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>46d05a0e-65ee-4b33-98f2-2845c105707f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C27">
+      <value>4.7uF/10V</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="hakai" part="C" description="Capacitor"/>
+      <property name="Sheetname" value="hakai_mouse_v6"/>
+      <property name="Sheetfile" value="hakai_mouse_v6.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>af57d717-dc7a-4ee6-b55e-f93357f2856b</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C28">
+      <value>100nF (DNP)</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="hakai" part="C" description="Capacitor"/>
+      <property name="Sheetname" value="hakai_mouse_v6"/>
+      <property name="Sheetfile" value="hakai_mouse_v6.kicad_sch"/>
+      <property name="dnp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0e76351d-e2b6-4924-8318-5a4c08448642</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C29">
+      <value>100nF (DNP)</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="hakai" part="C" description="Capacitor"/>
+      <property name="Sheetname" value="hakai_mouse_v6"/>
+      <property name="Sheetfile" value="hakai_mouse_v6.kicad_sch"/>
+      <property name="dnp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c76015bb-68ef-4405-af71-68f0839884bf</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C30">
+      <value>100nF (DNP)</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="hakai" part="C" description="Capacitor"/>
+      <property name="Sheetname" value="hakai_mouse_v6"/>
+      <property name="Sheetfile" value="hakai_mouse_v6.kicad_sch"/>
+      <property name="dnp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f1ed7426-9771-47d8-95e4-e30116e57c9e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C31">
+      <value>100nF (DNP)</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="hakai" part="C" description="Capacitor"/>
+      <property name="Sheetname" value="hakai_mouse_v6"/>
+      <property name="Sheetfile" value="hakai_mouse_v6.kicad_sch"/>
+      <property name="dnp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>81cfdc64-085b-4857-85c8-39209ee941e2</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C32">
+      <value>10nF</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="hakai" part="C" description="Capacitor"/>
+      <property name="Sheetname" value="hakai_mouse_v6"/>
+      <property name="Sheetfile" value="hakai_mouse_v6.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>31cc58a2-d9a8-4ee6-8923-82b0ccb0ceaa</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C33">
+      <value>10nF</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="hakai" part="C" description="Capacitor"/>
+      <property name="Sheetname" value="hakai_mouse_v6"/>
+      <property name="Sheetfile" value="hakai_mouse_v6.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>24d530e6-f955-4a43-a977-6de3c9ea8ca3</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C34">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="hakai" part="C" description="Capacitor"/>
+      <property name="Sheetname" value="hakai_mouse_v6"/>
+      <property name="Sheetfile" value="hakai_mouse_v6.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>aafa463e-bac0-47cf-b1cf-95f6ee7c2e32</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C35">
+      <value>33uF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="hakai" part="C" description="Capacitor"/>
+      <property name="Sheetname" value="hakai_mouse_v6"/>
+      <property name="Sheetfile" value="hakai_mouse_v6.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>667dcef6-f625-4976-8c43-947a1f8bfaee</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C36">
+      <value>10uF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="hakai" part="C" description="Capacitor"/>
+      <property name="Sheetname" value="hakai_mouse_v6"/>
+      <property name="Sheetfile" value="hakai_mouse_v6.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>76ff0ae6-a802-487f-aa0f-2f6b60be1bb2</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D1">
+      <value>PESD5V0S1BA</value>
+      <footprint>Diode_SMD:D_SOD-323</footprint>
+      <fields>
+        <field name="Footprint">Diode_SMD:D_SOD-323</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="hakai" part="D_TVS" description="Bidirectional TVS"/>
+      <property name="Sheetname" value="hakai_mouse_v6"/>
+      <property name="Sheetfile" value="hakai_mouse_v6.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5f9fc8fc-b58a-4844-97d1-04ec4c1f56d1</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D2">
+      <value>IR LED (SMT / L0AJ-LSG1 set)</value>
+      <footprint>hakai_fp:IRLED_L0AJ_3311</footprint>
+      <fields>
+        <field name="Footprint">hakai_fp:IRLED_L0AJ_3311</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="hakai" part="LED" description="LED (1=A top, 2=K bottom)"/>
+      <property name="Sheetname" value="hakai_mouse_v6"/>
+      <property name="Sheetfile" value="hakai_mouse_v6.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8a7f4111-f781-49c2-af9b-bd224cbea917</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D3">
+      <value>BLUE</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">LED_SMD:LED_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="hakai" part="LED" description="LED (1=A top, 2=K bottom)"/>
+      <property name="Sheetname" value="hakai_mouse_v6"/>
+      <property name="Sheetfile" value="hakai_mouse_v6.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>aaab6c8f-2505-43e7-81a8-22d260304fdd</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="EC1">
+      <value>11mm encoder</value>
+      <footprint>hakai_fp:ENC_Mouse_11mm</footprint>
+      <fields>
+        <field name="Footprint">hakai_fp:ENC_Mouse_11mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="hakai" part="ENC_MOUSE_11MM" description="11mm mouse scroll encoder, rotation only; D-socket accepts the wheel axle"/>
+      <property name="Sheetname" value="hakai_mouse_v6"/>
+      <property name="Sheetfile" value="hakai_mouse_v6.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>cc74fda4-bee1-4e69-a9b4-2ed38a69e05d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="A"/>
+            <pin num="C"/>
+            <pin num="B"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="F1">
+      <value>PTC 1A</value>
+      <footprint>Fuse:Fuse_1206_3216Metric</footprint>
+      <fields>
+        <field name="Footprint">Fuse:Fuse_1206_3216Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="hakai" part="FUSE_PTC" description="PTC resettable fuse"/>
+      <property name="Sheetname" value="hakai_mouse_v6"/>
+      <property name="Sheetfile" value="hakai_mouse_v6.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f69b0079-2551-4374-90aa-e0bb78d0421d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="FB1">
+      <value>600R@100MHz</value>
+      <footprint>Inductor_SMD:L_1206_3216Metric</footprint>
+      <fields>
+        <field name="Footprint">Inductor_SMD:L_1206_3216Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="hakai" part="FERRITE" description="Ferrite bead"/>
+      <property name="Sheetname" value="hakai_mouse_v6"/>
+      <property name="Sheetfile" value="hakai_mouse_v6.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>bd7e4731-6456-4040-96ea-4f9f7c908ee8</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J1">
+      <value>USB4105-GF-A</value>
+      <footprint>Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12</footprint>
+      <fields>
+        <field name="Footprint">Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="hakai" part="USB4105-GF-A" description="USB-C receptacle 16-pin, charge-only use"/>
+      <property name="Sheetname" value="hakai_mouse_v6"/>
+      <property name="Sheetfile" value="hakai_mouse_v6.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e859299d-3a7e-442d-afc2-80d298c79490</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="A1"/>
+            <pin num="A4"/>
+            <pin num="A9"/>
+            <pin num="B4"/>
+            <pin num="B9"/>
+            <pin num="A5"/>
+            <pin num="B5"/>
+            <pin num="A6"/>
+            <pin num="A7"/>
+            <pin num="B6"/>
+            <pin num="B7"/>
+            <pin num="A8"/>
+            <pin num="B8"/>
+            <pin num="B1"/>
+            <pin num="A12"/>
+            <pin num="B12"/>
+            <pin num="S1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J2">
+      <value>JST S2B-PH-K</value>
+      <footprint>Connector_JST:JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal</footprint>
+      <fields>
+        <field name="Footprint">Connector_JST:JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="hakai" part="CONN_BATT_PH2" description="JST PH 2-pin battery. NO JST polarity standard - verify pack!"/>
+      <property name="Sheetname" value="hakai_mouse_v6"/>
+      <property name="Sheetfile" value="hakai_mouse_v6.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>92ed7f62-1edc-4a5a-a2fa-b1e28e1e0a9b</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J3">
+      <value>SWD 1x05</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical</footprint>
+      <fields>
+        <field name="Footprint">Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="hakai" part="CONN_SWD_05" description="SWD debug header 1x05 (1.9V logic - set probe VTref accordingly)"/>
+      <property name="Sheetname" value="hakai_mouse_v6"/>
+      <property name="Sheetfile" value="hakai_mouse_v6.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7ee6b275-eeed-4d0d-bead-fcf3de5cf211</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="L1">
+      <value>10uH</value>
+      <footprint>Inductor_SMD:L_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Inductor_SMD:L_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="hakai" part="L" description="Inductor"/>
+      <property name="Sheetname" value="hakai_mouse_v6"/>
+      <property name="Sheetfile" value="hakai_mouse_v6.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9152fc9d-9d85-4ba4-b464-3cc79cc2492a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="L2">
+      <value>15nH</value>
+      <footprint>Inductor_SMD:L_0402_1005Metric</footprint>
+      <fields>
+        <field name="Footprint">Inductor_SMD:L_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="hakai" part="L" description="Inductor"/>
+      <property name="Sheetname" value="hakai_mouse_v6"/>
+      <property name="Sheetfile" value="hakai_mouse_v6.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>78b65caf-306b-4b77-8089-8fcce126ea9b</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="L3">
+      <value>4.7nH</value>
+      <footprint>Inductor_SMD:L_0402_1005Metric</footprint>
+      <fields>
+        <field name="Footprint">Inductor_SMD:L_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="hakai" part="L" description="Inductor"/>
+      <property name="Sheetname" value="hakai_mouse_v6"/>
+      <property name="Sheetfile" value="hakai_mouse_v6.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>714675be-4fe5-4b29-b335-4098d8f06aae</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="L4">
+      <value>2.2nH</value>
+      <footprint>Inductor_SMD:L_0402_1005Metric</footprint>
+      <fields>
+        <field name="Footprint">Inductor_SMD:L_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="hakai" part="L" description="Inductor"/>
+      <property name="Sheetname" value="hakai_mouse_v6"/>
+      <property name="Sheetfile" value="hakai_mouse_v6.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ecc18fad-a273-4a1e-beda-214c1484b69c</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="Q1">
+      <value>AO3400A</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <fields>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="hakai" part="AO3400A" description="N-MOSFET SOT-23: 1=G 2=S 3=D. Low-Vth (2N7002 marginal at 1.9V gate)"/>
+      <property name="Sheetname" value="hakai_mouse_v6"/>
+      <property name="Sheetfile" value="hakai_mouse_v6.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ae639c4a-5f31-4019-b707-eeace4ced95c</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="3"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="Q2">
+      <value>AO3400A</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <fields>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="hakai" part="AO3400A" description="N-MOSFET SOT-23: 1=G 2=S 3=D. Low-Vth (2N7002 marginal at 1.9V gate)"/>
+      <property name="Sheetname" value="hakai_mouse_v6"/>
+      <property name="Sheetfile" value="hakai_mouse_v6.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e5b0d304-ba8f-4590-95d9-0e4842be5bd9</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="3"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="Q3">
+      <value>AO3401A</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <fields>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="hakai" part="AO3401A" description="P-MOSFET SOT-23: 1=G 2=S 3=D. High-side battery-divider switch"/>
+      <property name="Sheetname" value="hakai_mouse_v6"/>
+      <property name="Sheetfile" value="hakai_mouse_v6.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>aface1c3-2f85-4e05-8217-9be0b4a6f107</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="3"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R1">
+      <value>5.1k</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="hakai" part="R" description="Resistor"/>
+      <property name="Sheetname" value="hakai_mouse_v6"/>
+      <property name="Sheetfile" value="hakai_mouse_v6.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b93720ad-a302-4b5e-946a-7c8a7aaa95bd</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R2">
+      <value>5.1k</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="hakai" part="R" description="Resistor"/>
+      <property name="Sheetname" value="hakai_mouse_v6"/>
+      <property name="Sheetfile" value="hakai_mouse_v6.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2fe83074-1828-45ad-958e-57638054f688</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R3">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="hakai" part="R" description="Resistor"/>
+      <property name="Sheetname" value="hakai_mouse_v6"/>
+      <property name="Sheetfile" value="hakai_mouse_v6.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>17953bad-da62-423e-8e65-521dd94b2b42</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R4">
+      <value>3.24k</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="hakai" part="R" description="Resistor"/>
+      <property name="Sheetname" value="hakai_mouse_v6"/>
+      <property name="Sheetfile" value="hakai_mouse_v6.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7a11148d-5c77-4fc4-8914-4f1ed9dfd34f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R5">
+      <value>2.0k</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="hakai" part="R" description="Resistor"/>
+      <property name="Sheetname" value="hakai_mouse_v6"/>
+      <property name="Sheetfile" value="hakai_mouse_v6.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5e899ed7-a88c-4e14-89e5-b9bbe51a4dcb</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R6">
+      <value>100k</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="hakai" part="R" description="Resistor"/>
+      <property name="Sheetname" value="hakai_mouse_v6"/>
+      <property name="Sheetfile" value="hakai_mouse_v6.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d998d227-d71b-40f0-a83e-5ce97cd138d2</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R7">
+      <value>100k</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="hakai" part="R" description="Resistor"/>
+      <property name="Sheetname" value="hakai_mouse_v6"/>
+      <property name="Sheetfile" value="hakai_mouse_v6.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e45e0b8d-b6c2-490a-9692-9331cf19658a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R8">
+      <value>200k</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="hakai" part="R" description="Resistor"/>
+      <property name="Sheetname" value="hakai_mouse_v6"/>
+      <property name="Sheetfile" value="hakai_mouse_v6.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ed8d5693-8eda-4ca1-9f32-8681e20d08c7</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R9">
+      <value>100k</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="hakai" part="R" description="Resistor"/>
+      <property name="Sheetname" value="hakai_mouse_v6"/>
+      <property name="Sheetfile" value="hakai_mouse_v6.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>489993aa-4148-418b-9245-766c8dcaf392</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R10">
+      <value>100k</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="hakai" part="R" description="Resistor"/>
+      <property name="Sheetname" value="hakai_mouse_v6"/>
+      <property name="Sheetfile" value="hakai_mouse_v6.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4dcd4513-59af-476b-8858-ce85e47ca822</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R11">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="hakai" part="R" description="Resistor"/>
+      <property name="Sheetname" value="hakai_mouse_v6"/>
+      <property name="Sheetfile" value="hakai_mouse_v6.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>cab8d7b3-1e9a-483a-ba5e-8084d4bc30e3</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R12">
+      <value>1k</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="hakai" part="R" description="Resistor"/>
+      <property name="Sheetname" value="hakai_mouse_v6"/>
+      <property name="Sheetfile" value="hakai_mouse_v6.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7c0864cb-b9f2-4723-a9e3-3faea3f4fa45</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R13">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="hakai" part="R" description="Resistor"/>
+      <property name="Sheetname" value="hakai_mouse_v6"/>
+      <property name="Sheetfile" value="hakai_mouse_v6.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>401032b4-a3b6-4053-99e0-e24c223143dc</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R14">
+      <value>10k (DNP)</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="hakai" part="R" description="Resistor"/>
+      <property name="Sheetname" value="hakai_mouse_v6"/>
+      <property name="Sheetfile" value="hakai_mouse_v6.kicad_sch"/>
+      <property name="dnp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1c2976d1-79cc-44b8-b031-b4cb5a7df2a2</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R15">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="hakai" part="R" description="Resistor"/>
+      <property name="Sheetname" value="hakai_mouse_v6"/>
+      <property name="Sheetfile" value="hakai_mouse_v6.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>13d87cf5-e100-427a-8351-b8b1c3b53c26</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R16">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="hakai" part="R" description="Resistor"/>
+      <property name="Sheetname" value="hakai_mouse_v6"/>
+      <property name="Sheetfile" value="hakai_mouse_v6.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e8c23e4c-1231-4dcf-a55d-5bd5bde4f36c</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R17">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="hakai" part="R" description="Resistor"/>
+      <property name="Sheetname" value="hakai_mouse_v6"/>
+      <property name="Sheetfile" value="hakai_mouse_v6.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2701704a-f3de-4315-84d1-c0364dfce02d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R18">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="hakai" part="R" description="Resistor"/>
+      <property name="Sheetname" value="hakai_mouse_v6"/>
+      <property name="Sheetfile" value="hakai_mouse_v6.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0ec788be-9cdc-4c0a-a6e8-24b1cd3d105a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R19">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="hakai" part="R" description="Resistor"/>
+      <property name="Sheetname" value="hakai_mouse_v6"/>
+      <property name="Sheetfile" value="hakai_mouse_v6.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7660becb-1095-4a86-a630-3c57c3953541</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R20">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="hakai" part="R" description="Resistor"/>
+      <property name="Sheetname" value="hakai_mouse_v6"/>
+      <property name="Sheetfile" value="hakai_mouse_v6.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e987cbe8-3399-4f15-814f-174ff9ff86c7</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R21">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="hakai" part="R" description="Resistor"/>
+      <property name="Sheetname" value="hakai_mouse_v6"/>
+      <property name="Sheetfile" value="hakai_mouse_v6.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4901b93f-57e8-4b05-9971-3bd1b59e7047</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R22">
+      <value>18R 1%</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="hakai" part="R" description="Resistor"/>
+      <property name="Sheetname" value="hakai_mouse_v6"/>
+      <property name="Sheetfile" value="hakai_mouse_v6.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1012fd5e-6467-42df-98d6-7907b6b440a6</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R23">
+      <value>3.3k 1%</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="hakai" part="R" description="Resistor"/>
+      <property name="Sheetname" value="hakai_mouse_v6"/>
+      <property name="Sheetfile" value="hakai_mouse_v6.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ec628e86-94d4-4cd5-b714-61c8f2f39952</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R24">
+      <value>100k</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="hakai" part="R" description="Resistor"/>
+      <property name="Sheetname" value="hakai_mouse_v6"/>
+      <property name="Sheetfile" value="hakai_mouse_v6.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5035641e-5981-4579-bba9-d8f83167ce32</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R25">
+      <value>47k</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="hakai" part="R" description="Resistor"/>
+      <property name="Sheetname" value="hakai_mouse_v6"/>
+      <property name="Sheetfile" value="hakai_mouse_v6.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e4a91998-7591-42f6-a861-3e0b33365cb5</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="SW1">
+      <value>Kailh GM 8.0</value>
+      <footprint>hakai_fp:SW_Kailh_GM8_D2F</footprint>
+      <fields>
+        <field name="Footprint">hakai_fp:SW_Kailh_GM8_D2F</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="hakai" part="SW_Kailh_GM8" description="Kailh GM 8.0 mouse microswitch, SPDT"/>
+      <property name="Sheetname" value="hakai_mouse_v6"/>
+      <property name="Sheetfile" value="hakai_mouse_v6.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>47684d6e-31d5-40fe-bb53-3c7460babe34</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="SW2">
+      <value>Kailh GM 8.0</value>
+      <footprint>hakai_fp:SW_Kailh_GM8_D2F</footprint>
+      <fields>
+        <field name="Footprint">hakai_fp:SW_Kailh_GM8_D2F</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="hakai" part="SW_Kailh_GM8" description="Kailh GM 8.0 mouse microswitch, SPDT"/>
+      <property name="Sheetname" value="hakai_mouse_v6"/>
+      <property name="Sheetfile" value="hakai_mouse_v6.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>11554ca3-ac57-4905-8204-da6513e545d8</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="SW3">
+      <value>Kailh GM 8.0</value>
+      <footprint>hakai_fp:SW_Kailh_GM8_D2F</footprint>
+      <fields>
+        <field name="Footprint">hakai_fp:SW_Kailh_GM8_D2F</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="hakai" part="SW_Kailh_GM8" description="Kailh GM 8.0 mouse microswitch, SPDT"/>
+      <property name="Sheetname" value="hakai_mouse_v6"/>
+      <property name="Sheetfile" value="hakai_mouse_v6.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>85d9cb9b-bc47-4324-81e9-18c61c81dc22</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="SW4">
+      <value>Kailh GM 8.0</value>
+      <footprint>hakai_fp:SW_Kailh_GM8_D2F</footprint>
+      <fields>
+        <field name="Footprint">hakai_fp:SW_Kailh_GM8_D2F</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="hakai" part="SW_Kailh_GM8" description="Kailh GM 8.0 mouse microswitch, SPDT"/>
+      <property name="Sheetname" value="hakai_mouse_v6"/>
+      <property name="Sheetfile" value="hakai_mouse_v6.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4dfdee1d-92bf-4396-974e-91e2717231a1</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="SW5">
+      <value>Kailh GM 8.0</value>
+      <footprint>hakai_fp:SW_Kailh_GM8_D2F</footprint>
+      <fields>
+        <field name="Footprint">hakai_fp:SW_Kailh_GM8_D2F</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="hakai" part="SW_Kailh_GM8" description="Kailh GM 8.0 mouse microswitch, SPDT"/>
+      <property name="Sheetname" value="hakai_mouse_v6"/>
+      <property name="Sheetfile" value="hakai_mouse_v6.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>da737f90-3ea2-4fd3-8c92-7631f9c19fdb</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP1">
+      <value>TP1</value>
+      <footprint>TestPoint:TestPoint_Pad_1.0x1.0mm</footprint>
+      <fields>
+        <field name="Footprint">TestPoint:TestPoint_Pad_1.0x1.0mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="hakai" part="TP" description="Test point"/>
+      <property name="Sheetname" value="hakai_mouse_v6"/>
+      <property name="Sheetfile" value="hakai_mouse_v6.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>100e6a53-f556-4a69-bac8-a4c234ca9fe2</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP2">
+      <value>TP2</value>
+      <footprint>TestPoint:TestPoint_Pad_1.0x1.0mm</footprint>
+      <fields>
+        <field name="Footprint">TestPoint:TestPoint_Pad_1.0x1.0mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="hakai" part="TP" description="Test point"/>
+      <property name="Sheetname" value="hakai_mouse_v6"/>
+      <property name="Sheetfile" value="hakai_mouse_v6.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c1ee1657-fab9-47b6-8505-5855ee2f673e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP3">
+      <value>TP3</value>
+      <footprint>TestPoint:TestPoint_Pad_1.0x1.0mm</footprint>
+      <fields>
+        <field name="Footprint">TestPoint:TestPoint_Pad_1.0x1.0mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="hakai" part="TP" description="Test point"/>
+      <property name="Sheetname" value="hakai_mouse_v6"/>
+      <property name="Sheetfile" value="hakai_mouse_v6.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b5c94913-1657-4e49-ae11-b6884c9a68f7</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP4">
+      <value>TP4</value>
+      <footprint>TestPoint:TestPoint_Pad_1.0x1.0mm</footprint>
+      <fields>
+        <field name="Footprint">TestPoint:TestPoint_Pad_1.0x1.0mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="hakai" part="TP" description="Test point"/>
+      <property name="Sheetname" value="hakai_mouse_v6"/>
+      <property name="Sheetfile" value="hakai_mouse_v6.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e78543e2-fb1b-4605-9d57-47f3c7efb090</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP5">
+      <value>TP5</value>
+      <footprint>TestPoint:TestPoint_Pad_1.0x1.0mm</footprint>
+      <fields>
+        <field name="Footprint">TestPoint:TestPoint_Pad_1.0x1.0mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="hakai" part="TP" description="Test point"/>
+      <property name="Sheetname" value="hakai_mouse_v6"/>
+      <property name="Sheetfile" value="hakai_mouse_v6.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>10586ace-9f82-43a3-ae64-45e9e0fb763b</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP6">
+      <value>TP6</value>
+      <footprint>TestPoint:TestPoint_Pad_1.0x1.0mm</footprint>
+      <fields>
+        <field name="Footprint">TestPoint:TestPoint_Pad_1.0x1.0mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="hakai" part="TP" description="Test point"/>
+      <property name="Sheetname" value="hakai_mouse_v6"/>
+      <property name="Sheetfile" value="hakai_mouse_v6.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b7e7ec00-7e9e-4fe5-96e1-51465b786bd7</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U2">
+      <value>BQ24074</value>
+      <footprint>Package_DFN_QFN:VQFN-16-1EP_3x3mm_P0.5mm_EP1.68x1.68mm_ThermalVias</footprint>
+      <fields>
+        <field name="Footprint">Package_DFN_QFN:VQFN-16-1EP_3x3mm_P0.5mm_EP1.68x1.68mm_ThermalVias</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="hakai" part="BQ24074" description="TI Li-ion charger + power path, VQFN-16"/>
+      <property name="Sheetname" value="hakai_mouse_v6"/>
+      <property name="Sheetfile" value="hakai_mouse_v6.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>92b9f73c-9001-4fbc-82e6-aa51431fb2fb</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="13"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="4"/>
+            <pin num="1"/>
+            <pin num="12"/>
+            <pin num="16"/>
+            <pin num="14"/>
+            <pin num="15"/>
+            <pin num="10"/>
+            <pin num="11"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="9"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="17"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U3">
+      <value>XC6219B192MR</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23-5</footprint>
+      <fields>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23-5</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="hakai" part="XC6219B192MR" description="Torex 1.9V 240mA LDO, SOT-25 (system rail: PAW3311 abs max 2.1V)"/>
+      <property name="Sheetname" value="hakai_mouse_v6"/>
+      <property name="Sheetfile" value="hakai_mouse_v6.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a76adcdc-376e-4a06-901f-53b0e74e3b94</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="3"/>
+            <pin num="2"/>
+            <pin num="5"/>
+            <pin num="4"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U4">
+      <value>nRF52833-QIAA (Bxx+)</value>
+      <footprint>Package_DFN_QFN:Nordic_AQFN-73-1EP_7x7mm_P0.5mm</footprint>
+      <fields>
+        <field name="Footprint">Package_DFN_QFN:Nordic_AQFN-73-1EP_7x7mm_P0.5mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="hakai" part="nRF52833-QIAA" description="Nordic nRF52833 BLE/2.4GHz SoC, aQFN73"/>
+      <property name="Sheetname" value="hakai_mouse_v6"/>
+      <property name="Sheetfile" value="hakai_mouse_v6.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ae49a727-aeca-480c-88c4-bf2180e23cdf</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="A22"/>
+            <pin num="B1"/>
+            <pin num="W1"/>
+            <pin num="AD14"/>
+            <pin num="AD23"/>
+            <pin num="Y2"/>
+            <pin num="C1"/>
+            <pin num="D23"/>
+            <pin num="B5"/>
+            <pin num="N24"/>
+            <pin num="E24"/>
+            <pin num="B3"/>
+            <pin num="AD2"/>
+            <pin num="AD4"/>
+            <pin num="AD6"/>
+            <pin num="AC5"/>
+            <pin num="B24"/>
+            <pin num="A23"/>
+            <pin num="D2"/>
+            <pin num="F2"/>
+            <pin num="H23"/>
+            <pin num="AC24"/>
+            <pin num="AA24"/>
+            <pin num="AC13"/>
+            <pin num="B7"/>
+            <pin num="F23"/>
+            <pin num="74"/>
+            <pin num="A18"/>
+            <pin num="B19"/>
+            <pin num="T23"/>
+            <pin num="V23"/>
+            <pin num="AB2"/>
+            <pin num="AC15"/>
+            <pin num="AC19"/>
+            <pin num="AC21"/>
+            <pin num="A12"/>
+            <pin num="B13"/>
+            <pin num="J1"/>
+            <pin num="K2"/>
+            <pin num="L1"/>
+            <pin num="M2"/>
+            <pin num="N1"/>
+            <pin num="L24"/>
+            <pin num="J24"/>
+            <pin num="T2"/>
+            <pin num="U1"/>
+            <pin num="AD8"/>
+            <pin num="AC9"/>
+            <pin num="AD10"/>
+            <pin num="AC11"/>
+            <pin num="AD12"/>
+            <pin num="A14"/>
+            <pin num="AD16"/>
+            <pin num="AC17"/>
+            <pin num="AD18"/>
+            <pin num="B17"/>
+            <pin num="AD20"/>
+            <pin num="A20"/>
+            <pin num="G1"/>
+            <pin num="H2"/>
+            <pin num="B11"/>
+            <pin num="A10"/>
+            <pin num="B9"/>
+            <pin num="A8"/>
+            <pin num="AD22"/>
+            <pin num="Y23"/>
+            <pin num="W24"/>
+            <pin num="B15"/>
+            <pin num="U24"/>
+            <pin num="A16"/>
+            <pin num="R24"/>
+            <pin num="P23"/>
+            <pin num="P2"/>
+            <pin num="R1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U5">
+      <value>PAW3311DB-T2MU</value>
+      <footprint>hakai_fp:PAW3311DB_iDIP8_L0AJ</footprint>
+      <fields>
+        <field name="Footprint">hakai_fp:PAW3311DB_iDIP8_L0AJ</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="hakai" part="PAW3311DB-T2MU" description="PixArt low-power optical gaming sensor, 8-pin DB, VDD 1.8-2.1V, 3-wire SPI (datasheet 1A009EN v1.0)"/>
+      <property name="Sheetname" value="hakai_mouse_v6"/>
+      <property name="Sheetfile" value="hakai_mouse_v6.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>fe6b36c5-052a-4f8f-8ca6-d1db2e094ed6</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="3"/>
+            <pin num="2"/>
+            <pin num="1"/>
+            <pin num="6"/>
+            <pin num="8"/>
+            <pin num="4"/>
+            <pin num="7"/>
+            <pin num="5"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="Y1">
+      <value>32MHz CL=8pF</value>
+      <footprint>Crystal:Crystal_SMD_2016-4Pin_2.0x1.6mm</footprint>
+      <fields>
+        <field name="Footprint">Crystal:Crystal_SMD_2016-4Pin_2.0x1.6mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="hakai" part="XTAL" description="Crystal"/>
+      <property name="Sheetname" value="hakai_mouse_v6"/>
+      <property name="Sheetfile" value="hakai_mouse_v6.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1186a1d7-abc4-4afd-92e0-ddee4090117c</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="Y2">
+      <value>32.768kHz CL=9pF</value>
+      <footprint>Crystal:Crystal_SMD_3215-2Pin_3.2x1.5mm</footprint>
+      <fields>
+        <field name="Footprint">Crystal:Crystal_SMD_3215-2Pin_3.2x1.5mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="hakai" part="XTAL" description="Crystal"/>
+      <property name="Sheetname" value="hakai_mouse_v6"/>
+      <property name="Sheetfile" value="hakai_mouse_v6.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>35c07946-2163-4ecd-a153-af9e1a9263b3</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="hakai" part="ANT_PCB_2G4">
+      <description>2.4GHz PCB/chip antenna, 50R feed</description>
+      <fields>
+        <field name="Reference">ANT</field>
+        <field name="Value">ANT_PCB_2G4</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">2.4GHz PCB/chip antenna, 50R feed</field>
+      </fields>
+      <pins>
+        <pin num="1" name="FEED" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="hakai" part="AO3400A">
+      <description>N-MOSFET SOT-23: 1=G 2=S 3=D. Low-Vth (2N7002 marginal at 1.9V gate)</description>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">AO3400A</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">N-MOSFET SOT-23: 1=G 2=S 3=D. Low-Vth (2N7002 marginal at 1.9V gate)</field>
+      </fields>
+      <pins>
+        <pin num="1" name="G" type="passive"/>
+        <pin num="2" name="S" type="passive"/>
+        <pin num="3" name="D" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="hakai" part="AO3401A">
+      <description>P-MOSFET SOT-23: 1=G 2=S 3=D. High-side battery-divider switch</description>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">AO3401A</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">P-MOSFET SOT-23: 1=G 2=S 3=D. High-side battery-divider switch</field>
+      </fields>
+      <pins>
+        <pin num="1" name="G" type="passive"/>
+        <pin num="2" name="S" type="passive"/>
+        <pin num="3" name="D" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="hakai" part="BQ24074">
+      <description>TI Li-ion charger + power path, VQFN-16</description>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">BQ24074</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">TI Li-ion charger + power path, VQFN-16</field>
+      </fields>
+      <pins>
+        <pin num="1" name="TS" type="passive"/>
+        <pin num="2" name="BAT" type="passive"/>
+        <pin num="3" name="BAT" type="passive"/>
+        <pin num="4" name="/CE" type="passive"/>
+        <pin num="5" name="EN2" type="passive"/>
+        <pin num="6" name="EN1" type="passive"/>
+        <pin num="7" name="/PGOOD" type="passive"/>
+        <pin num="8" name="VSS" type="passive"/>
+        <pin num="9" name="/CHG" type="passive"/>
+        <pin num="10" name="OUT" type="passive"/>
+        <pin num="11" name="OUT" type="passive"/>
+        <pin num="12" name="ILIM" type="passive"/>
+        <pin num="13" name="IN" type="passive"/>
+        <pin num="14" name="TMR" type="passive"/>
+        <pin num="15" name="ITERM" type="passive"/>
+        <pin num="16" name="ISET" type="passive"/>
+        <pin num="17" name="PAD" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="hakai" part="C">
+      <description>Capacitor</description>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Capacitor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="hakai" part="CONN_BATT_PH2">
+      <description>JST PH 2-pin battery. NO JST polarity standard - verify pack!</description>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">CONN_BATT_PH2</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">JST PH 2-pin battery. NO JST polarity standard - verify pack!</field>
+      </fields>
+      <pins>
+        <pin num="1" name="BAT+" type="passive"/>
+        <pin num="2" name="BAT-" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="hakai" part="CONN_SWD_05">
+      <description>SWD debug header 1x05 (1.9V logic - set probe VTref accordingly)</description>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">CONN_SWD_05</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">SWD debug header 1x05 (1.9V logic - set probe VTref accordingly)</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1V9" type="passive"/>
+        <pin num="2" name="SWDIO" type="passive"/>
+        <pin num="3" name="SWDCLK" type="passive"/>
+        <pin num="4" name="nRESET" type="passive"/>
+        <pin num="5" name="GND" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="hakai" part="D_TVS">
+      <description>Bidirectional TVS</description>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">D_TVS</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Bidirectional TVS</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="hakai" part="ENC_MOUSE_11MM">
+      <description>11mm mouse scroll encoder, rotation only; D-socket accepts the wheel axle</description>
+      <fields>
+        <field name="Reference">EC</field>
+        <field name="Value">ENC_MOUSE_11MM</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">11mm mouse scroll encoder, rotation only; D-socket accepts the wheel axle</field>
+      </fields>
+      <pins>
+        <pin num="A" name="A" type="passive"/>
+        <pin num="B" name="B" type="passive"/>
+        <pin num="C" name="C(COM)" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="hakai" part="FERRITE">
+      <description>Ferrite bead</description>
+      <fields>
+        <field name="Reference">FB</field>
+        <field name="Value">FERRITE</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Ferrite bead</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="hakai" part="FUSE_PTC">
+      <description>PTC resettable fuse</description>
+      <fields>
+        <field name="Reference">F</field>
+        <field name="Value">FUSE_PTC</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">PTC resettable fuse</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="hakai" part="L">
+      <description>Inductor</description>
+      <fields>
+        <field name="Reference">L</field>
+        <field name="Value">L</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Inductor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="hakai" part="LED">
+      <description>LED (1=A top, 2=K bottom)</description>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">LED</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">LED (1=A top, 2=K bottom)</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="hakai" part="PAW3311DB-T2MU">
+      <description>PixArt low-power optical gaming sensor, 8-pin DB, VDD 1.8-2.1V, 3-wire SPI (datasheet 1A009EN v1.0)</description>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">PAW3311DB-T2MU</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">PixArt low-power optical gaming sensor, 8-pin DB, VDD 1.8-2.1V, 3-wire SPI (datasheet 1A009EN v1.0)</field>
+      </fields>
+      <pins>
+        <pin num="1" name="LED" type="passive"/>
+        <pin num="2" name="VDDREG" type="passive"/>
+        <pin num="3" name="VDD" type="power_in"/>
+        <pin num="4" name="SCLK" type="passive"/>
+        <pin num="5" name="MOTION" type="passive"/>
+        <pin num="6" name="GND" type="power_in"/>
+        <pin num="7" name="SDIO" type="passive"/>
+        <pin num="8" name="NCS" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="hakai" part="R">
+      <description>Resistor</description>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="hakai" part="SW_Kailh_GM8">
+      <description>Kailh GM 8.0 mouse microswitch, SPDT</description>
+      <fields>
+        <field name="Reference">SW</field>
+        <field name="Value">SW_Kailh_GM8</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Kailh GM 8.0 mouse microswitch, SPDT</field>
+      </fields>
+      <pins>
+        <pin num="1" name="COM" type="passive"/>
+        <pin num="2" name="NO" type="passive"/>
+        <pin num="3" name="NC" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="hakai" part="TP">
+      <description>Test point</description>
+      <fields>
+        <field name="Reference">TP</field>
+        <field name="Value">TP</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Test point</field>
+      </fields>
+      <pins>
+        <pin num="1" name="TP" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="hakai" part="USB4105-GF-A">
+      <description>USB-C receptacle 16-pin, charge-only use</description>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">USB4105-GF-A</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">USB-C receptacle 16-pin, charge-only use</field>
+      </fields>
+      <pins>
+        <pin num="A1" name="GND" type="passive"/>
+        <pin num="A4" name="VBUS" type="passive"/>
+        <pin num="A5" name="CC1" type="passive"/>
+        <pin num="A6" name="D+1" type="passive"/>
+        <pin num="A7" name="D-1" type="passive"/>
+        <pin num="A8" name="SBU1" type="passive"/>
+        <pin num="A9" name="VBUS" type="passive"/>
+        <pin num="A12" name="GND" type="passive"/>
+        <pin num="B1" name="GND" type="passive"/>
+        <pin num="B4" name="VBUS" type="passive"/>
+        <pin num="B5" name="CC2" type="passive"/>
+        <pin num="B6" name="D+2" type="passive"/>
+        <pin num="B7" name="D-2" type="passive"/>
+        <pin num="B8" name="SBU2" type="passive"/>
+        <pin num="B9" name="VBUS" type="passive"/>
+        <pin num="B12" name="GND" type="passive"/>
+        <pin num="S1" name="SHIELD" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="hakai" part="XC6219B192MR">
+      <description>Torex 1.9V 240mA LDO, SOT-25 (system rail: PAW3311 abs max 2.1V)</description>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">XC6219B192MR</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Torex 1.9V 240mA LDO, SOT-25 (system rail: PAW3311 abs max 2.1V)</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VIN" type="passive"/>
+        <pin num="2" name="VSS" type="power_in"/>
+        <pin num="3" name="CE" type="passive"/>
+        <pin num="4" name="NC" type="passive"/>
+        <pin num="5" name="VOUT" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="hakai" part="XTAL">
+      <description>Crystal</description>
+      <fields>
+        <field name="Reference">Y</field>
+        <field name="Value">XTAL</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Crystal</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="hakai" part="nRF52833-QIAA">
+      <description>Nordic nRF52833 BLE/2.4GHz SoC, aQFN73</description>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">nRF52833-QIAA</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Nordic nRF52833 BLE/2.4GHz SoC, aQFN73</field>
+      </fields>
+      <pins>
+        <pin num="74" name="VSS(PAD)" type="power_in"/>
+        <pin num="A8" name="P0.31/AIN7" type="passive"/>
+        <pin num="A10" name="P0.29/AIN5" type="passive"/>
+        <pin num="A12" name="P0.02/AIN0" type="passive"/>
+        <pin num="A14" name="P0.19" type="passive"/>
+        <pin num="A16" name="P1.05" type="passive"/>
+        <pin num="A18" name="N.C." type="passive"/>
+        <pin num="A20" name="P0.25" type="passive"/>
+        <pin num="A22" name="VDD" type="power_in"/>
+        <pin num="A23" name="XC2" type="passive"/>
+        <pin num="AA24" name="SWDCLK" type="passive"/>
+        <pin num="AB2" name="N.C." type="passive"/>
+        <pin num="AC5" name="DECUSB" type="passive"/>
+        <pin num="AC9" name="P0.14" type="passive"/>
+        <pin num="AC11" name="P0.16" type="passive"/>
+        <pin num="AC13" name="P0.18/nRESET" type="passive"/>
+        <pin num="AC15" name="N.C." type="passive"/>
+        <pin num="AC17" name="P0.21" type="passive"/>
+        <pin num="AC19" name="N.C." type="passive"/>
+        <pin num="AC21" name="N.C." type="passive"/>
+        <pin num="AC24" name="SWDIO" type="passive"/>
+        <pin num="AD2" name="VBUS" type="passive"/>
+        <pin num="AD4" name="D-" type="passive"/>
+        <pin num="AD6" name="D+" type="passive"/>
+        <pin num="AD8" name="P0.13" type="passive"/>
+        <pin num="AD10" name="P0.15" type="passive"/>
+        <pin num="AD12" name="P0.17" type="passive"/>
+        <pin num="AD14" name="VDD" type="power_in"/>
+        <pin num="AD16" name="P0.20" type="passive"/>
+        <pin num="AD18" name="P0.22" type="passive"/>
+        <pin num="AD20" name="P0.24" type="passive"/>
+        <pin num="AD22" name="P1.00" type="passive"/>
+        <pin num="AD23" name="VDD" type="power_in"/>
+        <pin num="B1" name="VDD" type="power_in"/>
+        <pin num="B3" name="DCC" type="passive"/>
+        <pin num="B5" name="DEC4" type="passive"/>
+        <pin num="B7" name="VSS" type="power_in"/>
+        <pin num="B9" name="P0.30/AIN6" type="passive"/>
+        <pin num="B11" name="P0.28/AIN4" type="passive"/>
+        <pin num="B13" name="P0.03/AIN1" type="passive"/>
+        <pin num="B15" name="P1.03" type="passive"/>
+        <pin num="B17" name="P0.23" type="passive"/>
+        <pin num="B19" name="N.C." type="passive"/>
+        <pin num="B24" name="XC1" type="passive"/>
+        <pin num="C1" name="DEC1" type="passive"/>
+        <pin num="D2" name="P0.00/XL1" type="passive"/>
+        <pin num="D23" name="DEC3" type="passive"/>
+        <pin num="E24" name="DEC6" type="passive"/>
+        <pin num="F2" name="P0.01/XL2" type="passive"/>
+        <pin num="F23" name="VSS_PA" type="power_in"/>
+        <pin num="G1" name="P0.26" type="passive"/>
+        <pin num="H2" name="P0.27" type="passive"/>
+        <pin num="H23" name="ANT" type="passive"/>
+        <pin num="J1" name="P0.04/AIN2" type="passive"/>
+        <pin num="J24" name="P0.10/NFC2" type="passive"/>
+        <pin num="K2" name="P0.05/AIN3" type="passive"/>
+        <pin num="L1" name="P0.06" type="passive"/>
+        <pin num="L24" name="P0.09/NFC1" type="passive"/>
+        <pin num="M2" name="P0.07" type="passive"/>
+        <pin num="N1" name="P0.08" type="passive"/>
+        <pin num="N24" name="DEC5" type="passive"/>
+        <pin num="P2" name="P1.08" type="passive"/>
+        <pin num="P23" name="P1.07" type="passive"/>
+        <pin num="R1" name="P1.09" type="passive"/>
+        <pin num="R24" name="P1.06" type="passive"/>
+        <pin num="T2" name="P0.11" type="passive"/>
+        <pin num="T23" name="N.C." type="passive"/>
+        <pin num="U1" name="P0.12" type="passive"/>
+        <pin num="U24" name="P1.04" type="passive"/>
+        <pin num="V23" name="N.C." type="passive"/>
+        <pin num="W1" name="VDD" type="power_in"/>
+        <pin num="W24" name="P1.02" type="passive"/>
+        <pin num="Y2" name="VDDH" type="power_in"/>
+        <pin num="Y23" name="P1.01" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries/>
+  <nets>
+    <net code="1" name="1V9" class="power">
+      <node ref="C5" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C6" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="FB1" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U3" pin="5" pinfunction="VOUT_5" pintype="passive"/>
+    </net>
+    <net code="2" name="1V9_A" class="fine">
+      <node ref="C13" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C14" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C15" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C16" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C17" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C25" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C26" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C35" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C7" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C8" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="FB1" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="J3" pin="1" pinfunction="1V9_1" pintype="passive"/>
+      <node ref="R11" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R13" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R14" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R15" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R16" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R17" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R18" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R19" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R20" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R21" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R22" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R6" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R7" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U4" pin="A22" pinfunction="VDD_A22" pintype="power_in"/>
+      <node ref="U4" pin="AD14" pinfunction="VDD_AD14" pintype="power_in"/>
+      <node ref="U4" pin="AD23" pinfunction="VDD_AD23" pintype="power_in"/>
+      <node ref="U4" pin="B1" pinfunction="VDD_B1" pintype="power_in"/>
+      <node ref="U4" pin="W1" pinfunction="VDD_W1" pintype="power_in"/>
+      <node ref="U4" pin="Y2" pinfunction="VDDH_Y2" pintype="power_in"/>
+      <node ref="U5" pin="3" pinfunction="VDD_3" pintype="power_in"/>
+    </net>
+    <net code="3" name="ANT" class="fine">
+      <node ref="C22" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="L3" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U4" pin="H23" pinfunction="ANT_H23" pintype="passive"/>
+    </net>
+    <net code="4" name="BTN_LEFT" class="Default">
+      <node ref="C28" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R15" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="SW1" pin="2" pinfunction="NO_2" pintype="passive"/>
+      <node ref="U4" pin="J1" pinfunction="P0.04/AIN2_J1" pintype="passive"/>
+    </net>
+    <net code="5" name="BTN_RIGHT" class="fine">
+      <node ref="C29" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R16" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="SW2" pin="2" pinfunction="NO_2" pintype="passive"/>
+      <node ref="U4" pin="W24" pinfunction="P1.02_W24" pintype="passive"/>
+    </net>
+    <net code="6" name="BTN_SIDE_BACK" class="Default">
+      <node ref="C30" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R17" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="SW3" pin="2" pinfunction="NO_2" pintype="passive"/>
+      <node ref="U4" pin="U24" pinfunction="P1.04_U24" pintype="passive"/>
+    </net>
+    <net code="7" name="BTN_SIDE_FWD" class="fine">
+      <node ref="C31" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R18" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="SW4" pin="2" pinfunction="NO_2" pintype="passive"/>
+      <node ref="U4" pin="M2" pinfunction="P0.07_M2" pintype="passive"/>
+    </net>
+    <net code="8" name="CC1" class="Default">
+      <node ref="J1" pin="A5" pinfunction="CC1_A5" pintype="passive"/>
+      <node ref="R1" pin="1" pinfunction="1_1" pintype="passive"/>
+    </net>
+    <net code="9" name="CC2" class="Default">
+      <node ref="J1" pin="B5" pinfunction="CC2_B5" pintype="passive"/>
+      <node ref="R2" pin="1" pinfunction="1_1" pintype="passive"/>
+    </net>
+    <net code="10" name="DCC" class="fine">
+      <node ref="L1" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U4" pin="B3" pinfunction="DCC_B3" pintype="passive"/>
+    </net>
+    <net code="11" name="DCC_L" class="Default">
+      <node ref="L1" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="L2" pin="1" pinfunction="1_1" pintype="passive"/>
+    </net>
+    <net code="12" name="DEC1" class="Default">
+      <node ref="C9" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U4" pin="C1" pinfunction="DEC1_C1" pintype="passive"/>
+    </net>
+    <net code="13" name="DEC3" class="fine">
+      <node ref="C10" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U4" pin="D23" pinfunction="DEC3_D23" pintype="passive"/>
+    </net>
+    <net code="14" name="DEC4_6" class="fine">
+      <node ref="C11" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C12" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="L2" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U4" pin="B5" pinfunction="DEC4_B5" pintype="passive"/>
+      <node ref="U4" pin="E24" pinfunction="DEC6_E24" pintype="passive"/>
+    </net>
+    <net code="15" name="ENC_A" class="Default">
+      <node ref="C32" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="EC1" pin="A" pinfunction="A_A" pintype="passive"/>
+      <node ref="R19" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U4" pin="N1" pinfunction="P0.08_N1" pintype="passive"/>
+    </net>
+    <net code="16" name="ENC_B" class="fine">
+      <node ref="C33" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="EC1" pin="B" pinfunction="B_B" pintype="passive"/>
+      <node ref="R20" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U4" pin="T2" pinfunction="P0.11_T2" pintype="passive"/>
+    </net>
+    <net code="17" name="ENC_SW" class="Default">
+      <node ref="R21" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="SW5" pin="2" pinfunction="NO_2" pintype="passive"/>
+      <node ref="U4" pin="U1" pinfunction="P0.12_U1" pintype="passive"/>
+    </net>
+    <net code="18" name="GND" class="Default">
+      <node ref="C1" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C10" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C11" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C12" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C13" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C14" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C15" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C16" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C17" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C18" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C19" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C2" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C20" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C21" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C22" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C23" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C24" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C25" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C26" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C27" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C28" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C29" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C3" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C30" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C31" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C32" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C33" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C34" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C35" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C36" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C4" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C5" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C6" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C7" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C8" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C9" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="D1" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="EC1" pin="C" pinfunction="C(COM)_C" pintype="passive"/>
+      <node ref="J1" pin="A1" pinfunction="GND_A1" pintype="passive"/>
+      <node ref="J1" pin="A12" pinfunction="GND_A12" pintype="passive"/>
+      <node ref="J1" pin="B1" pinfunction="GND_B1" pintype="passive"/>
+      <node ref="J1" pin="B12" pinfunction="GND_B12" pintype="passive"/>
+      <node ref="J1" pin="S1" pinfunction="SHIELD_S1" pintype="passive"/>
+      <node ref="J2" pin="2" pinfunction="BAT-_2" pintype="passive"/>
+      <node ref="J3" pin="5" pinfunction="GND_5" pintype="passive"/>
+      <node ref="Q1" pin="2" pinfunction="S_2" pintype="passive"/>
+      <node ref="Q2" pin="2" pinfunction="S_2" pintype="passive"/>
+      <node ref="R1" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R10" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R2" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R24" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R3" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R4" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R5" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R9" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="SW1" pin="1" pinfunction="COM_1" pintype="passive"/>
+      <node ref="SW2" pin="1" pinfunction="COM_1" pintype="passive"/>
+      <node ref="SW3" pin="1" pinfunction="COM_1" pintype="passive"/>
+      <node ref="SW4" pin="1" pinfunction="COM_1" pintype="passive"/>
+      <node ref="SW5" pin="1" pinfunction="COM_1" pintype="passive"/>
+      <node ref="U2" pin="17" pinfunction="PAD_17" pintype="passive"/>
+      <node ref="U2" pin="4" pinfunction="/CE_4" pintype="passive"/>
+      <node ref="U2" pin="6" pinfunction="EN1_6" pintype="passive"/>
+      <node ref="U2" pin="8" pinfunction="VSS_8" pintype="passive"/>
+      <node ref="U3" pin="2" pinfunction="VSS_2" pintype="power_in"/>
+      <node ref="U4" pin="74" pinfunction="VSS(PAD)_74" pintype="power_in"/>
+      <node ref="U4" pin="B7" pinfunction="VSS_B7" pintype="power_in"/>
+      <node ref="U4" pin="F23" pinfunction="VSS_PA_F23" pintype="power_in"/>
+      <node ref="U5" pin="6" pinfunction="GND_6" pintype="power_in"/>
+    </net>
+    <net code="19" name="ILIM" class="Default">
+      <node ref="R4" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U2" pin="12" pinfunction="ILIM_12" pintype="passive"/>
+    </net>
+    <net code="20" name="ISET" class="Default">
+      <node ref="R5" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U2" pin="16" pinfunction="ISET_16" pintype="passive"/>
+    </net>
+    <net code="21" name="LDO_IN" class="power">
+      <node ref="C4" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="F1" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U3" pin="1" pinfunction="VIN_1" pintype="passive"/>
+      <node ref="U3" pin="3" pinfunction="CE_3" pintype="passive"/>
+    </net>
+    <net code="22" name="LED_A" class="Default">
+      <node ref="D3" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R12" pin="2" pinfunction="2_2" pintype="passive"/>
+    </net>
+    <net code="23" name="LED_DRV" class="Default">
+      <node ref="D2" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R22" pin="2" pinfunction="2_2" pintype="passive"/>
+    </net>
+    <net code="24" name="LED_K" class="Default">
+      <node ref="D3" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="Q2" pin="3" pinfunction="D_3" pintype="passive"/>
+    </net>
+    <net code="25" name="LED_STAT" class="Default">
+      <node ref="Q2" pin="1" pinfunction="G_1" pintype="passive"/>
+      <node ref="R24" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U4" pin="AD8" pinfunction="P0.13_AD8" pintype="passive"/>
+    </net>
+    <net code="26" name="PGOOD" class="Default">
+      <node ref="R7" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U2" pin="7" pinfunction="/PGOOD_7" pintype="passive"/>
+      <node ref="U4" pin="AD10" pinfunction="P0.15_AD10" pintype="passive"/>
+    </net>
+    <net code="27" name="RF1" class="Default">
+      <node ref="C23" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="L3" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="L4" pin="1" pinfunction="1_1" pintype="passive"/>
+    </net>
+    <net code="28" name="RF_FEED" class="Default">
+      <node ref="ANT1" pin="1" pinfunction="FEED_1" pintype="passive"/>
+      <node ref="C24" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="L4" pin="2" pinfunction="2_2" pintype="passive"/>
+    </net>
+    <net code="29" name="SENS_LED" class="Default">
+      <node ref="D2" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U5" pin="1" pinfunction="LED_1" pintype="passive"/>
+    </net>
+    <net code="30" name="SENS_MOTION" class="Default">
+      <node ref="R14" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="TP4" pin="1" pinfunction="TP_1" pintype="passive"/>
+      <node ref="U4" pin="A14" pinfunction="P0.19_A14" pintype="passive"/>
+      <node ref="U5" pin="5" pinfunction="MOTION_5" pintype="passive"/>
+    </net>
+    <net code="31" name="SENS_NCS" class="Default">
+      <node ref="R13" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U4" pin="AD12" pinfunction="P0.17_AD12" pintype="passive"/>
+      <node ref="U5" pin="8" pinfunction="NCS_8" pintype="passive"/>
+    </net>
+    <net code="32" name="SENS_SDIO" class="Default">
+      <node ref="R23" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="TP2" pin="1" pinfunction="TP_1" pintype="passive"/>
+      <node ref="U4" pin="AD20" pinfunction="P0.24_AD20" pintype="passive"/>
+      <node ref="U5" pin="7" pinfunction="SDIO_7" pintype="passive"/>
+    </net>
+    <net code="33" name="SPI_MOSI" class="Default">
+      <node ref="R23" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="TP3" pin="1" pinfunction="TP_1" pintype="passive"/>
+      <node ref="U4" pin="AD18" pinfunction="P0.22_AD18" pintype="passive"/>
+    </net>
+    <net code="34" name="SPI_SCK" class="Default">
+      <node ref="TP1" pin="1" pinfunction="TP_1" pintype="passive"/>
+      <node ref="U4" pin="AD16" pinfunction="P0.20_AD16" pintype="passive"/>
+      <node ref="U5" pin="4" pinfunction="SCLK_4" pintype="passive"/>
+    </net>
+    <net code="35" name="STAT" class="fine">
+      <node ref="R6" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U2" pin="9" pinfunction="/CHG_9" pintype="passive"/>
+      <node ref="U4" pin="AC9" pinfunction="P0.14_AC9" pintype="passive"/>
+    </net>
+    <net code="36" name="SWDCLK" class="Default">
+      <node ref="J3" pin="3" pinfunction="SWDCLK_3" pintype="passive"/>
+      <node ref="U4" pin="AA24" pinfunction="SWDCLK_AA24" pintype="passive"/>
+    </net>
+    <net code="37" name="SWDIO" class="Default">
+      <node ref="J3" pin="2" pinfunction="SWDIO_2" pintype="passive"/>
+      <node ref="U4" pin="AC24" pinfunction="SWDIO_AC24" pintype="passive"/>
+    </net>
+    <net code="38" name="TS" class="Default">
+      <node ref="R3" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U2" pin="1" pinfunction="TS_1" pintype="passive"/>
+    </net>
+    <net code="39" name="VBAT" class="power">
+      <node ref="C36" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="J2" pin="1" pinfunction="BAT+_1" pintype="passive"/>
+      <node ref="Q3" pin="2" pinfunction="S_2" pintype="passive"/>
+      <node ref="R25" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="TP5" pin="1" pinfunction="TP_1" pintype="passive"/>
+      <node ref="U2" pin="2" pinfunction="BAT_2" pintype="passive"/>
+      <node ref="U2" pin="3" pinfunction="BAT_3" pintype="passive"/>
+    </net>
+    <net code="40" name="VBAT_EN" class="fine">
+      <node ref="Q1" pin="1" pinfunction="G_1" pintype="passive"/>
+      <node ref="R10" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U4" pin="AD22" pinfunction="P1.00_AD22" pintype="passive"/>
+    </net>
+    <net code="41" name="VBAT_SENSE" class="Default">
+      <node ref="R8" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R9" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U4" pin="A12" pinfunction="P0.02/AIN0_A12" pintype="passive"/>
+    </net>
+    <net code="42" name="VBAT_SW" class="Default">
+      <node ref="Q3" pin="3" pinfunction="D_3" pintype="passive"/>
+      <node ref="R8" pin="1" pinfunction="1_1" pintype="passive"/>
+    </net>
+    <net code="43" name="VBAT_SW_G" class="Default">
+      <node ref="Q1" pin="3" pinfunction="D_3" pintype="passive"/>
+      <node ref="Q3" pin="1" pinfunction="G_1" pintype="passive"/>
+      <node ref="R25" pin="2" pinfunction="2_2" pintype="passive"/>
+    </net>
+    <net code="44" name="VBUS" class="power">
+      <node ref="C1" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C2" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="D1" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="J1" pin="A4" pinfunction="VBUS_A4" pintype="passive"/>
+      <node ref="J1" pin="A9" pinfunction="VBUS_A9" pintype="passive"/>
+      <node ref="J1" pin="B4" pinfunction="VBUS_B4" pintype="passive"/>
+      <node ref="J1" pin="B9" pinfunction="VBUS_B9" pintype="passive"/>
+      <node ref="U2" pin="13" pinfunction="IN_13" pintype="passive"/>
+    </net>
+    <net code="45" name="VDDREG" class="Default">
+      <node ref="C27" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C34" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U5" pin="2" pinfunction="VDDREG_2" pintype="passive"/>
+    </net>
+    <net code="46" name="VSYS" class="power">
+      <node ref="C3" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="F1" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R12" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="TP6" pin="1" pinfunction="TP_1" pintype="passive"/>
+      <node ref="U2" pin="10" pinfunction="OUT_10" pintype="passive"/>
+      <node ref="U2" pin="11" pinfunction="OUT_11" pintype="passive"/>
+      <node ref="U2" pin="5" pinfunction="EN2_5" pintype="passive"/>
+    </net>
+    <net code="47" name="XC1" class="Default">
+      <node ref="C18" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U4" pin="B24" pinfunction="XC1_B24" pintype="passive"/>
+      <node ref="Y1" pin="1" pinfunction="1_1" pintype="passive"/>
+    </net>
+    <net code="48" name="XC2" class="Default">
+      <node ref="C19" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U4" pin="A23" pinfunction="XC2_A23" pintype="passive"/>
+      <node ref="Y1" pin="2" pinfunction="2_2" pintype="passive"/>
+    </net>
+    <net code="49" name="XL1" class="fine">
+      <node ref="C20" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U4" pin="D2" pinfunction="P0.00/XL1_D2" pintype="passive"/>
+      <node ref="Y2" pin="1" pinfunction="1_1" pintype="passive"/>
+    </net>
+    <net code="50" name="XL2" class="fine">
+      <node ref="C21" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U4" pin="F2" pinfunction="P0.01/XL2_F2" pintype="passive"/>
+      <node ref="Y2" pin="2" pinfunction="2_2" pintype="passive"/>
+    </net>
+    <net code="51" name="nRESET" class="fine">
+      <node ref="J3" pin="4" pinfunction="nRESET_4" pintype="passive"/>
+      <node ref="R11" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U4" pin="AC13" pinfunction="P0.18/nRESET_AC13" pintype="passive"/>
+    </net>
+    <net code="52" name="unconnected-(J1-D+1-PadA6)" class="Default">
+      <node ref="J1" pin="A6" pinfunction="D+1_A6" pintype="passive+no_connect"/>
+    </net>
+    <net code="53" name="unconnected-(J1-D+2-PadB6)" class="Default">
+      <node ref="J1" pin="B6" pinfunction="D+2_B6" pintype="passive+no_connect"/>
+    </net>
+    <net code="54" name="unconnected-(J1-D-1-PadA7)" class="Default">
+      <node ref="J1" pin="A7" pinfunction="D-1_A7" pintype="passive+no_connect"/>
+    </net>
+    <net code="55" name="unconnected-(J1-D-2-PadB7)" class="Default">
+      <node ref="J1" pin="B7" pinfunction="D-2_B7" pintype="passive+no_connect"/>
+    </net>
+    <net code="56" name="unconnected-(J1-SBU1-PadA8)" class="Default">
+      <node ref="J1" pin="A8" pinfunction="SBU1_A8" pintype="passive+no_connect"/>
+    </net>
+    <net code="57" name="unconnected-(J1-SBU2-PadB8)" class="Default">
+      <node ref="J1" pin="B8" pinfunction="SBU2_B8" pintype="passive+no_connect"/>
+    </net>
+    <net code="58" name="unconnected-(SW1-NC-Pad3)" class="Default">
+      <node ref="SW1" pin="3" pinfunction="NC_3" pintype="passive+no_connect"/>
+    </net>
+    <net code="59" name="unconnected-(SW2-NC-Pad3)" class="Default">
+      <node ref="SW2" pin="3" pinfunction="NC_3" pintype="passive+no_connect"/>
+    </net>
+    <net code="60" name="unconnected-(SW3-NC-Pad3)" class="Default">
+      <node ref="SW3" pin="3" pinfunction="NC_3" pintype="passive+no_connect"/>
+    </net>
+    <net code="61" name="unconnected-(SW4-NC-Pad3)" class="Default">
+      <node ref="SW4" pin="3" pinfunction="NC_3" pintype="passive+no_connect"/>
+    </net>
+    <net code="62" name="unconnected-(SW5-NC-Pad3)" class="Default">
+      <node ref="SW5" pin="3" pinfunction="NC_3" pintype="passive+no_connect"/>
+    </net>
+    <net code="63" name="unconnected-(U2-ITERM-Pad15)" class="Default">
+      <node ref="U2" pin="15" pinfunction="ITERM_15" pintype="passive+no_connect"/>
+    </net>
+    <net code="64" name="unconnected-(U2-TMR-Pad14)" class="Default">
+      <node ref="U2" pin="14" pinfunction="TMR_14" pintype="passive+no_connect"/>
+    </net>
+    <net code="65" name="unconnected-(U3-NC-Pad4)" class="Default">
+      <node ref="U3" pin="4" pinfunction="NC_4" pintype="passive+no_connect"/>
+    </net>
+    <net code="66" name="unconnected-(U4-D+-PadAD6)" class="Default">
+      <node ref="U4" pin="AD6" pinfunction="D+_AD6" pintype="passive+no_connect"/>
+    </net>
+    <net code="67" name="unconnected-(U4-D--PadAD4)" class="Default">
+      <node ref="U4" pin="AD4" pinfunction="D-_AD4" pintype="passive+no_connect"/>
+    </net>
+    <net code="68" name="unconnected-(U4-DEC5-PadN24)" class="Default">
+      <node ref="U4" pin="N24" pinfunction="DEC5_N24" pintype="passive+no_connect"/>
+    </net>
+    <net code="69" name="unconnected-(U4-DECUSB-PadAC5)" class="Default">
+      <node ref="U4" pin="AC5" pinfunction="DECUSB_AC5" pintype="passive+no_connect"/>
+    </net>
+    <net code="70" name="unconnected-(U4-N.C.-PadA18)" class="Default">
+      <node ref="U4" pin="A18" pinfunction="N.C._A18" pintype="passive+no_connect"/>
+    </net>
+    <net code="71" name="unconnected-(U4-N.C.-PadAB2)" class="Default">
+      <node ref="U4" pin="AB2" pinfunction="N.C._AB2" pintype="passive+no_connect"/>
+    </net>
+    <net code="72" name="unconnected-(U4-N.C.-PadAC15)" class="Default">
+      <node ref="U4" pin="AC15" pinfunction="N.C._AC15" pintype="passive+no_connect"/>
+    </net>
+    <net code="73" name="unconnected-(U4-N.C.-PadAC19)" class="Default">
+      <node ref="U4" pin="AC19" pinfunction="N.C._AC19" pintype="passive+no_connect"/>
+    </net>
+    <net code="74" name="unconnected-(U4-N.C.-PadAC21)" class="Default">
+      <node ref="U4" pin="AC21" pinfunction="N.C._AC21" pintype="passive+no_connect"/>
+    </net>
+    <net code="75" name="unconnected-(U4-N.C.-PadB19)" class="Default">
+      <node ref="U4" pin="B19" pinfunction="N.C._B19" pintype="passive+no_connect"/>
+    </net>
+    <net code="76" name="unconnected-(U4-N.C.-PadT23)" class="Default">
+      <node ref="U4" pin="T23" pinfunction="N.C._T23" pintype="passive+no_connect"/>
+    </net>
+    <net code="77" name="unconnected-(U4-N.C.-PadV23)" class="Default">
+      <node ref="U4" pin="V23" pinfunction="N.C._V23" pintype="passive+no_connect"/>
+    </net>
+    <net code="78" name="unconnected-(U4-P0.03/AIN1-PadB13)" class="Default">
+      <node ref="U4" pin="B13" pinfunction="P0.03/AIN1_B13" pintype="passive+no_connect"/>
+    </net>
+    <net code="79" name="unconnected-(U4-P0.05/AIN3-PadK2)" class="Default">
+      <node ref="U4" pin="K2" pinfunction="P0.05/AIN3_K2" pintype="passive+no_connect"/>
+    </net>
+    <net code="80" name="unconnected-(U4-P0.06-PadL1)" class="Default">
+      <node ref="U4" pin="L1" pinfunction="P0.06_L1" pintype="passive+no_connect"/>
+    </net>
+    <net code="81" name="unconnected-(U4-P0.09/NFC1-PadL24)" class="Default">
+      <node ref="U4" pin="L24" pinfunction="P0.09/NFC1_L24" pintype="passive+no_connect"/>
+    </net>
+    <net code="82" name="unconnected-(U4-P0.10/NFC2-PadJ24)" class="Default">
+      <node ref="U4" pin="J24" pinfunction="P0.10/NFC2_J24" pintype="passive+no_connect"/>
+    </net>
+    <net code="83" name="unconnected-(U4-P0.16-PadAC11)" class="Default">
+      <node ref="U4" pin="AC11" pinfunction="P0.16_AC11" pintype="passive+no_connect"/>
+    </net>
+    <net code="84" name="unconnected-(U4-P0.21-PadAC17)" class="Default">
+      <node ref="U4" pin="AC17" pinfunction="P0.21_AC17" pintype="passive+no_connect"/>
+    </net>
+    <net code="85" name="unconnected-(U4-P0.23-PadB17)" class="Default">
+      <node ref="U4" pin="B17" pinfunction="P0.23_B17" pintype="passive+no_connect"/>
+    </net>
+    <net code="86" name="unconnected-(U4-P0.25-PadA20)" class="Default">
+      <node ref="U4" pin="A20" pinfunction="P0.25_A20" pintype="passive+no_connect"/>
+    </net>
+    <net code="87" name="unconnected-(U4-P0.26-PadG1)" class="Default">
+      <node ref="U4" pin="G1" pinfunction="P0.26_G1" pintype="passive+no_connect"/>
+    </net>
+    <net code="88" name="unconnected-(U4-P0.27-PadH2)" class="Default">
+      <node ref="U4" pin="H2" pinfunction="P0.27_H2" pintype="passive+no_connect"/>
+    </net>
+    <net code="89" name="unconnected-(U4-P0.28/AIN4-PadB11)" class="Default">
+      <node ref="U4" pin="B11" pinfunction="P0.28/AIN4_B11" pintype="passive+no_connect"/>
+    </net>
+    <net code="90" name="unconnected-(U4-P0.29/AIN5-PadA10)" class="Default">
+      <node ref="U4" pin="A10" pinfunction="P0.29/AIN5_A10" pintype="passive+no_connect"/>
+    </net>
+    <net code="91" name="unconnected-(U4-P0.30/AIN6-PadB9)" class="Default">
+      <node ref="U4" pin="B9" pinfunction="P0.30/AIN6_B9" pintype="passive+no_connect"/>
+    </net>
+    <net code="92" name="unconnected-(U4-P0.31/AIN7-PadA8)" class="Default">
+      <node ref="U4" pin="A8" pinfunction="P0.31/AIN7_A8" pintype="passive+no_connect"/>
+    </net>
+    <net code="93" name="unconnected-(U4-P1.01-PadY23)" class="Default">
+      <node ref="U4" pin="Y23" pinfunction="P1.01_Y23" pintype="passive+no_connect"/>
+    </net>
+    <net code="94" name="unconnected-(U4-P1.03-PadB15)" class="Default">
+      <node ref="U4" pin="B15" pinfunction="P1.03_B15" pintype="passive+no_connect"/>
+    </net>
+    <net code="95" name="unconnected-(U4-P1.05-PadA16)" class="Default">
+      <node ref="U4" pin="A16" pinfunction="P1.05_A16" pintype="passive+no_connect"/>
+    </net>
+    <net code="96" name="unconnected-(U4-P1.06-PadR24)" class="Default">
+      <node ref="U4" pin="R24" pinfunction="P1.06_R24" pintype="passive+no_connect"/>
+    </net>
+    <net code="97" name="unconnected-(U4-P1.07-PadP23)" class="Default">
+      <node ref="U4" pin="P23" pinfunction="P1.07_P23" pintype="passive+no_connect"/>
+    </net>
+    <net code="98" name="unconnected-(U4-P1.08-PadP2)" class="Default">
+      <node ref="U4" pin="P2" pinfunction="P1.08_P2" pintype="passive+no_connect"/>
+    </net>
+    <net code="99" name="unconnected-(U4-P1.09-PadR1)" class="Default">
+      <node ref="U4" pin="R1" pinfunction="P1.09_R1" pintype="passive+no_connect"/>
+    </net>
+    <net code="100" name="unconnected-(U4-VBUS-PadAD2)" class="Default">
+      <node ref="U4" pin="AD2" pinfunction="VBUS_AD2" pintype="passive+no_connect"/>
+    </net>
+  </nets>
+</export>

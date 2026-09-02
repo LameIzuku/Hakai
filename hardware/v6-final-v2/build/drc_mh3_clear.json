@@ -1,0 +1,4299 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-08-15T19:56:14",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.5",
+    "schematic_parity": [],
+    "source": "hakai_mouse_v6.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "Items not allowed",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 1.2000 mm",
+                    "pos": {
+                        "x": 155.4,
+                        "y": 126.9
+                    },
+                    "uuid": "de078e08-1e36-4135-a8ab-85eaec184416"
+                }
+            ],
+            "severity": "error",
+            "type": "items_not_allowed"
+        },
+        {
+            "description": "Items not allowed",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 9.1540 mm",
+                    "pos": {
+                        "x": 155.4,
+                        "y": 117.746
+                    },
+                    "uuid": "ed5e81a6-64c4-455b-a552-21e1db8c608c"
+                }
+            ],
+            "severity": "error",
+            "type": "items_not_allowed"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Track [SWDIO] on B.Cu, length 3.0000 mm",
+                    "pos": {
+                        "x": 154.2,
+                        "y": 125.5
+                    },
+                    "uuid": "81ec24cd-7753-4562-8ed2-d419a32fb593"
+                },
+                {
+                    "description": "Track [GND] on B.Cu, length 7.4800 mm",
+                    "pos": {
+                        "x": 152.5,
+                        "y": 118.52
+                    },
+                    "uuid": "e4121d9e-eaa5-4154-9be0-ac8f6004ffec"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Track [VBAT_SENSE] on B.Cu, length 4.2200 mm",
+                    "pos": {
+                        "x": 155.92,
+                        "y": 126.5
+                    },
+                    "uuid": "cb0d1a9e-34ca-42de-8f53-6e48df594063"
+                },
+                {
+                    "description": "Track [XC1] on B.Cu, length 9.1540 mm",
+                    "pos": {
+                        "x": 155.4,
+                        "y": 117.746
+                    },
+                    "uuid": "ed5e81a6-64c4-455b-a552-21e1db8c608c"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Clearance violation (netclass 'Default' clearance 0.1500 mm; actual 0.0038 mm)",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 160.75,
+                        "y": 113.1
+                    },
+                    "uuid": "fbc206d4-c044-43b2-86ff-0996e7bb325a"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (netclass 'Default' clearance 0.1500 mm; actual 0.0821 mm)",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 163.9,
+                        "y": 109.9
+                    },
+                    "uuid": "fbed65e0-447a-4b52-aef0-c7aa36ddc164"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (netclass 'Default' clearance 0.1500 mm; actual 0.0213 mm)",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 160.6,
+                        "y": 113.25
+                    },
+                    "uuid": "fd3d8056-b4a2-4105-8277-7ea7c41d0386"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (netclass 'Default' clearance 0.1500 mm; actual 0.1055 mm)",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 164.1,
+                        "y": 109.7
+                    },
+                    "uuid": "f9d5945f-0afe-4daf-9565-4f27d36e47cd"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (netclass 'Default' clearance 0.1500 mm; actual 0.0739 mm)",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 160.15,
+                        "y": 113.7
+                    },
+                    "uuid": "feef28e4-71b9-4ec0-9323-cf77952ed771"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Items shorting two nets (nets XC1 and BTN_SIDE_BACK)",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 161.3,
+                        "y": 112.5
+                    },
+                    "uuid": "f80e5487-155c-48b8-9b44-472d79b0b14a"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Items shorting two nets (nets XC1 and BTN_SIDE_BACK)",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 163.1,
+                        "y": 110.7
+                    },
+                    "uuid": "f488e687-382b-4360-afe4-0ee1c905f208"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Items shorting two nets (nets XC1 and BTN_SIDE_BACK)",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 161.2,
+                        "y": 112.6
+                    },
+                    "uuid": "f77e95e3-4736-47e7-addb-2f64a8178b3d"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 161.9,
+                        "y": 111.95
+                    },
+                    "uuid": "f6ba1970-e078-414c-90e9-dc9de93dc0fa"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Clearance violation (netclass 'Default' clearance 0.1500 mm; actual 0.0097 mm)",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 160.7,
+                        "y": 113.1
+                    },
+                    "uuid": "f30b214d-4490-42ab-9890-067c5dd0fe6f"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (netclass 'Default' clearance 0.1500 mm; actual 0.1113 mm)",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 164.2,
+                        "y": 109.65
+                    },
+                    "uuid": "f232cb52-a3dc-452c-8813-2b431464e3b5"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (netclass 'Default' clearance 0.1500 mm; actual 0.0529 mm)",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 163.65,
+                        "y": 110.15
+                    },
+                    "uuid": "ef770ca7-59d7-4177-8b6e-ee5c01008297"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (netclass 'Default' clearance 0.1500 mm; actual 0.0295 mm)",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 163.5,
+                        "y": 110.35
+                    },
+                    "uuid": "ef01c84b-49a3-4e72-afbf-eb70f2edefe3"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Items shorting two nets (nets XC1 and BTN_SIDE_BACK)",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 162.4,
+                        "y": 111.4
+                    },
+                    "uuid": "eba2e737-bc40-4dde-829a-21285b80a096"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Items shorting two nets (nets XC1 and BTN_SIDE_BACK)",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 162.9,
+                        "y": 110.95
+                    },
+                    "uuid": "f0020a4d-5bb7-40f9-8953-5b2191a28374"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Items shorting two nets (nets XC1 and BTN_SIDE_BACK)",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 162.4,
+                        "y": 111.45
+                    },
+                    "uuid": "ecc86297-7ee2-48b5-8823-83af6e70dee3"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Clearance violation (netclass 'Default' clearance 0.1500 mm; actual 0.1289 mm)",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 164.35,
+                        "y": 109.5
+                    },
+                    "uuid": "ef07c671-bc79-405c-b141-d35fc30b572b"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Items shorting two nets (nets XC1 and BTN_SIDE_BACK)",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 161.75,
+                        "y": 112.05
+                    },
+                    "uuid": "ec723c3f-fca9-4f44-b088-d587b07f242b"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Items shorting two nets (nets XC1 and BTN_SIDE_BACK)",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 162.95,
+                        "y": 110.9
+                    },
+                    "uuid": "f3c1c3b9-7f81-4635-b595-8d756b728f93"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Items shorting two nets (nets XC1 and BTN_SIDE_BACK)",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 160.85,
+                        "y": 112.95
+                    },
+                    "uuid": "ea0b08fa-591b-44a5-8afc-2a0e8333eca1"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Items shorting two nets (nets XC1 and BTN_SIDE_BACK)",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 161.65,
+                        "y": 112.2
+                    },
+                    "uuid": "e7df9610-0663-4eec-8fbe-63d61482c00d"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Clearance violation (netclass 'Default' clearance 0.1500 mm; actual 0.0389 mm)",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 160.45,
+                        "y": 113.35
+                    },
+                    "uuid": "e8ba6f3d-0e53-424c-9b79-ba3278bf234a"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Items shorting two nets (nets XC1 and BTN_SIDE_BACK)",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 162.3,
+                        "y": 111.55
+                    },
+                    "uuid": "e60775b5-b137-4073-99a5-28ce384c3779"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Items shorting two nets (nets XC1 and BTN_SIDE_BACK)",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 160.8,
+                        "y": 113.05
+                    },
+                    "uuid": "e489244c-cfae-4f5f-bbe1-8c2067027ffa"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Items shorting two nets (nets XC1 and BTN_SIDE_BACK)",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 162.65,
+                        "y": 111.15
+                    },
+                    "uuid": "e353f87f-19d1-4369-bcc3-b095da1072e1"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Items shorting two nets (nets XC1 and BTN_SIDE_BACK)",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 163.1,
+                        "y": 110.75
+                    },
+                    "uuid": "e5de0a3f-7531-41eb-8bbb-7dadbde2ab58"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 162.05,
+                        "y": 111.8
+                    },
+                    "uuid": "d79feee6-0044-43d1-bfd4-59ee797b8fd4"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Items shorting two nets (nets XC1 and BTN_SIDE_BACK)",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 162.75,
+                        "y": 111.1
+                    },
+                    "uuid": "d3bb1462-f31d-40cf-91a1-201a4fff1b39"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Items shorting two nets (nets XC1 and BTN_SIDE_BACK)",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 162.6,
+                        "y": 111.2
+                    },
+                    "uuid": "d0addfa6-d8a1-4be0-946a-db349d0d5db6"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Items shorting two nets (nets XC1 and BTN_SIDE_BACK)",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 162.5,
+                        "y": 111.3
+                    },
+                    "uuid": "ce5c669e-cd40-4539-b5ad-e835858c1160"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Items shorting two nets (nets XC1 and BTN_SIDE_BACK)",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 161.0,
+                        "y": 112.85
+                    },
+                    "uuid": "d239b286-8f62-4e98-9e3e-86396ebf4270"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Items shorting two nets (nets XC1 and BTN_SIDE_BACK)",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 163.15,
+                        "y": 110.65
+                    },
+                    "uuid": "e5ac9c8e-11ff-4435-bd99-65ba9434ad0f"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Items shorting two nets (nets XC1 and BTN_SIDE_BACK)",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 163.15,
+                        "y": 110.7
+                    },
+                    "uuid": "ca23a9ec-1323-46b0-ac3d-7eadbe523105"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Clearance violation (netclass 'Default' clearance 0.1500 mm; actual 0.0996 mm)",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 164.1,
+                        "y": 109.75
+                    },
+                    "uuid": "d3c65f41-5ce4-4ff0-9ee9-bc53b3b4c30d"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (netclass 'Default' clearance 0.1500 mm; actual 0.0003 mm)",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 163.2,
+                        "y": 110.6
+                    },
+                    "uuid": "cd988785-fcab-4ca8-afc8-5116d0742f76"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Items shorting two nets (nets XC1 and BTN_SIDE_BACK)",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 162.8,
+                        "y": 111.05
+                    },
+                    "uuid": "c87ef2ad-53fe-4752-b442-9cd7d86a4218"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Clearance violation (netclass 'Default' clearance 0.1500 mm; actual 0.1230 mm)",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 164.25,
+                        "y": 109.55
+                    },
+                    "uuid": "c0b6d2d9-bf49-4fa4-9888-6b1af1748a8a"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (netclass 'Default' clearance 0.1500 mm; actual 0.0681 mm)",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 160.2,
+                        "y": 113.65
+                    },
+                    "uuid": "c690a2d9-e10a-4844-9a6e-5c3edcb5d8bc"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Items shorting two nets (nets XC1 and BTN_SIDE_BACK)",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 161.1,
+                        "y": 112.7
+                    },
+                    "uuid": "c364a9b2-bc8b-403d-a0a5-c06ce167f741"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Clearance violation (netclass 'Default' clearance 0.1500 mm; actual 0.0295 mm)",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 163.45,
+                        "y": 110.35
+                    },
+                    "uuid": "c1caa793-6aca-4b5d-8efa-1253db10516c"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (netclass 'Default' clearance 0.1500 mm; actual 0.0003 mm)",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 163.25,
+                        "y": 110.6
+                    },
+                    "uuid": "c2cd5ebf-3ad0-458b-b221-f608b4860e18"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (netclass 'Default' clearance 0.1500 mm; actual 0.0623 mm)",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 160.25,
+                        "y": 113.55
+                    },
+                    "uuid": "becd50df-400b-4247-aa42-f8f76dbbf949"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (netclass 'Default' clearance 0.1500 mm; actual 0.0120 mm)",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 163.3,
+                        "y": 110.5
+                    },
+                    "uuid": "bbf849ec-29ca-4b6f-876b-7b1aefcb295c"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Items shorting two nets (nets XC1 and BTN_SIDE_BACK)",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 161.2,
+                        "y": 112.65
+                    },
+                    "uuid": "c0c8d08f-c7c5-4b0c-aefd-7aecc98e577a"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Clearance violation (netclass 'Default' clearance 0.1500 mm; actual 0.0178 mm)",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 163.4,
+                        "y": 110.45
+                    },
+                    "uuid": "bda5b6d2-8762-4635-aa8a-58f6562d8580"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (netclass 'Default' clearance 0.1500 mm; actual 0.0353 mm)",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 163.55,
+                        "y": 110.3
+                    },
+                    "uuid": "bb75305c-10c3-471f-b7da-3243edffc887"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (netclass 'Default' clearance 0.1500 mm; actual 0.1464 mm)",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 164.45,
+                        "y": 109.35
+                    },
+                    "uuid": "b7e2ffbf-fa29-48ad-9a7e-a212f8297a2a"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (netclass 'Default' clearance 0.1500 mm; actual 0.0587 mm)",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 163.75,
+                        "y": 110.1
+                    },
+                    "uuid": "b74ccb81-ebeb-4ebf-8048-9ea65de0da2d"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (netclass 'Default' clearance 0.1500 mm; actual 0.0353 mm)",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 163.5,
+                        "y": 110.3
+                    },
+                    "uuid": "b96b14a4-ed38-4ac6-83f9-b9ca9f9c2e0f"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (netclass 'Default' clearance 0.1500 mm; actual 0.0155 mm)",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 160.65,
+                        "y": 113.15
+                    },
+                    "uuid": "c3ed4eb9-e7c1-4f08-bace-be7ed0fc78e7"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Items shorting two nets (nets XC1 and BTN_SIDE_BACK)",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 161.5,
+                        "y": 112.35
+                    },
+                    "uuid": "b57e93f1-6103-45b4-9c18-07af456dd890"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Items shorting two nets (nets XC1 and BTN_SIDE_BACK)",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 161.85,
+                        "y": 112.0
+                    },
+                    "uuid": "bd659a3e-ea62-48d6-9a6e-34595736453f"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Clearance violation (netclass 'Default' clearance 0.1500 mm; actual 0.0097 mm)",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 160.7,
+                        "y": 113.15
+                    },
+                    "uuid": "ba5b1fc4-f798-4f4e-b9f1-4ef59693e301"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (netclass 'Default' clearance 0.1500 mm; actual 0.0412 mm)",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 163.55,
+                        "y": 110.25
+                    },
+                    "uuid": "b2dbe94e-d216-49ab-823b-fb6ed2b9fe05"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (netclass 'Default' clearance 0.1500 mm; actual 0.0447 mm)",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 160.4,
+                        "y": 113.45
+                    },
+                    "uuid": "b55f2837-0cf7-41c9-a954-76b832f17485"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Items shorting two nets (nets XC1 and BTN_SIDE_BACK)",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 162.2,
+                        "y": 111.65
+                    },
+                    "uuid": "b09decdd-0830-4ef9-b5cd-770d12aa91bd"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Clearance violation (netclass 'Default' clearance 0.1500 mm; actual 0.1406 mm)",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 164.45,
+                        "y": 109.4
+                    },
+                    "uuid": "af2a0487-7011-4739-9cc1-657200282570"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Items shorting two nets (nets XC1 and BTN_SIDE_BACK)",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 162.3,
+                        "y": 111.5
+                    },
+                    "uuid": "b1ba31e3-ea0a-4a79-a2f9-4710f29f3478"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Clearance violation (netclass 'Default' clearance 0.1500 mm; actual 0.1406 mm)",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 164.4,
+                        "y": 109.4
+                    },
+                    "uuid": "a9f1644c-3dda-469f-be7e-295eb44acbd5"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Items shorting two nets (nets XC1 and BTN_SIDE_BACK)",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 162.75,
+                        "y": 111.05
+                    },
+                    "uuid": "a8a13775-d077-4872-81aa-5a71b1f641f9"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Clearance violation (netclass 'Default' clearance 0.1500 mm; actual 0.1172 mm)",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 164.25,
+                        "y": 109.6
+                    },
+                    "uuid": "a9efdd02-257b-4812-97aa-88a160a2cf6d"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (netclass 'Default' clearance 0.1500 mm; actual 0.0155 mm)",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 160.65,
+                        "y": 113.2
+                    },
+                    "uuid": "adfa835c-3739-414f-823e-a6c064581f74"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Items shorting two nets (nets XC1 and BTN_SIDE_BACK)",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 162.9,
+                        "y": 110.9
+                    },
+                    "uuid": "ae419e78-55ba-4e49-98e0-decb2b3c1d53"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Clearance violation (netclass 'Default' clearance 0.1500 mm; actual 0.0470 mm)",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 163.6,
+                        "y": 110.2
+                    },
+                    "uuid": "a8354594-469a-4679-b3aa-6ccb8de37e27"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Items shorting two nets (nets XC1 and BTN_SIDE_BACK)",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 162.45,
+                        "y": 111.35
+                    },
+                    "uuid": "a88ad508-3c71-4077-8a17-ca4ea6f1a5f5"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Items shorting two nets (nets XC1 and BTN_SIDE_BACK)",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 161.1,
+                        "y": 112.75
+                    },
+                    "uuid": "a5fec5e5-0348-46fe-b4ab-0d973bb955a1"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Items shorting two nets (nets XC1 and BTN_SIDE_BACK)",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 161.45,
+                        "y": 112.4
+                    },
+                    "uuid": "a7135aba-a4b4-435c-8783-8815f9918f74"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Clearance violation (netclass 'Default' clearance 0.1500 mm; actual 0.0763 mm)",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 163.85,
+                        "y": 109.95
+                    },
+                    "uuid": "a534abc0-3d22-458d-b2ce-ed3b6b2072fd"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 162.15,
+                        "y": 111.7
+                    },
+                    "uuid": "a3757366-05b4-47bb-abbd-270c2b62279a"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Clearance violation (netclass 'Default' clearance 0.1500 mm; actual 0.0237 mm)",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 163.45,
+                        "y": 110.4
+                    },
+                    "uuid": "9df1fceb-1146-4ccb-a82b-bcf84f18aef5"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Items shorting two nets (nets XC1 and BTN_SIDE_BACK)",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 161.05,
+                        "y": 112.8
+                    },
+                    "uuid": "a2d8db57-f65f-4168-95c8-caf2d648a5fd"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Clearance violation (netclass 'Default' clearance 0.1500 mm; actual 0.0506 mm)",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 160.35,
+                        "y": 113.5
+                    },
+                    "uuid": "9e0d5f58-9a39-43e7-911f-a21d947ffe89"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Items shorting two nets (nets XC1 and BTN_SIDE_BACK)",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 161.25,
+                        "y": 112.55
+                    },
+                    "uuid": "9d912d94-3dea-4d25-b6ab-37453d9ba0b9"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Clearance violation (netclass 'Default' clearance 0.1500 mm; actual 0.0038 mm)",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 160.75,
+                        "y": 113.05
+                    },
+                    "uuid": "a597833a-207c-42f8-9dc7-4d59b180270a"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (netclass 'Default' clearance 0.1500 mm; actual 0.1230 mm)",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 164.3,
+                        "y": 109.55
+                    },
+                    "uuid": "9e4e321b-cc6b-43c3-b4e7-222a9fd7741b"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Items shorting two nets (nets XC1 and BTN_SIDE_BACK)",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 161.35,
+                        "y": 112.45
+                    },
+                    "uuid": "9c2c90d4-2c69-459a-9717-0d04e4b84985"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Items shorting two nets (nets XC1 and BTN_SIDE_BACK)",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 162.2,
+                        "y": 111.6
+                    },
+                    "uuid": "9c5cdd4e-9664-4de0-92db-063c78062a5a"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Items shorting two nets (nets XC1 and BTN_SIDE_BACK)",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 162.6,
+                        "y": 111.25
+                    },
+                    "uuid": "987ea933-9147-4973-9a57-34fb0f9f66ca"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Items shorting two nets (nets XC1 and BTN_SIDE_BACK)",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 161.6,
+                        "y": 112.2
+                    },
+                    "uuid": "9a0a588b-9160-4b7b-a51f-88195f07eae0"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Items shorting two nets (nets XC1 and BTN_SIDE_BACK)",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 162.8,
+                        "y": 111.0
+                    },
+                    "uuid": "91f9a0c7-ea9f-4dd4-bf9b-7c553fd6d947"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Items shorting two nets (nets XC1 and BTN_SIDE_BACK)",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 162.45,
+                        "y": 111.4
+                    },
+                    "uuid": "9171c9f1-87ec-4582-82b2-0356e1a68234"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Items shorting two nets (nets XC1 and BTN_SIDE_BACK)",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 162.55,
+                        "y": 111.25
+                    },
+                    "uuid": "9d63e9cc-2c2b-45db-9287-e08d121eebd4"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Clearance violation (netclass 'Default' clearance 0.1500 mm; actual 0.0646 mm)",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 163.75,
+                        "y": 110.05
+                    },
+                    "uuid": "981991b8-f8b8-4da1-813d-92af3b30455f"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Items shorting two nets (nets XC1 and BTN_SIDE_BACK)",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 161.35,
+                        "y": 112.5
+                    },
+                    "uuid": "8bdc2f77-2eab-4ad6-af2b-cc2ee5b2087f"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Items shorting two nets (nets XC1 and BTN_SIDE_BACK)",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 161.15,
+                        "y": 112.7
+                    },
+                    "uuid": "842b24bf-a826-4bdc-8438-ba55d81886b1"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Clearance violation (netclass 'Default' clearance 0.1500 mm; actual 0.0681 mm)",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 160.2,
+                        "y": 113.6
+                    },
+                    "uuid": "87df98d4-11d2-402d-a9b3-16a791fd7e7e"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Items shorting two nets (nets XC1 and BTN_SIDE_BACK)",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 161.4,
+                        "y": 112.45
+                    },
+                    "uuid": "b143a484-8d2d-4489-8d15-fb574e3ad4d3"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 161.95,
+                        "y": 111.9
+                    },
+                    "uuid": "74e818af-299c-43a2-8331-ca39459ae8fb"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Items shorting two nets (nets XC1 and BTN_SIDE_BACK)",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 163.05,
+                        "y": 110.75
+                    },
+                    "uuid": "93b05e94-8eaf-443d-9a55-1e0b0cd7a966"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Items shorting two nets (nets XC1 and BTN_SIDE_BACK)",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 161.8,
+                        "y": 112.05
+                    },
+                    "uuid": "758700e9-dfd1-4f93-a3df-fd3d4a8b69a8"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Items shorting two nets (nets XC1 and BTN_SIDE_BACK)",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 161.85,
+                        "y": 111.95
+                    },
+                    "uuid": "9e3ba0ad-9625-4167-8237-8efcf624ec8e"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Items shorting two nets (nets XC1 and BTN_SIDE_BACK)",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 160.8,
+                        "y": 113.0
+                    },
+                    "uuid": "7bb02691-b73d-43d4-b8aa-17af825ccd9d"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Items shorting two nets (nets XC1 and BTN_SIDE_BACK)",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 160.85,
+                        "y": 113.0
+                    },
+                    "uuid": "863a81c0-afd5-420e-b156-e282882f7584"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Clearance violation (netclass 'Default' clearance 0.1500 mm; actual 0.0763 mm)",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 163.9,
+                        "y": 109.95
+                    },
+                    "uuid": "7dc66d72-cd00-475e-8f41-e6c6425dc43a"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Items shorting two nets (nets XC1 and BTN_SIDE_BACK)",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 161.55,
+                        "y": 112.3
+                    },
+                    "uuid": "821e3bd3-c878-4647-ab17-c5aa2d0f47ed"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Clearance violation (netclass 'Default' clearance 0.1500 mm; actual 0.0704 mm)",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 163.85,
+                        "y": 110.0
+                    },
+                    "uuid": "73169518-c346-4f22-b0e1-f0b3a03c4f9a"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Items shorting two nets (nets XC1 and BTN_SIDE_BACK)",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 162.55,
+                        "y": 111.3
+                    },
+                    "uuid": "74119ac8-a19a-4b15-88d6-350f3a8b1471"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Clearance violation (netclass 'Default' clearance 0.1500 mm; actual 0.0529 mm)",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 163.7,
+                        "y": 110.15
+                    },
+                    "uuid": "72caa7ea-cecf-429e-beee-985f5f5d01fd"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (netclass 'Default' clearance 0.1500 mm; actual 0.0447 mm)",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 160.4,
+                        "y": 113.4
+                    },
+                    "uuid": "6d1c6a69-f2c3-462a-8efe-506897ddfe20"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (netclass 'Default' clearance 0.1500 mm; actual 0.0120 mm)",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 163.35,
+                        "y": 110.5
+                    },
+                    "uuid": "6d4b0154-e18d-4b05-bd49-8b3bad103c84"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Items shorting two nets (nets XC1 and BTN_SIDE_BACK)",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 162.25,
+                        "y": 111.55
+                    },
+                    "uuid": "77267173-a29c-4622-9a27-124de6a65e2f"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Clearance violation (netclass 'Default' clearance 0.1500 mm; actual 0.0506 mm)",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 160.35,
+                        "y": 113.45
+                    },
+                    "uuid": "687b2058-573f-4aa3-af49-7f89e7ea2d97"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 162.0,
+                        "y": 111.85
+                    },
+                    "uuid": "71874636-77d6-442b-874e-883dce94547a"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Items shorting two nets (nets XC1 and BTN_SIDE_BACK)",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 163.0,
+                        "y": 110.8
+                    },
+                    "uuid": "67c7cbcd-f454-47d2-a816-fa9db3500dfe"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Items shorting two nets (nets XC1 and BTN_SIDE_BACK)",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 161.55,
+                        "y": 112.25
+                    },
+                    "uuid": "66e1e1e3-ffa1-4952-a517-27afe0301fc1"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Items shorting two nets (nets XC1 and BTN_SIDE_BACK)",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 162.35,
+                        "y": 111.45
+                    },
+                    "uuid": "65a02c8a-81b2-4c36-8a77-82062bd8dca8"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Items shorting two nets (nets XC1 and BTN_SIDE_BACK)",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 162.85,
+                        "y": 111.0
+                    },
+                    "uuid": "72e910d3-eddc-40fd-978c-beb83487cdc2"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 5.0500 mm",
+                    "pos": {
+                        "x": 160.1,
+                        "y": 113.7
+                    },
+                    "uuid": "6fd456f9-8e8c-4c3b-aae2-451704fc822b"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Clearance violation (netclass 'Default' clearance 0.1500 mm; actual 0.0330 mm)",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 160.5,
+                        "y": 113.35
+                    },
+                    "uuid": "62a9ee7a-02b9-4841-9d94-a766b6846eef"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (netclass 'Default' clearance 0.1500 mm; actual 0.0704 mm)",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 163.8,
+                        "y": 110.0
+                    },
+                    "uuid": "655c9b78-db9f-4c48-bfaa-9f7bb82fe7f0"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Items shorting two nets (nets XC1 and BTN_SIDE_BACK)",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 160.9,
+                        "y": 112.95
+                    },
+                    "uuid": "6149b6e6-f1ee-4915-b5eb-367a33847255"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Clearance violation (netclass 'Default' clearance 0.1500 mm; actual 0.1464 mm)",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 164.5,
+                        "y": 109.35
+                    },
+                    "uuid": "6208076c-7748-451c-ae01-2d6f07555c4e"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 162.1,
+                        "y": 111.7
+                    },
+                    "uuid": "5c60ca98-3650-4960-bb23-fee95c587e92"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Clearance violation (netclass 'Default' clearance 0.1500 mm; actual 0.1347 mm)",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 164.35,
+                        "y": 109.45
+                    },
+                    "uuid": "584ac50d-5e00-4cb2-a0c6-a2417bce8c28"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 162.1,
+                        "y": 111.75
+                    },
+                    "uuid": "5af9370a-8b77-4a55-8314-b680b60ef1dd"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Items shorting two nets (nets XC1 and BTN_SIDE_BACK)",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 162.25,
+                        "y": 111.6
+                    },
+                    "uuid": "5b5efff2-9d14-47bb-abe1-920d2e8f0f89"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Clearance violation (netclass 'Default' clearance 0.1500 mm; actual 0.1289 mm)",
+            "items": [
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 164.3,
+                        "y": 109.5
+                    },
+                    "uuid": "50e211e0-4111-418e-9a8e-2914ce5d9477"
+                },
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (netclass 'Default' clearance 0.1500 mm; actual 0.0061 mm)",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 163.3,
+                        "y": 110.55
+                    },
+                    "uuid": "5d4890b2-402b-4db9-bfab-286dcc4da811"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Items shorting two nets (nets XC1 and BTN_SIDE_BACK)",
+            "items": [
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                },
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 161.6,
+                        "y": 112.25
+                    },
+                    "uuid": "82d8b900-8369-4e5e-9374-72d9eb089ae7"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Items shorting two nets (nets BTN_SIDE_BACK and XC1)",
+            "items": [
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 162.5,
+                        "y": 111.35
+                    },
+                    "uuid": "4ac063ba-d760-45cc-8b65-d87cbbc9baf2"
+                },
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Clearance violation (netclass 'Default' clearance 0.1500 mm; actual 0.0587 mm)",
+            "items": [
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 163.7,
+                        "y": 110.1
+                    },
+                    "uuid": "4abda60c-c408-4478-bc14-94a993a8abb0"
+                },
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Items shorting two nets (nets BTN_SIDE_BACK and XC1)",
+            "items": [
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 163.05,
+                        "y": 110.8
+                    },
+                    "uuid": "47ebfa3d-6c2f-4909-ba48-dd3cdfa07689"
+                },
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Items shorting two nets (nets BTN_SIDE_BACK and XC1)",
+            "items": [
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 161.8,
+                        "y": 112.0
+                    },
+                    "uuid": "43132e8c-194d-4c9e-973d-105a94ae23e4"
+                },
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Items shorting two nets (nets BTN_SIDE_BACK and XC1)",
+            "items": [
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 162.35,
+                        "y": 111.5
+                    },
+                    "uuid": "47d0158e-0006-4578-a89d-e2a428319fe5"
+                },
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Clearance violation (netclass 'Default' clearance 0.1500 mm; actual 0.0237 mm)",
+            "items": [
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 163.4,
+                        "y": 110.4
+                    },
+                    "uuid": "41a19e16-941e-4f54-a1e0-92df625d81a0"
+                },
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Items shorting two nets (nets BTN_SIDE_BACK and XC1)",
+            "items": [
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 162.7,
+                        "y": 111.15
+                    },
+                    "uuid": "409569e0-28f2-4998-bad1-958895e32dc5"
+                },
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 162.05,
+                        "y": 111.75
+                    },
+                    "uuid": "3792e697-93d1-477e-be30-0fad4ee3c98f"
+                },
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Items shorting two nets (nets BTN_SIDE_BACK and XC1)",
+            "items": [
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 160.9,
+                        "y": 112.9
+                    },
+                    "uuid": "379c7e1a-9c2a-48d0-8bd8-75483cb903f5"
+                },
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Clearance violation (netclass 'Default' clearance 0.1500 mm; actual 0.0412 mm)",
+            "items": [
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 163.6,
+                        "y": 110.25
+                    },
+                    "uuid": "370ae048-b4d8-40ee-bc98-ad3f9318dc95"
+                },
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (netclass 'Default' clearance 0.1500 mm; actual 0.0996 mm)",
+            "items": [
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 164.05,
+                        "y": 109.75
+                    },
+                    "uuid": "38f2d0d2-b372-4215-9f01-f1ce958bb78e"
+                },
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Items shorting two nets (nets BTN_SIDE_BACK and XC1)",
+            "items": [
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 163.0,
+                        "y": 110.85
+                    },
+                    "uuid": "32810574-b487-480a-84f6-f4758c40e33a"
+                },
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Items shorting two nets (nets BTN_SIDE_BACK and XC1)",
+            "items": [
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 161.65,
+                        "y": 112.15
+                    },
+                    "uuid": "35560d1d-1d39-4333-882e-3d05767ebab2"
+                },
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Clearance violation (netclass 'Default' clearance 0.1500 mm; actual 0.0623 mm)",
+            "items": [
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 160.25,
+                        "y": 113.6
+                    },
+                    "uuid": "32e57d2b-4b93-476f-aa86-acca96a4696d"
+                },
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (netclass 'Default' clearance 0.1500 mm; actual 0.1172 mm)",
+            "items": [
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 164.2,
+                        "y": 109.6
+                    },
+                    "uuid": "32584a42-0793-435c-9e56-235bca92de65"
+                },
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (netclass 'Default' clearance 0.1500 mm; actual 0.1113 mm)",
+            "items": [
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 164.15,
+                        "y": 109.65
+                    },
+                    "uuid": "31d47ba8-78de-4061-ac7f-8541efe2687f"
+                },
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Items shorting two nets (nets BTN_SIDE_BACK and XC1)",
+            "items": [
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 163.2,
+                        "y": 110.65
+                    },
+                    "uuid": "2db7dfd6-2c54-43a7-92af-df24e7176f02"
+                },
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Clearance violation (netclass 'Default' clearance 0.1500 mm; actual 0.0272 mm)",
+            "items": [
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 160.55,
+                        "y": 113.25
+                    },
+                    "uuid": "2919fbd6-7393-4899-ae1f-3f21f12f19e5"
+                },
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (netclass 'Default' clearance 0.1500 mm; actual 0.0213 mm)",
+            "items": [
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 160.6,
+                        "y": 113.2
+                    },
+                    "uuid": "28171d81-abfe-48a1-9e77-dc9b5f2e6e07"
+                },
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Items shorting two nets (nets BTN_SIDE_BACK and XC1)",
+            "items": [
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 161.05,
+                        "y": 112.75
+                    },
+                    "uuid": "265ed327-0eac-4ad3-ab6b-f92428d5aab5"
+                },
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Clearance violation (netclass 'Default' clearance 0.1500 mm; actual 0.0739 mm)",
+            "items": [
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 160.15,
+                        "y": 113.65
+                    },
+                    "uuid": "273c42b0-08fa-4a26-a638-f8136e3741ed"
+                },
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (netclass 'Default' clearance 0.1500 mm; actual 0.0938 mm)",
+            "items": [
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 164.0,
+                        "y": 109.8
+                    },
+                    "uuid": "289ec41f-ab82-439d-b3c2-d5ffee9787cd"
+                },
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Items shorting two nets (nets BTN_SIDE_BACK and XC1)",
+            "items": [
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 162.85,
+                        "y": 110.95
+                    },
+                    "uuid": "25649c9f-37a6-4e9b-bde2-d4b5b18002ec"
+                },
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Items shorting two nets (nets BTN_SIDE_BACK and XC1)",
+            "items": [
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 161.25,
+                        "y": 112.6
+                    },
+                    "uuid": "277657ec-8895-4c5d-9a9f-102549140f26"
+                },
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Items shorting two nets (nets BTN_SIDE_BACK and XC1)",
+            "items": [
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 161.15,
+                        "y": 112.65
+                    },
+                    "uuid": "2ecd9372-51a0-496d-b35e-441b34587542"
+                },
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Items shorting two nets (nets BTN_SIDE_BACK and XC1)",
+            "items": [
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 162.7,
+                        "y": 111.1
+                    },
+                    "uuid": "490e2b86-e3b7-47ef-bc65-7057856885c0"
+                },
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Clearance violation (netclass 'Default' clearance 0.1500 mm; actual 0.0470 mm)",
+            "items": [
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 163.65,
+                        "y": 110.2
+                    },
+                    "uuid": "20a1c6c4-a336-43ff-93e3-fa9278172a4c"
+                },
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 161.9,
+                        "y": 111.9
+                    },
+                    "uuid": "1c9ab8e8-156a-4a87-892f-fe9f1a09f694"
+                },
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Clearance violation (netclass 'Default' clearance 0.1500 mm; actual 0.0564 mm)",
+            "items": [
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 160.3,
+                        "y": 113.5
+                    },
+                    "uuid": "235a0b66-4d5d-4ccc-8560-972f2033bcf1"
+                },
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (netclass 'Default' clearance 0.1500 mm; actual 0.0061 mm)",
+            "items": [
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 163.25,
+                        "y": 110.55
+                    },
+                    "uuid": "1cf04630-89b0-4fd7-aea0-fe8f597c7cef"
+                },
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (netclass 'Default' clearance 0.1500 mm; actual 0.1055 mm)",
+            "items": [
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 164.15,
+                        "y": 109.7
+                    },
+                    "uuid": "2364ee59-cbac-4da2-94c3-363f16c99576"
+                },
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Items shorting two nets (nets BTN_SIDE_BACK and XC1)",
+            "items": [
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 162.15,
+                        "y": 111.65
+                    },
+                    "uuid": "1a5820ed-543e-4285-bc7a-978ffe5d2e52"
+                },
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Clearance violation (netclass 'Default' clearance 0.1500 mm; actual 0.1347 mm)",
+            "items": [
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 164.4,
+                        "y": 109.45
+                    },
+                    "uuid": "17056db1-8da1-48e2-b41d-283ab60b416c"
+                },
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (netclass 'Default' clearance 0.1500 mm; actual 0.0880 mm)",
+            "items": [
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 163.95,
+                        "y": 109.85
+                    },
+                    "uuid": "1dfcba8b-ea01-4d72-a19d-d375fc637fe6"
+                },
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (netclass 'Default' clearance 0.1500 mm; actual 0.0821 mm)",
+            "items": [
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 163.95,
+                        "y": 109.9
+                    },
+                    "uuid": "1d8b4a5a-3351-4e05-ae9a-f4ab1fb8bcfe"
+                },
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Items shorting two nets (nets BTN_SIDE_BACK and XC1)",
+            "items": [
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 161.45,
+                        "y": 112.35
+                    },
+                    "uuid": "1600e037-7583-46c8-8ef0-1bf182db315f"
+                },
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Clearance violation (netclass 'Default' clearance 0.1500 mm; actual 0.0330 mm)",
+            "items": [
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 160.5,
+                        "y": 113.3
+                    },
+                    "uuid": "3947d5a0-3527-4ed3-8988-71de55650503"
+                },
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 161.95,
+                        "y": 111.85
+                    },
+                    "uuid": "18834773-cf28-46cc-8c77-8d2ac19dbaca"
+                },
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Clearance violation (netclass 'Default' clearance 0.1500 mm; actual 0.0880 mm)",
+            "items": [
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 164.0,
+                        "y": 109.85
+                    },
+                    "uuid": "143da6e0-1cf8-4bc9-a1b9-7238578844c3"
+                },
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (netclass 'Default' clearance 0.1500 mm; actual 0.0938 mm)",
+            "items": [
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 164.05,
+                        "y": 109.8
+                    },
+                    "uuid": "153255e5-6cfd-4e4e-8cb9-8e2fb5d8a110"
+                },
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Items shorting two nets (nets BTN_SIDE_BACK and XC1)",
+            "items": [
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 161.7,
+                        "y": 112.15
+                    },
+                    "uuid": "146b2383-0fb3-4dbd-b606-64bc7a9ff49b"
+                },
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Items shorting two nets (nets BTN_SIDE_BACK and XC1)",
+            "items": [
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 161.0,
+                        "y": 112.8
+                    },
+                    "uuid": "13fbdb3f-a731-412d-87e8-592198408689"
+                },
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 162.0,
+                        "y": 111.8
+                    },
+                    "uuid": "34022226-fd01-431f-a708-347c8a7c7c95"
+                },
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Items shorting two nets (nets BTN_SIDE_BACK and XC1)",
+            "items": [
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 161.7,
+                        "y": 112.1
+                    },
+                    "uuid": "1565cef0-877a-415c-871e-2b66ebabff63"
+                },
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Clearance violation (netclass 'Default' clearance 0.1500 mm; actual 0.0178 mm)",
+            "items": [
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 163.35,
+                        "y": 110.45
+                    },
+                    "uuid": "0dda3a89-3eaa-4b52-9402-50867c395360"
+                },
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (netclass 'Default' clearance 0.1500 mm; actual 0.0272 mm)",
+            "items": [
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 160.55,
+                        "y": 113.3
+                    },
+                    "uuid": "10fcd234-24e9-44ad-a9f0-2fc2e3ab26d4"
+                },
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Items shorting two nets (nets BTN_SIDE_BACK and XC1)",
+            "items": [
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 162.95,
+                        "y": 110.85
+                    },
+                    "uuid": "0e354b3c-3781-48e3-b515-0e877efeca3e"
+                },
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Clearance violation (netclass 'Default' clearance 0.1500 mm; actual 0.0646 mm)",
+            "items": [
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 163.8,
+                        "y": 110.05
+                    },
+                    "uuid": "0c9eb6eb-d38e-42d7-817b-99290316d543"
+                },
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Items shorting two nets (nets BTN_SIDE_BACK and XC1)",
+            "items": [
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 161.75,
+                        "y": 112.1
+                    },
+                    "uuid": "0984ee03-b258-4db2-b7d5-b83b416dff3a"
+                },
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Items shorting two nets (nets BTN_SIDE_BACK and XC1)",
+            "items": [
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 161.3,
+                        "y": 112.55
+                    },
+                    "uuid": "03b14573-18fa-4704-a3d6-bd534849106e"
+                },
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Clearance violation (netclass 'Default' clearance 0.1500 mm; actual 0.0564 mm)",
+            "items": [
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 160.3,
+                        "y": 113.55
+                    },
+                    "uuid": "05dd9fff-3301-49cb-874a-95139a7162e7"
+                },
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Items shorting two nets (nets BTN_SIDE_BACK and XC1)",
+            "items": [
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 162.65,
+                        "y": 111.2
+                    },
+                    "uuid": "040f60af-dcce-453c-86b1-7c5d9f69fb5b"
+                },
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Items shorting two nets (nets BTN_SIDE_BACK and XC1)",
+            "items": [
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 160.95,
+                        "y": 112.9
+                    },
+                    "uuid": "07bfad21-0776-4f64-8e4c-b4e7bf84bdd8"
+                },
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Clearance violation (netclass 'Default' clearance 0.1500 mm; actual 0.0389 mm)",
+            "items": [
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 160.45,
+                        "y": 113.4
+                    },
+                    "uuid": "0337ce44-b869-497b-8823-1dd2344d3229"
+                },
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Items shorting two nets (nets BTN_SIDE_BACK and XC1)",
+            "items": [
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 161.4,
+                        "y": 112.4
+                    },
+                    "uuid": "01c1cf62-fc5e-447c-8634-8558b9abd3cd"
+                },
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Items shorting two nets (nets BTN_SIDE_BACK and XC1)",
+            "items": [
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 160.95,
+                        "y": 112.85
+                    },
+                    "uuid": "00b42bea-dad6-4978-9315-f8245834781d"
+                },
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Items shorting two nets (nets BTN_SIDE_BACK and XC1)",
+            "items": [
+                {
+                    "description": "Track [BTN_SIDE_BACK] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 161.5,
+                        "y": 112.3
+                    },
+                    "uuid": "074cd301-62a2-4f2a-b44f-7a4ca9dd42dc"
+                },
+                {
+                    "description": "Track [XC1] on B.Cu, length 12.2416 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 118.2
+                    },
+                    "uuid": "518c45e1-8453-4ff3-89eb-8f4c4a3b716b"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Clearance violation (netclass 'Default' clearance 0.1500 mm; actual 0.1000 mm)",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 157.0,
+                        "y": 122.5
+                    },
+                    "uuid": "b51b3660-bc04-43e0-bc84-5271f9d7abe3"
+                },
+                {
+                    "description": "Track [XC1] on B.Cu, length 8.7000 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 126.9
+                    },
+                    "uuid": "bce31d6e-1f7b-4661-a215-2e8bc8410efd"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (netclass 'Default' clearance 0.1500 mm; actual 0.1000 mm)",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 157.0,
+                        "y": 126.0
+                    },
+                    "uuid": "105ea0db-2b60-40c6-a79c-295ae38f3205"
+                },
+                {
+                    "description": "Track [XC1] on B.Cu, length 8.7000 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 126.9
+                    },
+                    "uuid": "bce31d6e-1f7b-4661-a215-2e8bc8410efd"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Reference field of Q3",
+                    "pos": {
+                        "x": 131.0,
+                        "y": 134.4
+                    },
+                    "uuid": "4244efb6-0883-40af-ae06-2d3b36f0e1c9"
+                },
+                {
+                    "description": "Reference field of R10",
+                    "pos": {
+                        "x": 130.83,
+                        "y": 133.0
+                    },
+                    "uuid": "8b83d4f6-7b18-4bdf-b35a-0055aaeb0739"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Segment of J3 on F.Silkscreen",
+                    "pos": {
+                        "x": 105.62,
+                        "y": 134.27
+                    },
+                    "uuid": "576dc916-e2a0-4187-8e64-ee4742a652d1"
+                },
+                {
+                    "description": "Reference field of R11",
+                    "pos": {
+                        "x": 108.63,
+                        "y": 133.0
+                    },
+                    "uuid": "d5af97a1-3626-441a-8077-f3524fe262ec"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Reference field of R11",
+                    "pos": {
+                        "x": 108.63,
+                        "y": 133.0
+                    },
+                    "uuid": "d5af97a1-3626-441a-8077-f3524fe262ec"
+                },
+                {
+                    "description": "Segment of J3 on F.Silkscreen",
+                    "pos": {
+                        "x": 108.38,
+                        "y": 134.27
+                    },
+                    "uuid": "e68e7ace-8d0f-4ce8-b448-42e1be460ae3"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of Q3",
+                    "pos": {
+                        "x": 131.0,
+                        "y": 134.4
+                    },
+                    "uuid": "4244efb6-0883-40af-ae06-2d3b36f0e1c9"
+                },
+                {
+                    "description": "Pad 1 [VBAT_EN] of R10 on F.Cu",
+                    "pos": {
+                        "x": 132.0,
+                        "y": 133.51
+                    },
+                    "uuid": "e2c4ffb5-ba5a-4ba7-a135-e1e90fdfb73f"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        }
+    ]
+}
