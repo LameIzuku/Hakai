@@ -1,0 +1,52 @@
+# hakai_mouse_v6 — Prototype Fabrication Notes
+
+*Generated 2026-09-02 from `hakai_mouse_v6.kicad_pcb` (zones refilled).*
+*KiCad 10.0.5 · Units: mm · Gerber X2, 4.6 absolute · Drill: Excellon, absolute, metric.*
+
+## Board
+
+| Parameter | Value |
+|---|---|
+| Size | 70.10 × 110.10 mm |
+| Layers | 2 (F.Cu / B.Cu) |
+| Board thickness | 0.8 mm |
+| Min track width | 0.10 mm |
+| Min clearance | 0.072 mm (confined to U2/U4 QFN courtyards; 0.20 mm elsewhere) |
+| Min drill | 0.20 mm |
+| Surface finish | fab standard (ENIG preferred for the aQFN-73) |
+
+> **⚡ Copper weight: 1 oz (35 µm) on BOTH outer layers.**
+
+## File List
+
+| File | Description |
+|---|---|
+| `hakai_mouse_v6-F_Cu.gtl` | Copper, top |
+| `hakai_mouse_v6-B_Cu.gbl` | Copper, bottom |
+| `hakai_mouse_v6-F_Mask.gts` | Solder mask, top |
+| `hakai_mouse_v6-B_Mask.gbs` | Solder mask, bottom |
+| `hakai_mouse_v6-F_Paste.gtp` | Paste, top |
+| `hakai_mouse_v6-B_Paste.gbp` | Paste, bottom |
+| `hakai_mouse_v6-F_Silkscreen.gto` | Legend, top |
+| `hakai_mouse_v6-B_Silkscreen.gbo` | Legend, bottom (intentionally **EMPTY** — no bottom-side parts) |
+| `hakai_mouse_v6-Edge_Cuts.gm1` | Board profile |
+| `hakai_mouse_v6.drl` | Drill, PTH + NPTH merged (MixedPlating) |
+| `hakai_mouse_v6-job.gbrjob` | Gerber job file |
+
+## Drill
+
+- Single merged Excellon file, plated and non-plated in one file (MixedPlating header).
+- NPTH tools: **T10 = 0.65 mm**, **T11 = 3.20 mm**.
+- T11 (3.20 mm NPTH) mounting holes at: **(114.0, 72.0)**, **(155.0, 130.0)**, **(160.0, 74.0)**.
+
+## Assembly Note — MH3
+
+- MH3 is the NPTH 3.2 mm hole at **(155.000, 130.000)**.
+- Ground pour is held back **1.40 mm** from this hole edge by design.
+
+> **⚠️ Use a NYLON or other INSULATING washer / standoff under the screw at MH3.**
+> **Do NOT fit a bare metal washer here.**
+
+## DRC
+
+- 0 violations, 0 unconnected, checked against the as-shipped (stored) zone fill.

@@ -1,0 +1,42 @@
+** Drc report for hakai_mouse_v6.kicad_pcb **
+** Created on 2026-07-12T10:50:02 **
+** Report includes: Errors, Warnings **
+
+** Found 4 DRC violations **
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; warning
+    @(131.0000 mm, 134.4000 mm): Reference field of Q3
+    @(130.8300 mm, 133.0000 mm): Reference field of R10
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; warning
+    @(105.6200 mm, 134.2700 mm): Segment of J3 on F.Silkscreen
+    @(108.6300 mm, 133.0000 mm): Reference field of R11
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; warning
+    @(108.6300 mm, 133.0000 mm): Reference field of R11
+    @(108.3800 mm, 134.2700 mm): Segment of J3 on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(131.0000 mm, 134.4000 mm): Reference field of Q3
+    @(132.0000 mm, 133.5100 mm): Pad 1 [VBAT_EN] of R10 on F.Cu
+
+** Found 2 unconnected pads **
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(100.0000 mm, 40.0000 mm): Zone [GND] on F.Cu, priority 0
+    @(100.0000 mm, 40.0000 mm): Zone [GND] on F.Cu, priority 0
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(100.0000 mm, 40.0000 mm): Zone [GND] on F.Cu, priority 0
+    @(100.0000 mm, 40.0000 mm): Zone [GND] on F.Cu, priority 0
+
+** Found 0 Footprint errors **
+
+** Ignored checks **
+    - Footprint has no courtyard defined
+    - Track endpoint not centered on via
+    - Tuning profile track geometries
+    - Footprint doesn't match symbol's footprint filters
+    - Footprint component type doesn't match footprint pads
+
+** End of Report **

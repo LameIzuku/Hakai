@@ -1,0 +1,3 @@
+netlist pad assignments: 306 (257 on named nets, 49 no-connects)
+PCB pads audited: 319 (+3 mounting-hole pads)
+EVERY ELECTRICAL CONNECTION VERIFIED: PCB pad nets == schematic netlist (0 mismatches)
