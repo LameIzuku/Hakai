@@ -1,0 +1,200 @@
+================================================================================
+HAKAI MOUSE V6 â€” SESSION LOGS
+Project: C:\Users\kavya\Documents\hakai\claud\final v2 (v6)
+Rule: Update this file (~300 words) when a prompt finishes or a whole task completes.
+================================================================================
+
+---
+[2026-08-16 10:47] SESSION ENTRY â€” A+++ MH3 clearance budget (single pass)
+Status: COMPLETED WITH PARTIAL RESULT (budget exhausted; DRC not clean)
+---
+
+Task was to clear MH3 hole-clearance DRC under a fixed A+++ permission budget in one pass, without restoring on failure. Permitted, least-first: (1) GND spoke/via micro-move near (153.5, 126); (2) keepout TRACKS at r=3.00; (3) SWDCLK east for an east-of-MH VBAT column. Forbidden: XC1 F-hop/vias, necking 1V9_A, moving MH/components/outline. Hard rules: copper-to-hole >= 1.4 mm (report actual), unconnected=0, XC1 stays on B.Cu, no dangling stubs, refill all zones. Also required: answer washer r~4.5 vs SWDCLK and 1V9_A 0.10 mm ampacity in text only.
+
+Backup created first: hakai_mouse_v6.kicad_pcb.bak_pre_a_ppp_budget. Each config restored from bak_gnd_closed_ok. Script tools/fix_mh3_clearance.py was rewritten several times (early-west dual column, nested SWDIO, XC1 north-wrap, multi-step south-rejoin). Early-west VBAT hit 1V9_A B diagonal; north-wrap XC1 hit 1V9_A/PGOOD; south-rejoin through BTN/SWDCLK exploded error counts; SWDCLK east alone hit BTN_SIDE_BACK.
+
+Best achievable under budget was recreated as EXACT prior-best topology: GND via (153.5,126.0)->(153.5,125.4); SWDIO west col 151.1 gate y~126.15; VBAT multi-step west col 151.7; XC1 B south then north-rejoin to NE; keepout tracks r=3.10. Left on main PCB and hakai_mouse_v6.kicad_pcb.best_mh3_attempt (not restored). Full DRC: unconnected=0, errors=5, warnings=4 (silk). Measured min copper-to-MH edge=1.532 mm. Remaining hard errors: XC1Ã—VBAT_SENSE short/clear near (155.5â€“155.9, y~126.5â€“126.8) and GND via@125.4Ã—RF_FEED on F. Keeping via at y=126 removes RF_FEED short but drops min_edge below 1.4 mm.
+
+Permissions actually used: GND via micro-move + keepout tracks (~r=3.10). SWDCLK east not used. Consolidated blocking report listed minimum extra unlocks: 1V9_A full-width shove, PGOOD micro-shove, XC1 F-hop, BTN+SWDCLK together, or RF_FEED F micro-clear. Deferred Qs answered: r~4.5 washer not practical without large multi-net moves; 1V9 0.10 mm ~0.4â€“0.5 A @1 oz external, OK for tens of mA, polish-widen preferred not a hard fab defect. Gerbers not exported (DRC not clean).
+
+Word count target ~300. End of entry.
+================================================================================
+
+---
+[2026-08-16 ~12:00] SESSION ENTRY â€” A + E unlock budget (1V9_A shove + RF prefer via)
+Status: COMPLETED WITH PARTIAL RESULT (budget exhausted; DRC not clean; not restored)
+---
+
+New permissions: (A) 1V9_A full-width shove, width >=0.10 mm, widening OK; (E) RF_FEED micro-clear only if GND via has no valid seat â€” prefer via position, no RF width/layer change, length delta <=0.5 mm, keep continuous pour under RF. Still allowed: GND via micro-move, keepout r=3.00â€“3.10, SWDCLK east, PGOOD micro-shove, BTN+SWDCLK. Still forbidden: XC1 F-hop/vias, move MH/components/outline. Also fix four silk warnings. Hard: unc=0, copper-hole >=1.4 mm, XC1 on B.Cu, refill zones.
+
+Backup: hakai_mouse_v6.kicad_pcb.bak_pre_a_e (and timestamped bak_pre_a_e_20260816_111833). Baseline each try: bak_gnd_closed_ok. Script tools/fix_mh3_a_e.py plus ad-hoc trials: early-west dual column + 1V9 U-detour + PGOOD orthogonal; XC1 north-wrap + late-west; SWDIO col east of VBAT at start-y.
+
+Best left on disk (not restored): hakai_mouse_v6.kicad_pcb.best_a_e_attempt and main PCB. Config: early-west VBAT col 151.7 @ y=117.1; nested SWDIO 151.1â†’150.3; 1V9 detour via x=148.8 w=0.15; PGOOD V@142.545 then H to via; keepout tracks r=3.00; GND via UNCHANGED (153.5,126.0); RF_FEED length delta=0.000 mm. DRC: unc=0, err=8, warn=5, min copper-to-MH edge=1.625 mm. RF short gone (via stayed at 126). Remaining hard errors: VBAT_SENSEÃ—XC1 NE clear (~0.14 mm stub), VBATÃ—PGOOD via, PGOODÃ—nRESET, PGOODÃ—BTN_SIDE_BACK, 1V9Ã—PGOOD, SWDIOÃ—GND via(150.0,129.5). Silk: moved Q3/R10/R11 refs; original four cleared partially; new overlaps U3/R11, J2/R10, Q3/R25 remain.
+
+Permissions used: A (1V9 full-width shove + widen to 0.15 on detour), PGOOD micro-shove, SWDIO/VBAT MH west routing, keepout r=3.00, silk moves. Not used: SWDCLK east, GND via move, RF_FEED move (E satisfied by leaving via at 126). Single minimum unlock to close: authorize coordinated micro-nudge of PGOOD via (151.892,116.784) and/or nRESET+BTN clearance for a clean PGOOD rejoin, plus SWDIO dodge of GND via (150.0,129.5) â€” or XC1 F-hop if crystal via ban lifted (Q1: XC1 is 32 MHz crystal net Y1.1â€“C18â€“U4.B24; ban is correct). Copper oz not specified in project â€” unresolved fab param. Gerbers not exported.
+
+End of entry.
+================================================================================
+
+---
+[2026-08-16 ~session] SESSION ENTRY — Region rip-up authority (stop incremental)
+Status: COMPLETED — REGION CANNOT CLOSE under freezes; best residual left on disk
+---
+
+Working-method change: (1) pick baseline by residual difficulty not error count;
+(2) full re-route of listed nets inside MH3 zone x~147-161 y~108-136.
+
+Baseline judgment: best_mh3_attempt residual is genuinely closer than best_a_e.
+best_mh3 had one packing cluster (XC1 x VBAT multi-step) plus one easy RF conflict
+(GND via y vs RF_FEED). best_a_e had eight errors in a multi-net cascade
+(PGOOD x nRESET/BTN/1V9/VBAT via, SWDIO x GND via) — higher remaining difficulty.
+Started rebuild from bak_gnd_closed_ok targeting that residual.
+
+Backup: bak_pre_region_ripup. Surgical and full-region trials. Aggressive via rip
+broke connectivity; surgical rebuild of SWDIO/VBAT_SENSE/1V9/PGOOD/GND with XC1
+frozen achieved min_edge ~2.5-2.9 mm and unc=0 but 23-36 hard errors: PGOOD fights
+VBAT power bus @y~115.4, XL1 via, BTN cloud; SWDIO H fights XC1 L and GND spoke;
+SWDIO south H hits VBAT_SENSE via; 1V9 U-detour hits VBAT and GND vias. Silk moves
+shifted warnings rather than clearing to zero.
+
+Honest closure: under permanent XC1 no-via, no MH/component/outline moves, RF
+length freeze, and 2-layer stackup, the MH3 annulus is over-constrained. Real
+blockers are structural (move MH, free a nearby passive, or 4-layer) — not
+another track nudge menu.
+
+Best left (not restored): best_region_attempt = prior best_mh3 topology freeze
+(unc=0, err=5, min_edge=1.532, RF short via@125.4, XC1 south-rejoin lengthened
+vs baseline ~22 to ~41 mm). Fab notes updated: 1 oz outer copper; MH3 insulating
+washer required. Decisions recorded. Gerbers not exported.
+
+End of entry.
+================================================================================
+
+---
+[2026-08-16 20:36] SESSION ENTRY — Structural decision brief (no routing)
+Status: COMPLETED — analysis only; no PCB copper changes
+---
+
+User stopped routing and required a structural decision. Correction: any state that
+lengthened XC1 (best_region / best_mh3 ~40.9 mm vs baseline 22.4 mm) is
+disqualified — 32 MHz crystal loop must stay within +10% length and non-increasing
+loop area. New permanent rule recorded and applied to every saved board file.
+
+XC1 audit (baseline bak_gnd_closed_ok L=22.359 mm, hull A=43.217 mm2, +10% L cap
+24.595 mm). Survivors: bak_gnd_closed_ok and family (min_edge -0.875, hole_clearance
+only); best_a_e_attempt and bak_pre_region_ripup* (L OK, min_edge 1.625, 8 hard
+shorts/crossings); older pre-GND-close backups. Disqualified: best_mh3_attempt,
+best_region_attempt, bak_pre_a_e*, bak_pre_a_ppp_budget (XC1 +17% to +83%).
+
+Three options costed without implementing: (1) Move MH3 min pure-X west to about
+(151.13,130) delta -3.88 mm — opens annulus for fixed SWDIO/VBAT_SENSE verticals;
+east move fights SWDCLK@158.4; shell/boss check required. (2) Free passive —
+rank L2 15nH, XL1 y-shift, C19 12pF XC2; partial-to-full DRC depending on count.
+(3) 4-layer F/GND/route/B with XC1 short on B — clears same-layer annulus fights;
+does not auto-fix silk or mechanical washer. Fallback: no XC1-legal residual is
+both fab-safe and electrically clean — bak_gnd has copper-in-hole; best_a_e has
+hard shorts (GND-SWDIO, PGOOD-1V9, crossings). Do not ship either. README still
+has 1 oz outer copper and MH3 insulating-washer fab notes. Main left as
+bak_gnd_closed_ok after analysis DRC. Awaiting user pick of MH move / passive /
+4-layer.
+
+End of entry.
+================================================================================
+
+---
+[2026-08-18 13:21] LAST ACTIVITY
+Status: IDLE — awaiting structural direction
+---
+
+Last completed work: structural decision brief (no routing). XC1 +10% / loop-area
+rule applied; best_mh3/best_region disqualified for lengthened crystal. Three
+options costed (MH3 west ~3.88 mm, free L2/XL1/C19, 4-layer). No shippable
+XC1-legal residual. Main = bak_gnd_closed_ok. README still has 1 oz copper and
+MH3 insulating-washer notes. User asked to keep LOGS updated; this stamp refreshes
+last activity. Next action blocked on user choice: move MH / move passive / 4L.
+
+End of activity stamp.
+================================================================================
+
+---
+[2026-08-18 13:28] LAST ACTIVITY — Option 1 MH3 west SPEC ONLY (no PCB edit)
+Status: COMPLETED — mechanical/electrical spec delivered; awaiting shell go/no-go
+---
+
+Direction: Option 1 MH3 move west. Spec-only; main remains bak_gnd_closed_ok.
+Proposed MH3 (155.000,130.000) -> (151.130,130.000), delta (-3.870, 0.000) mm.
+Outline bbox used for edge numbers (100,40)-(170,150); flag irregular outline to
+user. Edge from new hole center: W 51.13 E 18.87 N 90 S 20; material beyond hole
+wall min E ~17.27 mm (comfortable). Mounting pattern change MH3-MH1 71.028->68.867,
+MH3-MH2 56.223->56.698. Gate: XC1 can stay 22.359 mm B original loop. Move alone
+clears baseline hole_clearance on SWDIO/VBAT_SENSE if tracks stay; silk remains.
+Washer r=4.5 still overlaps SWDIO column at new site. Option 2 filter: C19 crystal
+load DISQUALIFIED; XL1 is a net not a part; L2 is DC/DC 15nH not RF match.
+Awaiting shell measurement go/no-go before any board touch.
+
+End of activity stamp.
+================================================================================
+
+---
+[2026-08-18 13:36] LAST ACTIVITY — MH3 Option 1 spec CORRECTION (real Edge.Cuts)
+Status: COMPLETED — bbox distances retracted; true outline + pattern gate answered
+---
+
+User blocked go/no-go: edge numbers from AABB were unusable; hole-pattern deltas
+are the real shell gate. Recomputed against board Edge.Cuts only (16-vertex
+chamfered outline; footprint-local Edge.Cuts excluded). True nearest outline from
+(151.13,130) is east wall x=166 at (166,130), center dist 14.87 mm, wall-to-edge
+13.27 mm; inside=True. Current MH3 nearest same wall at 11.00 mm. Min west move
+for fixed SWDIO/VBAT verticals is mx<=151.125 (delta -3.875) — proposed 151.13
+is that minimum not a comfort pad. Relocating GND via (150,129.5) does not shrink
+that delta; it only makes 151.125 fab-clean. Without moving via, via-safe west is
+mx<=148.175 (delta -6.825). Slot with boss fixed at 155 does not clear SWDIO.
+No position clears tracks while keeping MH3-MH1 and MH3-MH2 within +/-0.5 mm.
+Rank for unmodified shell: d impossible; c unlikely; a/b both need boss move.
+Washer overlap closed as issue (insulating washer committed). Main untouched.
+
+End of activity stamp.
+================================================================================
+
+================================================================================
+[2026-08-18 15:49] LAST ACTIVITY - SWDIO+VBAT_SENSE re-route at original MH3 (155,130)
+Status: SUCCESS - DRC 0/0/0; gerbers exported; XC1 untouched
+---
+
+Green-light executed: SWDIO west column + VBAT east dual-F-hop corridor at
+original MH3 (155,130). Option 1 / shell boss move NOT used.
+
+Backup: hakai_mouse_v6.kicad_pcb.bak_pre_swdio_vbat (+ timestamped copies)
+Best/main: hakai_mouse_v6.kicad_pcb.best_swdio_vbat / hakai_mouse_v6.kicad_pcb
+Baseline remained bak_gnd_closed_ok until this pass committed.
+
+DRC (kicad-cli --refill-zones): unc=0 err=0 warn=0
+min copper-to-MH3 edge = 1.529 mm (GND via 153.5,133); keepout tracks r=3.00
+XC1 B length 22.359 mm, hull A 43.217, vias=2 - UNCHANGED (no XC1 via add)
+SWDIO: west B gate y=126.55 col=151.0 bus y=132.5; via count unchanged (1)
+VBAT_SENSE: short F-hop over XC1, B past BTN, F-hop over SWDCLK, B east col
+161.5 south of MH, F-hop over SWDCLK south bus into existing via 129.203,134.911
+1V9_A: not modified this final path (width still 0.10-0.10)
+RF_FEED: unchanged
+GND via (150.0,129.5) relocated to (149.50,127.50)
+Silk: refs moved; DRC silk warnings cleared this pass
+Gerbers: gerbers/swdio_vbat_clean/
+
+Also: 13:42 assumption-test LOGS entry was MISSING after 13:36; backfilled below
+as a dated note that it never landed in the previous session file.
+
+End of activity stamp.
+================================================================================
+
+[2026-08-18 15:49] BACKFILL - 13:42 assumption-test entry (was missing after 13:36)
+Status: NOTED - entry never written in prior session; reconstructed intent
+---
+
+Prior session planned a 13:42 LOGS stamp for MH3 assumption-test (washer r=4.5
+insulating, copper keepout r~3.10, SWDIO/VBAT verticals as fixed vs free). That
+stamp did not append; file still ended at 13:36 Edge.Cuts correction. This
+backfill records that gap. Subsequent green-light superseded Option 1.
+
+End of backfill stamp.
+================================================================================
+

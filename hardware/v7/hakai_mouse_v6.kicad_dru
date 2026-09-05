@@ -1,0 +1,12 @@
+(version 1)
+
+# nRF52833 aQFN-73 and BQ24074 VQFN-16: 0.5 mm pitch / 0.25 mm pads force the
+# ring-2 escape through a 0.25 mm channel (0.10 mm trace + 0.072 mm clearance).
+# Confined to the two QFN courtyards; the rest of the board is standard.
+(rule "qfn_escape_clearance"
+  (condition "A.insideCourtyard('U4') || A.insideCourtyard('U2')")
+  (constraint clearance (min 0.072mm)))
+
+(rule "qfn_escape_track"
+  (condition "A.insideCourtyard('U4') || A.insideCourtyard('U2')")
+  (constraint track_width (min 0.09mm)))

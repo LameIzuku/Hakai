@@ -1,0 +1,155 @@
+(footprint "ENC_Mouse_11mm"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "11mm mouse quadrature encoder (no switch), shaft +X into wheel bay. A/C/B 2.0mm pitch + 2 bracket tabs. VERIFY vs vendor drawing before fab.")
+	(property "Reference" "REF**"
+		(at 0.5 -7.2 0)
+		(layer "F.SilkS")
+		(uuid "692c858e-f717-4210-be93-406564b7605b")
+		(effects
+			(font
+				(size 1 1)
+			)
+		)
+	)
+	(property "Value" ""
+		(at 0.5 -8.6 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "df506fa8-da65-4c04-8ca0-b0523da9ff81")
+		(effects
+			(font
+				(size 1 1)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0a7415ff-9e41-41f6-a401-ced90c7c8bfa")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c3e41071-881c-47f7-a353-e90c032597e1")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_rect
+		(start -8 -4.2)
+		(end 2 4.2)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "fe093fba-7078-476f-ab2e-9ef0ef9e7bca")
+	)
+	(fp_rect
+		(start -8.5 -6.5)
+		(end 2.5 5.5)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "a992e141-ac7c-4734-bbc7-726c5f9b97df")
+	)
+	(fp_line
+		(start 2 0)
+		(end 5.5 0)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "7366020e-8184-426f-b81e-e31971cafff9")
+	)
+	(fp_line
+		(start 4.5 -0.8)
+		(end 5.5 0)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "147601d4-a638-411c-bf3a-054251fcb676")
+	)
+	(fp_line
+		(start 4.5 0.8)
+		(end 5.5 0)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "87834711-2b72-4139-8c6f-8f0cf70b9327")
+	)
+	(fp_rect
+		(start -8 -6)
+		(end 2 6)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "dd606df5-162a-4cce-a06c-4ed76b56ff97")
+	)
+	(pad "A" thru_hole circle
+		(at 0 -2)
+		(size 1.7 1.7)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "18abcc29-d7a6-4aa6-ad6c-b5fd230b7164")
+	)
+	(pad "B" thru_hole circle
+		(at 0 2)
+		(size 1.7 1.7)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "011bdbad-6224-4ae1-a8c7-d89afe863c85")
+	)
+	(pad "C" thru_hole circle
+		(at 0 0)
+		(size 1.7 1.7)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "9a6a5ffb-9c82-477e-ad3c-38d7521707fd")
+	)
+	(pad "MP1" thru_hole circle
+		(at -3.5 -5.5)
+		(size 2.3 2.3)
+		(drill 1.4)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "71febd20-6249-423f-a91e-6f3d12c800a5")
+	)
+	(pad "MP2" thru_hole circle
+		(at -3.5 5.5)
+		(size 2.3 2.3)
+		(drill 1.4)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "3888628d-37bf-4477-96bd-75a478451438")
+	)
+	(embedded_fonts no)
+)
